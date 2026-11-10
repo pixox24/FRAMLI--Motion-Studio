@@ -11,14 +11,22 @@
 </p>
 
 <p align="center">
-  <sub>预设库 → 实时舞台 → Inspector。截图拍于 327 预设版本，当前数据为 346 条。</sub>
+  <sub>预设库 → 实时舞台 → Inspector。2026-11-10 当前版本实拍：Header 显示 346 预设，右上角为 X / GitHub 入口。</sub>
+</p>
+
+<p align="center">
+  <img src="./assets/readme/landing-340.png" width="100%" alt="首页实拍：徽章、简介与「探索 340+ 预设画廊」按钮均标注 340+，右上角为 X 与 GitHub 入口">
+</p>
+
+<p align="center">
+  <sub>首页入口已统一为「340+ 预设画廊」。</sub>
 </p>
 
 **FRAMLI-MOTION 是一个跑在浏览器里的动效调试工作台。** 挑一个预设，拖贝塞尔控制点把节奏调准，配上程序化声效，然后把能直接用的代码复制走。不用装设计软件，也不用猜 `cubic-bezier()` 里那四个数字。
 
 ## 能做什么
 
-- **346 条预设数据**（编号延伸至 #350），按 9 类组件、7 类触发时机以及 CSS / GSAP / Canvas 技术筛选；支持搜索、收藏与键盘切换。
+- **346 条预设数据**（编号延伸至 #350，页面统一标为「340+ 预设画廊」），按 9 类组件、7 类触发时机以及 CSS / GSAP / Canvas 技术筛选；支持搜索、收藏与键盘切换。
 - **可视化缓动编辑**：拖动 P1 / P2 控制点或套用预设曲线，调时长（0.2–6s）、交错、缩放、播放倍速与循环；舞台提供 16:9 / 4:3 / 9:16 三种比例和 4 套主题。
 - **音画同步**：13 种 Web Audio 程序化声效原型，按动效类型自动匹配，只在重播或切换预设时响一次，不循环扰耳。
 - **一次调参，四种产出**：CSS Keyframes、Motion (React)、GSAP 3 代码片段，以及可复制给 AI 的完整动效描述 Prompt。
@@ -80,6 +88,7 @@ assets/readme/       README 的 SVG / GIF 视觉素材与动效参数
 
 ## 相关链接
 
+- [在线预览 · framli-motion.vercel.app](https://framli-motion.vercel.app)
 - [X · @Gotoobig](https://x.com/Gotoobig)
 - [GitHub · FRAMLI--Motion-Studio](https://github.com/pixox24/FRAMLI--Motion-Studio)
 

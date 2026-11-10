@@ -180,7 +180,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <span className="font-semibold text-white block mb-1">
                   1. 示例文本实时驱动
                 </span>
-                在顶部输入框中输入您想要测试的文本、标点或数字，327 款动效（支持字符分拆、路径轨迹、物理破碎等）将实时重绘生效。
+                在顶部输入框中输入您想要测试的文本、标点或数字，340+ 款动效（支持字符分拆、路径轨迹、物理破碎等）将实时重绘生效。
               </div>
 
               <div className="bg-[#141824] p-3 rounded-xl border border-[#23293c]">

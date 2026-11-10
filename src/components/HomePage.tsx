@@ -318,7 +318,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <span className="w-2 h-2 rounded-full bg-[#cdff39] animate-pulse" />
             <span className="text-[#cdff39] font-bold">FRAMLI-MOTION</span>
             <span className="text-white/40">/</span>
-            <span className="text-white/80">350+ 工业级全品类动效工作台</span>
+            <span className="text-white/80">340+ 工业级全品类动效工作台</span>
           </div>
 
           {/* Headline */}
@@ -333,7 +333,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           {/* Subtitle */}
           <p className="max-w-2xl text-sm sm:text-base md:text-lg text-[#949cb3] leading-relaxed mb-10">
-            专为现代 Web 开发者与高级设计工程师打造的动效平台。集成 350+ 经典机械、流体、
+            专为现代 Web 开发者与高级设计工程师打造的动效平台。集成 340+ 经典机械、流体、
             光电与几何力学动效预设，配备毫秒级物理声学合成与贝塞尔曲线实时调试，一键导出生产级代码。
           </p>
 
@@ -353,7 +353,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="px-6 py-3.5 rounded-xl bg-[#141722]/80 hover:bg-[#1e2334] text-white font-bold text-sm sm:text-base border border-[#2a3146] transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2 cursor-pointer backdrop-blur-md shadow-lg"
             >
               <Compass className="w-4 h-4 text-[#cdff39]" />
-              探索 350+ 预设画廊
+              探索 340+ 预设画廊
               <ChevronDown className="w-4 h-4 text-white/50" />
             </button>
           </div>
@@ -433,7 +433,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 w-full max-w-4xl text-left">
             <div className="p-4 rounded-xl bg-[#0d0f16] border border-[#1a1f2c] flex flex-col gap-1">
               <span className="text-2xl sm:text-3xl font-black text-[#cdff39] font-mono">
-                350+
+                340+
               </span>
               <span className="text-xs font-bold text-white">工业级动效预设</span>
               <span className="text-[11px] text-[#71788e]">
@@ -580,7 +580,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <span className="font-mono font-bold text-white">FRAMLI-MOTION</span>
             <span>· 专业级动效预览与参数调试工坊</span>
           </div>
-          <div>集成 350+ 动效预设 · 基于 React 19 + TypeScript + Tailwind CSS</div>
+          <div>集成 340+ 动效预设 · 基于 React 19 + TypeScript + Tailwind CSS</div>
         </div>
       </footer>
     </div>
