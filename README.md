@@ -84,7 +84,12 @@ assets/readme/       README 的 SVG / GIF 视觉素材与动效参数
 - 预设是随仓库打包的静态数据，不是运行时远程拉取；`scripts/convert-and-refine.mjs` 负责简繁术语标准化。
 - `index.html` 通过 jsdelivr 预载 GSAP 及插件脚本。标注为 GSAP 技术的预设在离线时会走内置降级渲染，表现可能与联网时不同。
 - 声效由浏览器 Web Audio 合成，需要用户交互后才能出声；这是浏览器策略，不是故障。
-- 仓库目前没有 `LICENSE` 文件。二次分发或商用前请先联系作者。
+
+## 授权协议
+
+- **CLI 与协议**：采用 [MIT License](https://opensource.org/license/mit)。
+- **风格数据**：采用 [CC BY 4.0（知识共享署名 4.0 国际许可协议）](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)。
+- **图片**：以各风格的授权记录为准。
 
 ## 相关链接
 
