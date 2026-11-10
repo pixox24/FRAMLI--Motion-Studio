@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="flow-title flow-desc">
+  <title id="flow-title">FRAMLI-MOTION 的四步工作流</title>
+  <desc id="flow-desc">从预设库筛选动效，用贝塞尔编辑器调整缓动与时长，配上程序化声效，最后复制 CSS、Motion 或 GSAP 代码。</desc>
+
+  <defs>
+    <g id="ticks">
+      <rect x="0" y="0" width="2" height="9" fill="#cdff39"/>
+      <rect x="14" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="28" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="42" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="56" y="0" width="2" height="9" fill="#cdff39"/>
+      <rect x="70" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="84" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="98" y="0" width="2" height="6" fill="#2b3342"/>
+      <rect x="112" y="0" width="2" height="9" fill="#cdff39"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="340" rx="26" fill="#090b10"/>
+  <rect x="1" y="1" width="1198" height="338" rx="25" fill="none" stroke="#232b3b"/>
+  <use href="#ticks" x="56" y="30"/>
+  <path d="M56 50 H1144" stroke="#1b2230"/>
+  <text x="56" y="70" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#7f8aa0">WORKFLOW / 从预设到可用代码</text>
+
+  <!-- 01 选预设 -->
+  <g id="step-01">
+    <rect x="56" y="86" width="246" height="192" rx="14" fill="#10141d" stroke="#222a39"/>
+    <text x="74" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#cdff39">01</text>
+    <rect x="74" y="126" width="62" height="26" rx="5" fill="#cdff39"/>
+    <rect x="144" y="126" width="62" height="26" rx="5" fill="#1b2230"/>
+    <rect x="214" y="126" width="62" height="26" rx="5" fill="#1b2230"/>
+    <rect x="74" y="160" width="62" height="26" rx="5" fill="#1b2230"/>
+    <rect x="144" y="160" width="62" height="26" rx="5" fill="#1b2230"/>
+    <rect x="214" y="160" width="62" height="26" rx="5" fill="#1b2230"/>
+    <text x="74" y="230" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="28" fill="#f2f5fb">选预设</text>
+    <text x="74" y="260" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="19" fill="#8b94a8">按组件与时机筛选</text>
+  </g>
+
+  <!-- 02 调曲线 -->
+  <g id="step-02">
+    <rect x="334" y="86" width="246" height="192" rx="14" fill="#10141d" stroke="#222a39"/>
+    <text x="352" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#cdff39">02</text>
+    <rect x="352" y="126" width="210" height="60" rx="8" fill="#0b0e15" stroke="#1d2532"/>
+    <path d="M366 176 C400 164 430 136 548 132" stroke="#cdff39" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="406" cy="158" r="6" fill="#cdff39"/>
+    <circle cx="466" cy="134" r="6" fill="#5ad2ff"/>
+    <text x="352" y="230" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="28" fill="#f2f5fb">调曲线</text>
+    <text x="352" y="260" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="19" fill="#8b94a8">拖 P1 / P2 改缓动</text>
+  </g>
+
+  <!-- 03 配音效 -->
+  <g id="step-03">
+    <rect x="612" y="86" width="246" height="192" rx="14" fill="#10141d" stroke="#222a39"/>
+    <text x="630" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#cdff39">03</text>
+    <rect x="630" y="126" width="210" height="60" rx="8" fill="#0b0e15" stroke="#1d2532"/>
+    <g fill="#2b3342">
+      <rect x="644" y="158" width="8" height="14" rx="2"/>
+      <rect x="660" y="150" width="8" height="22" rx="2"/>
+      <rect x="676" y="142" width="8" height="30" rx="2"/>
+      <rect x="692" y="150" width="8" height="22" rx="2"/>
+      <rect x="708" y="136" width="8" height="36" rx="2"/>
+      <rect x="724" y="148" width="8" height="24" rx="2"/>
+      <rect x="740" y="140" width="8" height="32" rx="2"/>
+      <rect x="756" y="154" width="8" height="18" rx="2"/>
+      <rect x="772" y="146" width="8" height="26" rx="2"/>
+      <rect x="788" y="158" width="8" height="14" rx="2"/>
+      <rect x="804" y="150" width="8" height="22" rx="2"/>
+      <rect x="820" y="158" width="8" height="14" rx="2"/>
+    </g>
+    <g fill="#cdff39">
+      <rect x="676" y="142" width="8" height="30" rx="2"/>
+      <rect x="708" y="136" width="8" height="36" rx="2"/>
+      <rect x="740" y="140" width="8" height="32" rx="2"/>
+    </g>
+    <text x="630" y="230" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="28" fill="#f2f5fb">配音效</text>
+    <text x="630" y="260" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="19" fill="#8b94a8">13 种程序化声效</text>
+  </g>
+
+  <!-- 04 导出代码 -->
+  <g id="step-04">
+    <rect x="890" y="86" width="246" height="192" rx="14" fill="#10141d" stroke="#222a39"/>
+    <text x="908" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#cdff39">04</text>
+    <rect x="908" y="126" width="210" height="60" rx="8" fill="#0b0e15" stroke="#1d2532"/>
+    <rect x="922" y="136" width="120" height="7" rx="3" fill="#2b3342"/>
+    <rect x="922" y="148" width="86" height="7" rx="3" fill="#cdff39"/>
+    <rect x="922" y="160" width="152" height="7" rx="3" fill="#2b3342"/>
+    <rect x="922" y="172" width="70" height="7" rx="3" fill="#2b3342"/>
+    <text x="908" y="230" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="28" fill="#f2f5fb">导出代码</text>
+    <text x="908" y="260" font-family="-apple-system, BlinkMacSystemFont, PingFang SC, Segoe UI, sans-serif" font-size="19" fill="#8b94a8">CSS / Motion / GSAP</text>
+  </g>
+
+  <!-- Sequence arrows -->
+  <g stroke="#cdff39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M312 172 L324 182 L312 192"/>
+    <path d="M590 172 L602 182 L590 192"/>
+    <path d="M868 172 L880 182 L868 192"/>
+  </g>
+
+  <text x="56" y="314" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#667085">MOTION_ITEMS → AnimationOverrides → StudioCanvas → Clipboard</text>
+</svg>

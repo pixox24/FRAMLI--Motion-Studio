@@ -1,0 +1,16 @@
+{
+  "name": "framli-motion",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "cleanUrls": true,
+  "alias": [
+    "framli-motion.vercel.app"
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

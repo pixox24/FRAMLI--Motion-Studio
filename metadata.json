@@ -1,0 +1,7 @@
+{
+  "name": "Framli-Motion",
+  "description": "Framli-Motion 专业级动画预览与调试工作台，集成 350+ 经典动效预设。支持自定义示例文本、贝塞尔曲线、缓动与时长调参及代码/AI Prompt导出。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

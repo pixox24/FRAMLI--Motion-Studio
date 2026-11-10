@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@import "./motion-engine/remote-fx.css";
+
+:root {
+  --color-primary: #cdff39;
+  --a: #cdff39;
+}
+
+/* Custom scrollbars for pro studio look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #394054;
+}
+
+/* Container query support for stages */
+.stage {
+  container-type: inline-size;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 1.2cqw;
+}
+
+/* Universal safe framing to prevent edge clipping */
+.stage > .w,
+.stage > .t,
+.stage > .k,
+.stage > .sp,
+.stage > .goo,
+.stage > svg {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+/* FX 17: 水面倒影 (Water Reflection) balanced layout */
+.fx17 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.fx17 .w {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-height: 84% !important;
+  max-width: 90% !important;
+  transform: scale(0.95);
+  transform-origin: center center;
+}
+.fx17 .t {
+  line-height: 1.15;
+  text-align: center;
+}
+.fx17 .line {
+  width: 60cqw !important;
+  max-width: 85% !important;
+  margin: 0.5cqw 0 !important;
+}
+.fx17 .ref {
+  line-height: 1.15;
+  text-align: center;
+}
+
+/* FX 7: 万花筒 (Kaleidoscope) boundary balance */
+.fx7 .k {
+  transform: scale(0.86);
+  transform-origin: center center;
+}
+
+/* FX 24: 文字开扇 (Fan) boundary balance */
+.fx24 .w {
+  transform: scale(0.88);
+  transform-origin: center center;
+}
+
+.stage.dark {
+  background: #0d0f14;
+  color: #fff;
+}
+
+.stage.cream {
+  background: #fbf8f1;
+  color: #1a1a1a;
+}
+
+.stage.acc {
+  background: var(--a);
+  color: #0b0c10;
+}
+
+.stage.grid-bg {
+  background-color: #0c0e14;
+  background-image: radial-gradient(rgba(205, 255, 57, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Slider styling */
+input[type="range"] {
+  accent-color: #cdff39;
+}
+
+

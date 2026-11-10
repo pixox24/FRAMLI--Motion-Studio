@@ -1,0 +1,7398 @@
+/**
+ * Framli-Motion Library Data - 350 Presets
+ * Simplified Chinese (zh-CN) & Standardized Terminology
+ */
+
+import { MotionItem } from "../types/motion";
+
+export const COMPS: [string, string, string][] = [
+  ['text', '文字', '#c8f03c'],
+  ['button', '按钮', '#ff6b4a'],
+  ['control', '表单・控件', '#a3b8ff'],
+  ['card', '卡片・组合', '#ffc93c'],
+  ['media', '图片・媒体', '#6cc4ff'],
+  ['shape', '图形・SVG', '#8b7cf6'],
+  ['bg', '背景・氛围', '#3dd9b8'],
+  ['layout', '版面・页面', '#f47fae'],
+  ['cursor', '光标', '#ff7a2f'],
+];
+
+export const WHENS: [string, string][] = [
+  ['enter', '进场'],
+  ['exit', '退场'],
+  ['switch', '切换'],
+  ['loop', '循环待机'],
+  ['hover', '悬停・点击'],
+  ['scroll', '滚动触发'],
+  ['drag', '拖拽手势'],
+];
+
+export const USES: Record<string, string> = {
+  hero: '标题・Hero',
+  emph: '强调重点',
+  data: '数字信息',
+  bg: '背景装饰',
+  trans: '转场切换',
+  logo: 'Logo・品牌',
+  ui: '界面交互',
+  scroll: '滚动效果',
+  app: 'App 界面',
+};
+
+export const MOTION_ITEMS: MotionItem[] = [
+  {
+    "id": 1,
+    "zh": "闪电砸落",
+    "en": "Lightning Strike",
+    "desc": "伴随闪电闪光重重砸下",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "冲击・开场",
+    "txt": "雷鸣",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "画面先闪两下强光并出现一道闪电线，文字从 2 倍大瞬间砸下缩回原尺寸，落地时轻微震动，之后保持柔和的外发光。整段约 2.4 秒，节奏急促有爆发力。"
+  },
+  {
+    "id": 2,
+    "zh": "激光横切",
+    "en": "Laser Cut",
+    "desc": "激光把文字一刀两断",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "SF・切断",
+    "txt": "切断",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "一道带光晕的激光线由左往右快速横切文字中线，切过后文字上半部往左上、下半部往右下错开并微微倾斜，停留片刻再合回。约 2.6 秒一轮，俐落科幻感。"
+  },
+  {
+    "id": 3,
+    "zh": "硬币翻转",
+    "en": "Coin Flip",
+    "desc": "文字像硬币一样翻转弹跳",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph"
+    ],
+    "tag": "碰运气・游戏",
+    "txt": "表か里か",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "每个字像硬币一样以 Y 轴翻转两圈并往上跳，落地后再小弹一下，字与字之间依序延迟约 0.14 秒。约 2.4 秒一轮，轻快俏皮。"
+  },
+  {
+    "id": 4,
+    "zh": "爆炸四散",
+    "en": "Explode Out",
+    "desc": "文字向四面八方炸飞",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "trans",
+      "emph"
+    ],
+    "tag": "冲击・副歌",
+    "txt": "爆発四散",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字先微微放大蓄力，接著每个字往不同方向随机炸飞、旋转并缩小淡出，停顿后再飞回原位组成文字，字与字可用主色与强调色交错。约 2.8 秒一轮，冲击感强。"
+  },
+  {
+    "id": 5,
+    "zh": "粒子消散",
+    "en": "Disintegrate",
+    "desc": "文字化为粒子消散",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "trans"
+    ],
+    "tag": "消灭・戏剧",
+    "txt": "消灭",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字由左到右逐字变模糊、往右上飘散并淡出，同时周围冒出许多小方块粒子往外飘走，消失后再重新浮现。约 3 秒一轮，戏剧化。"
+  },
+  {
+    "id": 6,
+    "zh": "心跳放大",
+    "en": "Heartbeat Zoom",
+    "desc": "随心跳放大并扩散波纹",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "emph"
+    ],
+    "tag": "感动・戏剧",
+    "txt": "鼓动",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "文字像心跳一样「咚咚」连续放大两次再回原尺寸，每次跳动同时从中心扩散出两圈圆形波纹并淡出。约 1.3 秒一拍。"
+  },
+  {
+    "id": 7,
+    "zh": "文字万花筒",
+    "en": "Text Kaleido",
+    "desc": "文字万花筒旋转",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "bg",
+      "logo"
+    ],
+    "tag": "迷幻・MV",
+    "txt": "万华镜",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "同一个词复制 12 份，以中心点放射状排列成花朵形，整体持续慢速旋转，每份文字同时往外伸缩呼吸，形成万花筒效果，相邻的复本用深浅两种色调交错。旋转一圈约 7 秒。"
+  },
+  {
+    "id": 8,
+    "zh": "倒数重击",
+    "en": "Number Slam",
+    "desc": "倒数数字重重砸下",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "data",
+      "hero"
+    ],
+    "tag": "开场・倒数",
+    "txt": "3,2,1,GO!",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "倒数「3、2、1、GO!」依序出现，每个数字从 3 倍大猛力砸下、回弹到原尺寸，每个数字约 0.75 秒，GO! 用强调色凸显。粗黑体，开场感强烈。"
+  },
+  {
+    "id": 9,
+    "zh": "波浪文字",
+    "en": "Wave Letters",
+    "desc": "文字像波浪上下起伏",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "hero"
+    ],
+    "tag": "欢乐・夏日",
+    "txt": "うねる波",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "每个字依序上下起伏并轻微左右摆动，形成连续流动的波浪，字与字可用两种色调交错。约 1.4 秒一个波，轻松欢乐的夏日感。"
+  },
+  {
+    "id": 10,
+    "zh": "定格抽帧晃动",
+    "en": "Stop Motion",
+    "desc": "定格动画般喀喀晃动",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph"
+    ],
+    "tag": "手作・玩具",
+    "txt": "コマ撮り",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "每个字以不连续、一格一格跳动的方式随机微晃与微旋转（像定格动画，无平滑过渡），各字节奏错开。约 0.9 秒循环，手作玩具感。"
+  },
+  {
+    "id": 11,
+    "zh": "假名字符雨",
+    "en": "Letter Rain",
+    "desc": "文字如雨般落下",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "奇幻・背景",
+    "txt": "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろ",
+    "bg": "cream",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "整个区块背景布满直排的假名文字，像雨一样由上往下不断落下，每一行速度不同（约 3–5 秒落完），少数几行用强调色，其余用低对比色调，奇幻背景感。"
+  },
+  {
+    "id": 12,
+    "zh": "放大镜局部透视",
+    "en": "Magnifier Lens",
+    "desc": "用放大镜放大文字",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "emph"
+    ],
+    "tag": "解说・发现",
+    "txt": "虫眼镜で拡大",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "一个圆形放大镜在文字上左右来回移动，镜片范围内的文字放大约 1.5 倍并改用强调色，镜片外的文字较淡，放大镜附手把。来回约 6 秒，解说／发现感。"
+  },
+  {
+    "id": 13,
+    "zh": "乱码解码",
+    "en": "Scramble Decode",
+    "desc": "从乱码解读成正确文字",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "hero",
+      "data"
+    ],
+    "tag": "骇客・SF",
+    "txt": "解読完了",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字一开始是不断跳动的乱码（片假名、符号、数字），再由左到右逐字解码成正确文字并改用强调色，停留后重新开始。像素点阵字体，骇客科幻感。"
+  },
+  {
+    "id": 14,
+    "zh": "多米诺骨牌连倒",
+    "en": "Domino Letters",
+    "desc": "文字像骨牌一样倒下",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "emph"
+    ],
+    "tag": "幽默・连锁",
+    "txt": "ドミノ倒し",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "每个字以右下角为支点，依序往右倒下约 72 度，像骨牌一样连锁倾倒，停留后一起站回。字下方有一条地板线，约 3.2 秒一轮。"
+  },
+  {
+    "id": 15,
+    "zh": "多色渐变流动",
+    "en": "Gradient Flow",
+    "desc": "渐变在文字中流动",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "标题・潮流",
+    "txt": "流れる色",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字内填充多色渐变，渐变持续由左往右在字里流动。粗体大字，约 3 秒流动一轮，时尚标题感。"
+  },
+  {
+    "id": 16,
+    "zh": "双环反向自旋",
+    "en": "Circle Text",
+    "desc": "文字圆环反向旋转",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "logo",
+      "bg"
+    ],
+    "tag": "Logo・催眠",
+    "txt": "CIRCLE TEXT ✦ ",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "两圈环状排列的文字，外圈顺时针慢转、内圈逆时针较快转，内外圈用不同色调区分。外圈约 9 秒、内圈约 6 秒一圈，催眠 Logo 感。"
+  },
+  {
+    "id": 17,
+    "zh": "水面倒影",
+    "en": "Water Reflection",
+    "desc": "在水面摇曳的倒影",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "hero"
+    ],
+    "tag": "夜景・沉静",
+    "txt": "水面",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字下方有一条细水平线，线下是上下颠倒的倒影，倒影半透明、往下渐淡，持续左右倾斜摇晃像水波，上方文字也轻微浮动。夜景沉静感。"
+  },
+  {
+    "id": 18,
+    "zh": "逐字弹跳",
+    "en": "Letter Bounce",
+    "desc": "文字逐字弹跳",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动 Canva 风格 Canva Bounce 弹跳",
+    "uses": [
+      "hero"
+    ],
+    "tag": "可爱・MV",
+    "txt": "はずむ文字",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "每个字依序压扁、弹起、落地再压扁回弹，像小球一样有挤压伸展的弹性，一次只跳一个字。约 2.2 秒一轮，可爱 MV 感。"
+  },
+  {
+    "id": 19,
+    "zh": "旗帜迎风飘扬",
+    "en": "Text Flag",
+    "desc": "文字像旗子般飘扬",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph"
+    ],
+    "tag": "气势・应援",
+    "txt": "はためく旗",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字左侧有一根旗杆，每个字依序做 3D 翻转与倾斜，形成旗子迎风飘扬的波浪。约 1.3 秒一个波，有气势的应援感。"
+  },
+  {
+    "id": 20,
+    "zh": "重力反转",
+    "en": "Gravity Flip",
+    "desc": "重力反转往上弹",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "trans"
+    ],
+    "tag": "惊奇・SF",
+    "txt": "重力反転",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "每个字先加速往上「掉」到上方并翻转成上下颠倒，停留后再掉回原位并翻正，落地时小弹一下，字与字依序错开。约 3 秒一轮。"
+  },
+  {
+    "id": 21,
+    "zh": "磁铁吸附",
+    "en": "Magnet Pull",
+    "desc": "文字像被磁铁吸过来",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "logo",
+      "hero"
+    ],
+    "tag": "集中・Logo",
+    "txt": "引き寄せる",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字一开始散得很开、模糊且半透明，接著像被磁铁吸住一样加速往中心靠拢、略微过冲后吸附定位，停留后再散开；最后两个字用强调色当重点。约 2.8 秒一轮。"
+  },
+  {
+    "id": 22,
+    "zh": "脉冲网格波纹",
+    "en": "Word Pulse Grid",
+    "desc": "格状文字随波膨胀",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "背景・节奏",
+    "txt": "脉",
+    "bg": "acc",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "同一个字排成 8×4 的格子，从中心往外一圈圈依序放大、变亮再缩小变暗，形成脉动波纹。约 1.8 秒一个波，节奏背景感。"
+  },
+  {
+    "id": 23,
+    "zh": "可变字重呼吸",
+    "en": "Weight Grow",
+    "desc": "细字逐渐变粗",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "emph"
+    ],
+    "tag": "强调・变化",
+    "txt": "太くなる",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字从极细的字重慢慢变成最粗的字重，停留后再变回细字（需使用可变字重字体）。约 3 秒一轮，强调变化感。"
+  },
+  {
+    "id": 24,
+    "zh": "折扇层叠展开",
+    "en": "Text Fan",
+    "desc": "同一字像扇子般展开",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "logo",
+      "hero"
+    ],
+    "tag": "和风・登场",
+    "txt": "扇",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "同一个字复制 7 份叠在一起，以字下方为轴心像扇子一样展开成扇形，停留后再收合。中央那份不透明，其余半透明。约 3 秒一轮，和风登场感。"
+  },
+  {
+    "id": 25,
+    "zh": "卡拉OK跳动小球",
+    "en": "Karaoke Ball",
+    "desc": "小球跳动，逐字点亮",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph"
+    ],
+    "tag": "歌曲・字幕",
+    "txt": "ボールが跳ねる",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "一颗发光小球在文字上方一字一字往右跳，每落在一个字上，该字就从暗淡亮起并带光晕，像卡拉 OK 字幕。每字约 0.38 秒，整句跳完后重来。"
+  },
+  {
+    "id": 26,
+    "zh": "摆钟悬挂摇晃",
+    "en": "Swing Letters",
+    "desc": "从上方一点如钟摆摇晃",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "logo"
+    ],
+    "tag": "可爱・慵懒",
+    "txt": "ゆらゆら",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "每个字顶端有一个小圆点，字以这个点为支点像钟摆一样左右摆动约 ±14 度，各字摆动错开。约 1.7 秒一摆，慵懒可爱。"
+  },
+  {
+    "id": 27,
+    "zh": "像素溶解",
+    "en": "Pixel Dissolve",
+    "desc": "化成方块溶解消失再复原",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "trans"
+    ],
+    "tag": "数位",
+    "txt": "ピクセル化",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字上方覆盖小方格，方格随机一格格出现把文字遮掉，再一格格消失让文字回来，夹杂少数强调色方块，像像素溶解。约 3 秒一轮，数位感。"
+  },
+  {
+    "id": 28,
+    "zh": "季节文字环轮播",
+    "en": "Rotating Words",
+    "desc": "在圆环中切换单字",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "data",
+      "logo"
+    ],
+    "tag": "时间・季节",
+    "txt": "春夏秋冬",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "中央圆角方块内的字依序切换（例：春→夏→秋→冬），每次切换有上下翻转的动作，周围有一圈文字环持续慢转。约 1.3 秒切换一次。"
+  },
+  {
+    "id": 29,
+    "zh": "高速残影掠过",
+    "en": "Blur Trail",
+    "desc": "拖著残影疾驰而过",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "trans"
+    ],
+    "tag": "速度・疾走",
+    "txt": "疾走",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字从画面左外侧高速冲进中央并带斜体倾斜，短暂停住后再冲出右侧，后方拖著 4 层半透明模糊的残影，背景闪过横向速度线。约 2.6 秒一轮，疾走感。"
+  },
+  {
+    "id": 30,
+    "zh": "棋盘格逐字翻转",
+    "en": "Checker Words",
+    "desc": "棋盘格文字依波浪翻转",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "花纹・背景",
+    "txt": "文",
+    "bg": "acc",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "同一个字排成 10×4 的棋盘格，深浅方块交错，从左上到右下依序以 Y 轴翻转，形成斜向的翻牌波浪。约 2.6 秒一轮，花纹背景感。"
+  },
+  {
+    "id": 31,
+    "zh": "无穷符号轨迹环绕",
+    "en": "Roller Path",
+    "desc": "文字沿 ∞ 轨道奔驰",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "疾走・欢乐",
+    "txt": "ころがる",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "每个字沿著一条「∞」形的虚线轨道依序奔跑，字会随行进方向转向，像小车队一样首尾相接。约 4.5 秒绕一圈，欢乐疾走感。"
+  },
+  {
+    "id": 32,
+    "zh": "随机字符洗牌重排",
+    "en": "Shuffle Letters",
+    "desc": "文字互换位置后排整齐",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "hero"
+    ],
+    "tag": "游戏・解谜",
+    "txt": "ならびかえ",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字的每个字随机互换位置并带点弹跳与歪斜，连续洗牌几次后归位排整齐，停留后再开始洗。每次换位约 0.6 秒，游戏解谜感。"
+  },
+  {
+    "id": 33,
+    "zh": "文字漩涡",
+    "en": "Text Spiral",
+    "desc": "文字沿漩涡旋转",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "bg",
+      "trans"
+    ],
+    "tag": "奇幻・吸入",
+    "txt": "うずまき",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字沿螺旋线排列，从中心小字逐渐往外变大，整个漩涡持续旋转，字的透明度轮流明暗。约 9 秒转一圈，奇幻吸入感。"
+  },
+  {
+    "id": 34,
+    "zh": "颤抖稳定",
+    "en": "Jitter Settle",
+    "desc": "颤抖后慢慢稳定",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph"
+    ],
+    "tag": "惊吓・紧张",
+    "txt": "ブルブル",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "文字一开始剧烈地左右上下抖动并旋转，抖动幅度逐渐变小，最后稳定停住，停一会儿再重新颤抖。约 2.4 秒一轮，惊吓紧张感。"
+  },
+  {
+    "id": 35,
+    "zh": "弹性拉伸",
+    "en": "Elastic Wave Stretch",
+    "desc": "文字纵向拉伸成波浪",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "hero"
+    ],
+    "tag": "流行・音乐",
+    "txt": "のびる波",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "每个字以底部为基准，依序纵向拉长到约 1.7 倍再缩回，同时横向变窄，形成弹性波浪，最后一个字用强调色。约 1.3 秒一个波，流行音乐感。"
+  },
+  {
+    "id": 36,
+    "zh": "墨水晕开",
+    "en": "Ink Bleed",
+    "desc": "墨水晕开成形",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "hero"
+    ],
+    "tag": "和风・手写感",
+    "txt": "にじむ墨",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字像墨水滴在纸上：一开始是模糊晕开的墨团，逐渐收敛成清晰锐利的字形，停留后再晕开消失，各字依序错开。约 3.4 秒一轮，和风手写感。"
+  },
+  {
+    "id": 37,
+    "zh": "文字聚集",
+    "en": "Letter Assemble",
+    "desc": "散落的文字聚集",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "标题・导入",
+    "txt": "あつまる",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字的每个字从画面四处、带著旋转与模糊放大飞进来，逐一聚集到正确位置并变清晰，停留后再散开。约 3.2 秒一轮，标题导入感。"
+  },
+  {
+    "id": 38,
+    "zh": "多字体逐字混排",
+    "en": "Text Mosaic",
+    "desc": "不同字体依序发光",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "bg"
+    ],
+    "tag": "字体样本・设计",
+    "txt": "爱梦光风花月海空",
+    "bg": "acc",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "8 个字排成 4×2 格，每格使用不同字体（黑体、明体、点阵、圆体、毛笔等），依序一格一格反白亮起并微微放大，再暗回去。约 3.2 秒一轮。"
+  },
+  {
+    "id": 39,
+    "zh": "崩落",
+    "en": "Crumble Down",
+    "desc": "文字崩塌掉落",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "trans"
+    ],
+    "tag": "结尾・翻转",
+    "txt": "崩れ落ちる",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "每个字先微微歪斜，接著依序像崩塌一样受重力加速往下掉并旋转淡出，之后从上方落回原位重组。约 3.4 秒一轮，结尾感。"
+  },
+  {
+    "id": 40,
+    "zh": "漂浮",
+    "en": "Float Drift",
+    "desc": "轻飘飘地浮动",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "bg",
+      "logo"
+    ],
+    "tag": "疗愈・梦幻",
+    "txt": "ふわふわ",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "每个字以不同速度缓慢上下左右漂浮并轻微旋转，带柔和光晕，像羽毛轻飘飘。每字约 3–4.5 秒一轮，疗愈梦幻感。"
+  },
+  {
+    "id": 41,
+    "zh": "文字爆开",
+    "en": "Word Burst",
+    "desc": "单字咚一声弹出来",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场 Canva 风格 Canva Pop 跳出",
+    "uses": [
+      "emph"
+    ],
+    "tag": "强调・亮点",
+    "txt": "冲击",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字从 0 迅速弹出放大到 1.25 倍再回到原尺寸，同时从中心放射出一圈短线条往外飞散消失。约 1.8 秒一轮，强调亮点。"
+  },
+  {
+    "id": 42,
+    "zh": "逐字敲击",
+    "en": "Letter Sequence",
+    "desc": "一个字一个字砸上来",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "hero"
+    ],
+    "tag": "节奏・歌词",
+    "txt": "砸上来吧",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "文字一个字一个字从上方大尺寸砸下来定位，每个字落下时略微压缩再回弹，依序间隔约 0.2 秒，全部出现后一起淡出。约 3 秒一轮。"
+  },
+  {
+    "id": 43,
+    "zh": "印章",
+    "en": "Text Stamp",
+    "desc": "像盖章一样一个个盖上去",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场 Canva 风格 Canva Stomp 重击",
+    "uses": [
+      "emph"
+    ],
+    "tag": "公告・决定",
+    "txt": "确定",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "两个带粗框的印章字样，从 2.4 倍大斜斜地「啪」一声盖上去，略微回缩后停住，印面带一点斑驳质感，两枚依序盖下。约 2.8 秒一轮。"
+  },
+  {
+    "id": 44,
+    "zh": "冲击放大",
+    "en": "Punch Zoom",
+    "desc": "从深处飞出、后面拖著残影",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "hero"
+    ],
+    "tag": "开场・强调",
+    "txt": "突破",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字从画面深处（极小、模糊）高速冲向前方并略微放大过头再回弹定位，后方拖著 4 层半透明残影。约 2.2 秒一轮，开场强调感。"
+  },
+  {
+    "id": 45,
+    "zh": "多向对撞入场",
+    "en": "Kinetic Stack",
+    "desc": "词一个个飞进来叠起来",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "冲击登场",
+    "uses": [
+      "hero"
+    ],
+    "tag": "MV・歌词",
+    "txt": "穿过 黑夜 现在就走",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "三行词汇分别从左、右、下方旋转飞入，依序叠成一组置中排版，每行字级不同、中间那行用强调色，停留后一起淡出。约 3.4 秒一轮，MV 歌词感。"
+  },
+  {
+    "id": 46,
+    "zh": "逐词聚焦放大",
+    "en": "Text Zoom Through",
+    "desc": "冲进字里，接到下一个词",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "trans"
+    ],
+    "tag": "转场・速度感",
+    "txt": "冲进 字里 下一个",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "词汇从小放大到正常尺寸，接著加速放大到填满画面并淡出，像镜头冲进字里，下一个词随即从远处出现接上。每个词约 1.2 秒。"
+  },
+  {
+    "id": 47,
+    "zh": "挤压弹跳",
+    "en": "Text Squeeze",
+    "desc": "像橡皮一样压扁再换字",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "逐字律动",
+    "uses": [
+      "emph",
+      "trans"
+    ],
+    "tag": "弹性・切换",
+    "txt": "反弹 弹力",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字像橡皮一样被压扁成一条线，再弹起拉高、回弹定位，停住后又压扁，压到最扁时换成下一个词。约 1.5 秒一轮，弹性切换。"
+  },
+  {
+    "id": 48,
+    "zh": "巨幅双速走马灯",
+    "en": "Huge Text Scroll",
+    "desc": "超大字一快一慢横越画面",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "背景・远景",
+    "txt": "台北夜行",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "超大字级的文字（比画面还大）持续由右往左慢慢横越，底部另有一条细带，带上的小字以较快速度反方向滑动。大字约 9 秒一轮，远景背景感。"
+  },
+  {
+    "id": 49,
+    "zh": "直书逆走",
+    "en": "Vertical Typography",
+    "desc": "直排文字往反方向流",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "东方・静与动",
+    "txt": "寂静",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "多栏直排文字，粗栏与细栏交错，相邻栏位一栏往上、一栏往下反方向流动，明体字。大栏慢（约 11 秒）、小栏快（约 6 秒），东方静与动。"
+  },
+  {
+    "id": 50,
+    "zh": "交错斜向警戒带",
+    "en": "Diagonal Text Bands",
+    "desc": "斜斜的带子，文字反向跑",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg",
+      "trans"
+    ],
+    "tag": "转场・俏皮",
+    "txt": "天亮以前",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "两条斜放的文字带子交错穿过画面，两条带子用不同底色区分，带上的重复文字往相反方向持续滑动，带子有阴影。约 7–9 秒一轮，俏皮转场感。"
+  },
+  {
+    "id": 51,
+    "zh": "S弯道跑道文字",
+    "en": "Text Ribbon",
+    "desc": "文字沿著波浪线流动",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "装饰・配乐感",
+    "txt": "跟著节奏走",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "一条宽的半透明波浪缎带横过画面，文字沿著波浪曲线持续流动前进。约 2.4 秒流过一段，有配乐律动的装饰感。"
+  },
+  {
+    "id": 52,
+    "zh": "跑马灯",
+    "en": "Marquee",
+    "desc": "字体、速度都不同的带子叠在一起",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg",
+      "data"
+    ],
+    "tag": "公告・街头",
+    "txt": "限时开卖 新品上市 预购中 最后一天",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "四条横向跑马灯叠在一起，每条字体、字级、速度、方向都不同，带子之间有细分隔线。速度 5–11 秒一轮不等，像街头公告看板。"
+  },
+  {
+    "id": 53,
+    "zh": "直书三层",
+    "en": "Parallax Columns",
+    "desc": "三层直排文字一起流动",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "夜・东方",
+    "txt": "雨街灯夜",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "三层直排文字直向流动：最后层字小、很淡、速度快；中间层半透明、中速；最前层字大、不透明、速度慢，形成景深视差，明体字。夜晚东方感。"
+  },
+  {
+    "id": 54,
+    "zh": "封锁胶带",
+    "en": "Tape Cross",
+    "desc": "写著字的胶带交叉成 X",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "emph",
+      "bg"
+    ],
+    "tag": "警告・街头",
+    "txt": "禁止进入",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "两条上下有粗边的警示胶带交叉成 X 形，胶带上的重复文字往相反方向滑动，带阴影。约 6–8 秒一轮，警告封锁感。"
+  },
+  {
+    "id": 55,
+    "zh": "文字隧道",
+    "en": "Text Tunnel",
+    "desc": "从文字中间穿过去",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "开场・科幻",
+    "txt": "穿越",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "同一个词的多层复本从中心极小处持续放大，越来越大直到冲出画面并淡出，一层接一层，像穿过文字隧道，相邻层用两种色调交错。约 3.6 秒一层。"
+  },
+  {
+    "id": 56,
+    "zh": "文字走廊",
+    "en": "Text Corridor",
+    "desc": "地板墙壁都是字，一路往前",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "沉浸・MV",
+    "txt": "前进",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "3D 透视的走廊，地板、天花板、左右墙面全部铺满重复文字，文字往观者方向持续流动，中心消失点处有暗色渐变。约 6 秒一轮，沉浸往前感。"
+  },
+  {
+    "id": 57,
+    "zh": "圆柱",
+    "en": "Text Cylinder",
+    "desc": "文字圆柱反向旋转",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "logo"
+    ],
+    "tag": "立体・Logo",
+    "txt": "转圈圈",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "三根以文字组成的 3D 圆柱（同一字环绕一圈），沿水平轴旋转，相邻圆柱方向相反，中间那根用强调色。约 4 秒转一圈，立体 Logo 感。"
+  },
+  {
+    "id": 58,
+    "zh": "圆环隧道",
+    "en": "Ring Text Tunnel",
+    "desc": "一圈圈文字扑面而来",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "trans",
+      "bg"
+    ],
+    "tag": "开场・科幻",
+    "txt": "TUNNEL・",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "多圈由文字组成的圆环，从中心极小处一圈圈放大朝观者扑来并淡出，每圈本身也在旋转、相邻方向相反。约 4.2 秒一圈。"
+  },
+  {
+    "id": 59,
+    "zh": "轨道",
+    "en": "Text Orbit",
+    "desc": "单字带著景深绕圈",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "logo"
+    ],
+    "tag": "Logo・标题",
+    "txt": "轨道",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "文字沿著一条椭圆虚线轨道绕圈，转到前方时变大变清楚、转到后方时变小变淡，呈现景深。约 5 秒绕一圈，Logo 标题感。"
+  },
+  {
+    "id": 60,
+    "zh": "方块",
+    "en": "Text Cube",
+    "desc": "四面写字的方块直向翻转",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "trans",
+      "data"
+    ],
+    "tag": "切换・立体",
+    "txt": "春夏秋冬",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "一个 3D 立方体，四个面各写一个字，以水平轴每次翻转 90 度换到下一面，翻转后停留一下，略带倾斜视角，方块有粗边框。约 1.5 秒换一面。"
+  },
+  {
+    "id": 61,
+    "zh": "立体字",
+    "en": "Extrude Text",
+    "desc": "立体字的厚度方向转一圈",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "3D 空间旋转",
+    "uses": [
+      "logo",
+      "hero"
+    ],
+    "tag": "标题",
+    "txt": "立体",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "有厚度的 3D 立体字，正面较亮、侧面由多层由深到浅的色阶堆叠出厚度，整组字以垂直轴缓慢旋转一整圈，能看到侧面厚度。约 5 秒转一圈。"
+  },
+  {
+    "id": 62,
+    "zh": "翻牌",
+    "en": "Split Flap",
+    "desc": "像车站时刻表一样翻到定位",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "data"
+    ],
+    "tag": "复古・车站",
+    "txt": "准时",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "每个字放在翻牌格内（中间有分隔线），像车站时刻表一样快速翻过许多随机字，由左到右依序停在正确的字上，停留后重新翻。翻动很快、全部停定约 1.5 秒。"
+  },
+  {
+    "id": 63,
+    "zh": "翻卡",
+    "en": "Flip Cards",
+    "desc": "一张张翻面换字",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "trans"
+    ],
+    "tag": "切换・公告",
+    "txt": "夜未眠",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "每个字是一张卡片，依序以 Y 轴翻面，正反两面用对比的配色，翻成另一组字后停留，再翻回来。约 3.4 秒一轮，切换公告感。"
+  },
+  {
+    "id": 64,
+    "zh": "打字机",
+    "en": "Typewriter",
+    "desc": "一个字一个字打出来再换掉",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换 Canva 风格 Canva Typewriter 打字机",
+    "uses": [
+      "hero",
+      "data"
+    ],
+    "tag": "故事・字幕",
+    "txt": "天亮以前 再见",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字像打字机一样一个字一个字出现在两行，后面有闪烁的光标，打完停留后再快速逐字删除，换成下一句继续打。明体字、第二行较淡，打字约每字 0.14 秒。"
+  },
+  {
+    "id": 65,
+    "zh": "拉霸",
+    "en": "Slot Text",
+    "desc": "滚轮转一转停下来",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "data"
+    ],
+    "tag": "结果揭晓",
+    "txt": "大吉利",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "每个字放在拉霸滚轮窗格里（窗格上下有内阴影），滚轮快速往上滚动许多随机字，再由左到右依序减速停在结果字上（略带回弹），停留后重转。约 4 秒一轮。"
+  },
+  {
+    "id": 66,
+    "zh": "计数器",
+    "en": "Odometer",
+    "desc": "数字滚动往上加",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "data"
+    ],
+    "tag": "成绩・数字",
+    "txt": "累计",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-15",
+    "prompt": "「累计 12,480 人」这类数字，每位数放在小格子中，数字像里程表一样往上滚动递增，带一点回弹。约每 1 秒增加一次。"
+  },
+  {
+    "id": 67,
+    "zh": "标题切换",
+    "en": "Headline Swap",
+    "desc": "新闻标题一个换一个",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换",
+    "uses": [
+      "data",
+      "trans"
+    ],
+    "tag": "快讯・解说",
+    "txt": "全面免费 今晚上线 限时三天",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "左侧「快讯」标签固定，右侧框内的新闻标题由下往上滑入，旧标题往上滑出，一则换一则。约 1.6 秒换一则。"
+  },
+  {
+    "id": 68,
+    "zh": "LED 看板",
+    "en": "LED Text",
+    "desc": "点点组成的电子字",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "data",
+      "bg"
+    ],
+    "tag": "复古・科技",
+    "txt": "最新消息・",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "像电子看板一样由圆点矩阵组成的文字，持续由右往左滚动，亮点与暗点对比明显。滚动速度中等，复古科技感。"
+  },
+  {
+    "id": 69,
+    "zh": "空心字",
+    "en": "Outline Text",
+    "desc": "空心字一行一行被填满",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "质感・MV",
+    "txt": "疾风怒涛",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "画面铺满多行重复的空心描边文字，每行往不同方向缓慢横移，并由上到下一行一行填满颜色再退回空心。约 3.2 秒一轮，质感 MV。"
+  },
+  {
+    "id": 70,
+    "zh": "故障切片",
+    "en": "Glitch Slices",
+    "desc": "大字被切成好几条错开",
+    "comp": "text",
+    "when": [
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "消散退场",
+    "uses": [
+      "emph",
+      "trans"
+    ],
+    "tag": "冲击・MV",
+    "txt": "故障",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "大字平时静止，偶尔突然被切成 6 条横向切片，各条左右随机错开并带色差错位（RGB split），闪一下又恢复，频率不规则。故障约每 0.1 秒闪动，冲击 MV 感。"
+  },
+  {
+    "id": 71,
+    "zh": "图案遮罩",
+    "en": "Text Mask Pattern",
+    "desc": "文字变成窗，条纹从里面流过",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "hero"
+    ],
+    "tag": "俏皮・祭典",
+    "txt": "祭典",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "文字像一扇窗，字里填满两色交错的斜条纹，条纹持续往侧边流动。粗体字，约 1 秒流动一个条纹周期，俏皮祭典感。"
+  },
+  {
+    "id": 72,
+    "zh": "长阴影",
+    "en": "Long Shadow",
+    "desc": "长长的影子转一圈",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "logo"
+    ],
+    "tag": "扁平风",
+    "txt": "光与影",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "文字后方拖著一条很长的扁平阴影，阴影方向持续绕著文字旋转一整圈。约 7 秒转一圈，扁平设计风。"
+  },
+  {
+    "id": 73,
+    "zh": "液体填满",
+    "en": "Liquid Fill",
+    "desc": "空心字被液体慢慢装满",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "emph"
+    ],
+    "tag": "清爽・MV",
+    "txt": "满",
+    "bg": "dark",
+    "added": "2026-10-15",
+    "prompt": "一开始只有描边的空心字，液体由下往上慢慢把字填满，填满后停留，再清空重来。约 3.4 秒一轮，清爽 MV 感。"
+  },
+  {
+    "id": 74,
+    "zh": "萤光笔",
+    "en": "Highlight Text",
+    "desc": "萤光笔从字后面划过",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "质感填色",
+    "uses": [
+      "emph"
+    ],
+    "tag": "强调・解说",
+    "txt": "一句话的力量",
+    "bg": "acc",
+    "added": "2026-10-15",
+    "prompt": "卡片上的文字，一条萤光笔线由左往右从字的下半部后方划过，停留后淡出。划过约 1 秒，整轮约 3 秒，强调解说感。"
+  },
+  {
+    "id": 75,
+    "zh": "斜线反转",
+    "en": "Split Invert",
+    "desc": "斜线扫过，两区互换",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "文字切换 Canva 风格 Canva Block 区块",
+    "uses": [
+      "trans"
+    ],
+    "tag": "切换・标题",
+    "txt": "反转",
+    "bg": "cream",
+    "added": "2026-10-15",
+    "prompt": "画面被一条斜线分成两区，两区的底色与文字色互为反差，斜线由左往右扫过画面，让文字的两种配色互换。约 3.4 秒扫一轮，切换标题感。"
+  },
+  {
+    "id": 76,
+    "zh": "逐字升起",
+    "en": "Split Rise",
+    "desc": "每个字从遮罩下方滑上来",
+    "comp": "text",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "Canva 风格 Canva Ascend Rise 上升",
+    "uses": [
+      "hero"
+    ],
+    "tag": "SplitText",
+    "txt": "一字一字升起",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "文字拆成单字，每个字放在裁切遮罩内，依序从遮罩下方滑上来（每字间隔约 0.06 秒、强烈减速），停留后再往上滑出。（GSAP：SplitText type chars + mask，from yPercent:110，ease power4.out，stagger）"
+  },
+  {
+    "id": 77,
+    "zh": "乱码揭示",
+    "en": "Scramble Reveal",
+    "desc": "乱码逐步解出正确文字",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "hero",
+      "data"
+    ],
+    "tag": "ScrambleText",
+    "txt": "解码完成",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "文字先是一串不断跳动的乱码（片假名、符号、数字），由左到右逐步解出正确文字，乱码与解出的字用不同颜色区分，停留后再打散。点阵字体。（GSAP：ScrambleTextPlugin，revealDelay、speed、newClass）"
+  },
+  {
+    "id": 78,
+    "zh": "打字换句",
+    "en": "Typing Swap",
+    "desc": "打字、删除、换下一句",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "Canva 风格 Canva Typewriter 打字机",
+    "uses": [
+      "hero"
+    ],
+    "tag": "TextPlugin",
+    "txt": "用 GSAP 打字",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "像打字机一样逐字打出一句话，后方光标闪烁，停留约 1 秒后从尾端逐字删除，再打下一句，三句轮播。（GSAP：TextPlugin 打字 + timeline 串接删除）"
+  },
+  {
+    "id": 79,
+    "zh": "弹性落下",
+    "en": "Elastic Drop",
+    "desc": "字从天而降并弹性晃动",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "Canva 风格 Canva Bounce 弹跳",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "Stagger・Elastic",
+    "txt": "弹跳落下",
+    "bg": "acc",
+    "added": "2026-10-16",
+    "prompt": "每个字从画面上方随机顺序掉下，带随机旋转，落地时像果冻一样弹性晃动后定位，停留后一起往下掉出并淡出。（GSAP：SplitText chars，ease elastic.out(1,0.35)，stagger from random）"
+  },
+  {
+    "id": 80,
+    "zh": "3D 翻字",
+    "en": "3D Char Flip",
+    "desc": "每个字沿 X 轴翻转登场",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "SplitText・3D",
+    "txt": "翻转登场",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "每个字以 X 轴 3D 翻转登场（从背面翻到正面、略带回弹），依序间隔 0.07 秒，停留后再往前翻走消失。（GSAP：SplitText chars，rotationX、transformOrigin 带 Z 深度，ease back.out）"
+  },
+  {
+    "id": 81,
+    "zh": "随机散聚",
+    "en": "Random Scatter",
+    "desc": "字从四处飞来再散开",
+    "comp": "text",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "hero"
+    ],
+    "tag": "Stagger random",
+    "txt": "四散再聚合",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "每个字从画面四处随机位置、随机旋转与大小飞进来，强烈减速聚合成文字，停留后再爆散到随机位置。（GSAP：SplitText chars，\"random(-400,400)\" 函式值，ease expo，stagger from random）"
+  },
+  {
+    "id": 82,
+    "zh": "格状扩散",
+    "en": "Grid Stagger",
+    "desc": "格子从中心向外一波波缩放",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "bg"
+    ],
+    "tag": "Grid stagger",
+    "txt": "动",
+    "bg": "acc",
+    "added": "2026-10-16",
+    "prompt": "同一个字排成 10×5 的格子，从中心向外一波波缩小旋转变淡，再从边缘往内放大转回，形成波纹。（GSAP：stagger { grid:[5,10], from:\"center\" / \"edges\", amount:1 }）"
+  },
+  {
+    "id": 83,
+    "zh": "遮罩换词",
+    "en": "Word Rotator",
+    "desc": "固定前缀、后面的词轮播替换",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "hero",
+      "trans"
+    ],
+    "tag": "SplitText mask",
+    "txt": "设计 动画 互动 体验",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "固定前缀「我们做」，后面的词放在遮罩内轮播：新词逐字从下方滑上，停留后往上滑出，接著换下一个词，轮播的词用强调色。（GSAP：SplitText chars + mask，timeline 依序串接每个词）"
+  },
+  {
+    "id": 84,
+    "zh": "数字累加",
+    "en": "Number Counter",
+    "desc": "数字滚动累加并同步进度条",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "data"
+    ],
+    "tag": "Tween 数值",
+    "txt": "下载次数",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "标签下方的大数字从 0 快速累加到 128,450，越接近终点越慢，下方进度条同步填满，停留后淡出重来，数字用等宽数字。（GSAP：tween 一个物件数值 + onUpdate 写入 toLocaleString，ease power3.out）"
+  },
+  {
+    "id": 85,
+    "zh": "磁力文字",
+    "en": "Magnetic Letters",
+    "desc": "光标靠近时字被推开",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "ui",
+      "logo"
+    ],
+    "tag": "quickTo",
+    "txt": "靠近我看看",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "光标靠近文字时，附近的字被往外推开并改用强调色，距离越近推得越远，光标离开后平滑回到原位。（GSAP：SplitText chars，每个字用 gsap.quickTo 控制 x/y，依光标距离计算推力）"
+  },
+  {
+    "id": 86,
+    "zh": "逐行揭示",
+    "en": "Line Reveal",
+    "desc": "一行行从遮罩下翻上来",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "hero"
+    ],
+    "tag": "Mask・Stagger",
+    "txt": "动画 让界面 有了生命",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "多行文字逐行从各自的遮罩下方带一点旋转翻上来，最后一行用强调色，下方一条细线由左往右画出，停留后整段往上收走。（GSAP：每行包 overflow hidden，from yPercent:115，stagger 0.14）"
+  },
+  {
+    "id": 87,
+    "zh": "压扁弹跳",
+    "en": "Squash Bounce",
+    "desc": "落地压扁、回弹伸展",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "emph"
+    ],
+    "tag": "CustomBounce",
+    "txt": "弹弹弹",
+    "bg": "acc",
+    "added": "2026-10-16",
+    "prompt": "文字从上方掉落，落地时像橡皮一样压扁、反弹时拉长，连续弹跳几下停住，地面阴影跟著高度缩放。（GSAP：CustomBounce.create 产生 bounce 与 squash 两条 ease，分别套在 y 与 scaleX/scaleY）"
+  },
+  {
+    "id": 88,
+    "zh": "手绘圈重点",
+    "en": "Draw Highlight",
+    "desc": "手绘圆圈与底线画出来",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "emph"
+    ],
+    "tag": "DrawSVG",
+    "txt": "重点在这",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "重点文字外围用像手绘的线条画出一个圆圈，接著在下方画一条底线，停留后线条从起点方向收掉，圆头线端。（GSAP：DrawSVGPlugin，drawSVG \"0%\"→\"100%\"，再到 \"100% 100%\"）"
+  },
+  {
+    "id": 89,
+    "zh": "形状变形",
+    "en": "Shape Morph",
+    "desc": "圆、星、心、云朵互相变形",
+    "comp": "shape",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "logo",
+      "trans"
+    ],
+    "tag": "MorphSVG",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "一个色块在圆形、星形、爱心、云朵之间平滑变形，每次变形同时换一个颜色，整体缓慢旋转。（GSAP：MorphSVGPlugin，morphSVG 切换路径，ease expo.inOut）"
+  },
+  {
+    "id": 90,
+    "zh": "路径飞行",
+    "en": "Path Flight",
+    "desc": "纸飞机沿曲线飞行并转向",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "bg"
+    ],
+    "tag": "MotionPath",
+    "txt": "",
+    "bg": "acc",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "一架纸飞机沿著带回圈的虚线曲线飞过画面，机头会跟著路径方向转弯，飞出画面后重新开始。（GSAP：MotionPathPlugin，path/align 指定 SVG 路径，autoRotate:true）"
+  },
+  {
+    "id": 91,
+    "zh": "版面重排",
+    "en": "Flip Layout",
+    "desc": "格状与横排之间平滑重排",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "ui",
+      "trans"
+    ],
+    "tag": "Flip",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "8 个方块在「4×2 格状」与「一整排」两种版面之间切换，同时随机打乱顺序，每个方块平滑滑到新位置与新尺寸。（GSAP：Flip.getState 记录 → 改 class 与 DOM 顺序 → Flip.from 补间）"
+  },
+  {
+    "id": 92,
+    "zh": "滚动揭示",
+    "en": "Scroll Reveal",
+    "desc": "卷到时淡入、进度条同步",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "scroll"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "滚动揭示",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "在可滚动的区块中，顶端进度条随滚动比例填满，每段文字卷到画面 85% 处时从左侧淡入，往回卷时再淡出。（GSAP：ScrollTrigger toggleActions \"play none none reverse\"，进度条用 scrub:true）"
+  },
+  {
+    "id": 93,
+    "zh": "横向滚动",
+    "en": "Horizontal Scroll",
+    "desc": "往下卷、内容往左滑",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "scroll"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "横向 滚动 展示 作品",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "往下滚动时，整排作品卡片改为往左横向滑动，卷到底刚好看到最后一张，像横向作品集展示。（GSAP：ScrollTrigger pin（或 sticky）+ scrub，x 移动距离 = 轨道宽 − 视窗宽）"
+  },
+  {
+    "id": 94,
+    "zh": "视差图层",
+    "en": "Parallax Layers",
+    "desc": "远中近景以不同速度移动",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "scroll",
+      "bg"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "视差",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "滚动时远景大字、中景圆点、近景标题以不同速度上下移动，近景最快、远景最慢，产生景深视差。（GSAP：一个 timeline 绑 ScrollTrigger scrub，三个图层分别设定不同 yPercent 范围）"
+  },
+  {
+    "id": 95,
+    "zh": "磁吸按钮",
+    "en": "Magnetic Button",
+    "desc": "按钮被光标吸过去并弹回",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "ui"
+    ],
+    "tag": "quickTo・Elastic",
+    "txt": "按我",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "光标靠近按钮时，按钮被吸向光标方向，按钮内文字移动得更少形成层次，同时切换成强调色；离开时带弹性回到原位。（GSAP：gsap.quickTo 控制 x/y，ease elastic.out(1,0.4)）"
+  },
+  {
+    "id": 96,
+    "zh": "光标跟随",
+    "en": "Cursor Follower",
+    "desc": "拖尾圆点与反相圆圈",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "ui"
+    ],
+    "tag": "quickTo",
+    "txt": "跟著光标",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "光标后方跟著一串由快到慢的拖尾圆点，加上一颗较大的圆圈以反色混合模式盖在文字上，经过时文字变成反色。（GSAP：多个 gsap.quickTo 设不同 duration，大圆用 mix-blend-mode:difference）"
+  },
+  {
+    "id": 97,
+    "zh": "拖拽甩动",
+    "en": "Drag & Toss",
+    "desc": "卡片可拖拽并带惯性甩出",
+    "comp": "card",
+    "when": [
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "ui"
+    ],
+    "tag": "Draggable・Inertia",
+    "txt": "拖拖看",
+    "bg": "acc",
+    "added": "2026-10-16",
+    "prompt": "几张卡片可以用鼠标或手指拖拽，放开时依甩动速度带惯性滑行，碰到边界会减速回弹，拖拽中的卡片浮到最上层。（GSAP：Draggable.create { bounds, inertia:true, edgeResistance }，需 InertiaPlugin）"
+  },
+  {
+    "id": 98,
+    "zh": "发牌展开",
+    "en": "Card Deal",
+    "desc": "卡片从底部发牌成扇形",
+    "comp": "card",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "trans",
+      "ui"
+    ],
+    "tag": "Timeline・Stagger",
+    "txt": "春夏秋冬雪",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "5 张卡片从画面底部依序发牌，展开成带角度的扇形并略带回弹，停留后从最后一张开始收回底部。（GSAP：timeline + stagger，xPercent / rotation 用函式值 (i)=>(i-2)*115）"
+  },
+  {
+    "id": 99,
+    "zh": "彩纸爆发",
+    "en": "Confetti Burst",
+    "desc": "受重力影响的彩纸喷发",
+    "comp": "bg",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "emph"
+    ],
+    "tag": "Physics2D",
+    "txt": "恭喜",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "文字弹性放大的同时，从下方喷出一大把纸片，纸片受重力抛物线落下、旋转并在尾段淡出，每 2 秒一次。（GSAP：Physics2DPlugin velocity / angle / gravity，random 随机化）"
+  },
+  {
+    "id": 100,
+    "zh": "滚动速度联动跑马灯",
+    "en": "Velocity Marquee",
+    "desc": "滚轮或拖拽让跑马灯加速倾斜",
+    "comp": "bg",
+    "when": [
+      "scroll",
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "",
+    "uses": [
+      "bg",
+      "ui"
+    ],
+    "tag": "Observer",
+    "txt": "滚轮加速",
+    "bg": "acc",
+    "added": "2026-10-16",
+    "prompt": "两行无限跑马灯（一行实心、一行空心描边，方向相反），使用者滚动滚轮或拖拽时加速并依方向倾斜，停下后慢慢恢复原速。（GSAP：Observer 取得 velocityY，调整 tween.timeScale 与 skewX）"
+  },
+  {
+    "id": 101,
+    "zh": "滚动定位指示点",
+    "en": "Scroll Spy Dot Nav",
+    "desc": "侧边导航点随滚动亮起，点了跳到该段",
+    "comp": "layout",
+    "when": [
+      "scroll",
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "滚动导航 侧边导航点 锚点导航 页面进度导航 Scroll Spy Navigation Dot Navigation",
+    "uses": [
+      "ui",
+      "scroll"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "简介 作品 服务 联络",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "滚动导航／侧边导航点（Scroll Spy / Dot Navigation，也称锚点导航、页面进度导航）：页面右侧固定一排小圆点，每个点对应一个区段；卷到哪一段，对应的点就放大并以强调色填满，旁边浮出该段名称的胶囊标签；点与点之间有一条细轨道，轨道里的进度条随整页滚动比例往下长；点击任一个点会平滑滚动到该段，鼠标移到点上也会显示名称。各区段底色深浅交错。（GSAP：每段一个 ScrollTrigger，start \"top center\"、end \"bottom center\"，onToggle 切换 active；进度条用 scrub:true 的 scaleY；点击用 gsap.to(scroller,{scrollTop}) 或 ScrollToPlugin）"
+  },
+  {
+    "id": 102,
+    "zh": "文字翻滚按钮",
+    "en": "Rolling Text Button",
+    "desc": "hover 时字逐一往上翻滚、按钮反转、箭头转向",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "按钮 hover 悬停 文字翻滚 Roll Text Button Hover Stagger CTA",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS hover",
+    "txt": "查看作品",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "胶囊形按钮，左边文字、右边一颗圆形箭头。鼠标移上去时，按钮文字的每个字依序往上翻滚（每字延迟约 0.035 秒），下方一模一样的文字从底下补上来；同时按钮底色与文字色互换成强调配色，右侧圆圈也跟著反转配色，并把箭头转成往右上 45 度；鼠标离开时全部反向翻回。整体约 0.55 秒、缓入缓出（cubic-bezier(.7,0,.2,1)）。（CSS：每个字包 span，用 ::after{content:attr(data-t);top:100%} 做第二份文字，外层 overflow:hidden，:hover 时 translateY(-100%)，transition-delay 用 calc(var(--i)*.035s) 做逐字错开）"
+  },
+  {
+    "id": 103,
+    "zh": "光标方向感知填充按钮",
+    "en": "Direction-aware Fill Button",
+    "desc": "从鼠标进入的位置扩散填满，离开时往出口收回",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "按钮 hover 方向感知 扩散 填色 涟漪 从鼠标位置 Direction Aware Hover Fill Ripple Button CTA",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS + JS",
+    "txt": "立即联络",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "描边胶囊按钮。鼠标移入时，一个强调色圆形从「光标进入按钮的那一点」开始放大，扩散到填满整颗按钮，文字颜色同时切换成与填色有反差的颜色；鼠标移出时，圆形改以「光标离开的那一点」为中心缩小消失，所以从哪边出去、颜色就往哪边收。约 0.55 秒、缓入缓出。（做法：按钮 overflow:hidden；pointerenter / pointerleave 时用 getBoundingClientRect 算出光标在按钮内的坐标，写进 CSS 变数 --x、--y，圆的直径取「到最远角距离 × 2」确保盖满；圆用 transform:scale(0→1) 做 transition）"
+  },
+  {
+    "id": 104,
+    "zh": "卡片阶梯交错渐入",
+    "en": "Staggered Card Reveal",
+    "desc": "一组卡片从左上往右下依序浮上、由模糊变清楚",
+    "comp": "card",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "卡片 群组 列表 进场 依序 错开 浮现 淡入 Stagger Fade Up Grid Reveal List Entrance",
+    "uses": [
+      "ui",
+      "trans"
+    ],
+    "tag": "Grid stagger",
+    "txt": "品牌 网站 App 海报 包装 插画",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "3 栏 × 2 列的作品卡片（上方缩图、下方标题与两条文字列），进场时每张卡片从下方 30px、95% 大小、模糊且透明的状态浮上来变清楚，顺序从左上往右下斜向依序错开（总共约 0.6 秒）；卡片内的缩图、标题、文字列再稍微延迟逐一补上；停留后从最后一张开始反向往上淡出。缓出（power3.out）。（GSAP：stagger { grid:[2,3], from:\"start\", amount:0.6 }，fromTo y / opacity / scale / filter:blur；实际网站可搭配 ScrollTrigger 在卷到时才播放、或用 ScrollTrigger.batch 让列表分批进场）"
+  },
+  {
+    "id": 105,
+    "zh": "3D 倾斜视差图片",
+    "en": "Tilt Parallax Image",
+    "desc": "hover 时图片跟著光标 3D 倾斜，景物分层视差、反光与说明滑出",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "图片 照片 hover 悬停 3D 倾斜 视差 反光 Tilt Parallax Glare Image Hover Card",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "quickTo・3D",
+    "txt": "山岚 夕照",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一张图片卡片，鼠标在图片上移动时，整张图以光标位置为方向做 3D 倾斜（最多约 ±10 度）并微微放大；图片内的远景、中景、近景分层往反方向位移，形成视差景深；一道柔和的反光跟著光标移动；同时底部的说明文字（小标＋标题）从下方滑上来。鼠标离开时全部平滑回正、说明收回。（GSAP：gsap.quickTo 控制 rotationX / rotationY / scale，父层设 perspective；各图层用 quickTo 依不同系数位移；反光用 radial-gradient 搭配 CSS 变数 --gx、--gy 定位；说明用 transform 过场）"
+  },
+  {
+    "id": 106,
+    "zh": "极光流动渐变背景",
+    "en": "Aurora Gradient",
+    "desc": "几团模糊光晕缓慢漂移交融，像极光一样流动",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "背景 极光 渐变 光晕 Aurora Mesh Gradient Blob Glow Hero 背景",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "CSS blur",
+    "txt": "Aurora",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "Hero 区块背景放 3–4 团大型圆形光晕，经过强烈模糊后互相重叠交融，各自以不同速度（约 9–16 秒）缓慢漂移、放大缩小、来回摆荡，形成像极光一样持续流动的渐变；前景标题保持清楚可读。（CSS：每团用大尺寸圆形 + filter:blur + mix-blend-mode:screen，各自设不同 animation-duration 与负的 animation-delay，animation-direction:alternate）"
+  },
+  {
+    "id": 107,
+    "zh": "聚光灯跟随网格",
+    "en": "Spotlight Grid",
+    "desc": "细格线背景，光标附近的格线被点亮并带柔光",
+    "comp": "bg",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "背景 网格 格线 聚光 光标 光晕 Spotlight Grid Pattern Cursor Glow SaaS",
+    "uses": [
+      "bg",
+      "ui"
+    ],
+    "tag": "CSS mask",
+    "txt": "Spotlight",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "整个区块背景是淡淡的细格线，光标所在位置周围一圈的格线会被点亮成强调色，并带一团柔和光晕，亮区跟著光标移动、边缘自然淡出；光标离开时亮区消失。（做法：两层相同的格线背景，上层用强调色，再用 mask:radial-gradient(circle at var(--mx) var(--my)) 只露出光标附近；mousemove 时更新 CSS 变数 --mx、--my）"
+  },
+  {
+    "id": 108,
+    "zh": "粒子连线",
+    "en": "Particle Network",
+    "desc": "漂浮的粒子靠近时自动连线，光标会吸引附近粒子",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "背景 粒子 连线 网路 星座 Particles Network Constellation particles.js Canvas",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "Canvas 2D",
+    "txt": "Network",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "背景有数十颗小粒子缓慢随机漂浮、碰到边界反弹；两颗粒子距离够近时自动连一条线，越近线越清楚、越远越淡；光标移入时，附近粒子会被轻轻吸过去并和光标连线，形成像星座网路的效果。前景标题保持清楚。（Canvas 2D：requestAnimationFrame 每帧更新位置，两两计算距离画线并依距离调整透明度；注意依 devicePixelRatio 设定画布尺寸）"
+  },
+  {
+    "id": 109,
+    "zh": "光泽横扫扫光按钮",
+    "en": "Shine Sweep Button",
+    "desc": "一道斜向光泽定时扫过按钮，hover 时加快并浮起",
+    "comp": "button",
+    "when": [
+      "hover",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "按钮 光泽 反光 扫光 闪光 Shine Sweep Glint Shimmer Button CTA",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS hover",
+    "txt": "立即购买",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "实心按钮上有一道斜向的半透明亮光，每隔约 2.4 秒从左往右快速扫过一次，像金属或玻璃的反光；鼠标移上去时光泽扫得更快，按钮同时微微上浮、阴影加深。（CSS：按钮 overflow:hidden，::after 做一条 skewX(-20deg) 的渐变亮带，用 keyframes 改变 left 位置；:hover 缩短 animation-duration 并加 translateY）"
+  },
+  {
+    "id": 110,
+    "zh": "旋转光边按钮",
+    "en": "Rotating Gradient Border",
+    "desc": "按钮外框的渐变光持续绕圈旋转，带柔和外光",
+    "comp": "button",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "按钮 边框 渐变 旋转 发光 Glow Border Conic Gradient Animated Border Button",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "@property",
+    "txt": "开始使用",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "胶囊按钮的外框是一圈多色渐变光，渐变持续沿著外框绕圈旋转（约 3 秒一圈），外框后方带一层模糊的柔光；按钮内部是实心底与文字；鼠标移上去时旋转加快。（CSS：@property 注册 --ang 角度变数，背景用 conic-gradient(from var(--ang))，keyframes 把 --ang 转到 360deg；内层 span 盖住中间只露出外框；::before 复制背景并 blur 做外光）"
+  },
+  {
+    "id": 111,
+    "zh": "爱心按赞爆开",
+    "en": "Like Burst",
+    "desc": "点击爱心时弹跳放大，周围喷出小圆点与光圈",
+    "comp": "button",
+    "when": [
+      "hover",
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "按钮 按赞 喜欢 爱心 点击 回馈 微互动 Like Heart Burst Micro-interaction Twitter",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "喜欢",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "点击「喜欢」按钮时，空心爱心瞬间填满并从小弹跳放大，同时从爱心周围往外喷出 8 颗小圆点、扩散一圈光环后消失，旁边的数字 +1；再点一次取消，爱心变回空心、数字 −1。整段约 0.5 秒，有弹性回馈感。（CSS：切换 .on class；爱心用 scale 弹跳 keyframes，小圆点用 rotate(var(--r)) translateY 向外飞并缩小淡出，光环用 scale + opacity；重播前先移除 class 并触发 reflow）"
+  },
+  {
+    "id": 112,
+    "zh": "卡片浮起",
+    "en": "Hover Lift Card",
+    "desc": "hover 时卡片上浮、阴影加深，缩图在框内放大",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "卡片 hover 浮起 阴影 缩图 放大 Hover Lift Card Shadow Zoom 作品集 商品",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "品牌 网站 插画",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一排作品卡片（上方缩图、下方标题与一条文字列）。鼠标移到某张卡片上时，卡片往上浮起一点并出现更深更大的阴影，缩图在原本的框内慢慢放大约 1.15 倍（框不变、图被裁切）；鼠标离开时平滑回到原位。约 0.45–0.6 秒，缓出。（CSS：卡片 transition transform 与 box-shadow，:hover 时 translateY(-8px)；缩图外框 overflow:hidden，内层图 transform:scale(1.14)）"
+  },
+  {
+    "id": 113,
+    "zh": "光晕边框卡片",
+    "en": "Spotlight Card",
+    "desc": "光标经过时，卡片边框与内部被一团光照亮",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "卡片 光晕 边框 聚光 光标 发光 Spotlight Card Glow Border Linear Vercel",
+    "uses": [
+      "ui"
+    ],
+    "tag": "radial-gradient",
+    "txt": "设计 开发 行销",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一排低调的卡片，光标在卡片附近移动时，靠近光标的那段卡片边框会被一团光照亮（强调色），卡片内部也有一层很淡的光晕跟著光标；光只照亮光标附近，离越远越暗，所以同时能看到相邻卡片的边缘也被微微点亮。（做法：mousemove 时算出光标相对每张卡片的坐标写入 --x、--y；::before 用 radial-gradient(circle at var(--x) var(--y)) 搭配 mask-composite 只显示边框那一圈，::after 做内部柔光）"
+  },
+  {
+    "id": 114,
+    "zh": "骨架载入",
+    "en": "Skeleton Shimmer",
+    "desc": "内容载入前显示骨架，光泽扫过后淡入真正内容",
+    "comp": "card",
+    "when": [
+      "loop",
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "骨架 载入 读取 占位 Skeleton Loading Shimmer Placeholder Loader",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "Skeleton",
+    "txt": "一起来设计动态吧",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "资料载入中时，卡片先显示低对比的骨架：圆形头像、两条长短不一的文字条、一块大图区，骨架上有一道柔和的亮光由左往右持续扫过；载入完成后骨架淡出，真正的头像、标题、时间与图片淡入并微微往上滑到定位。（CSS：骨架元素用 linear-gradient 亮带 + background-size:300% 并以 keyframes 移动 background-position；载入完成时切换 class，骨架 opacity 0、内容 opacity 1 + translateY 过场）"
+  },
+  {
+    "id": 115,
+    "zh": "图片遮罩揭示",
+    "en": "Image Clip Reveal",
+    "desc": "图片从下往上被揭开，同时由放大慢慢缩回原尺寸",
+    "comp": "media",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "图片 照片 遮罩 揭示 进场 clip-path Image Reveal Mask Wipe Zoom",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "clip-path",
+    "txt": "",
+    "bg": "cream",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "图片进场时，外框像窗帘一样由下往上被揭开，框内的图片同时从约 1.35 倍慢慢缩回原尺寸，形成「揭开＋镜头拉远」的层次；停留后再由下往上收起消失。揭开约 1.2 秒，缓入缓出（cubic-bezier(.7,0,.2,1)）。（CSS：外框用 clip-path:inset() 的 keyframes 从 inset(100% 0 0 0) 到 inset(0)；内层图片 transform:scale 1.35→1；实际网站可配合滚动进入画面时才播放）"
+  },
+  {
+    "id": 116,
+    "zh": "前后对比滑杆",
+    "en": "Before / After Slider",
+    "desc": "拖拽中间的把手，左右比较两张图的差异",
+    "comp": "media",
+    "when": [
+      "drag",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "图片 比较 对比 前后 滑杆 拖拽 Before After Compare Slider Image Comparison",
+    "uses": [
+      "ui"
+    ],
+    "tag": "clip-path・Drag",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "两张同尺寸的图片重叠，中间有一条直线和圆形把手（带左右箭头），左上角标示 BEFORE、右上角标示 AFTER；拖拽把手时分界线跟著左右移动，左边显示原图、右边显示修改后的图，方便比较差异；未操作时可以缓慢左右摆动提示可拖拽。（做法：上层图片用 clip-path:inset(0 0 0 var(--p))，pointerdown/pointermove 算出光标在框内的比例写入 --p；把手用 setPointerCapture 确保拖出框外也能继续拖；手机上设 touch-action:pan-y）"
+  },
+  {
+    "id": 117,
+    "zh": "导航栏滚动缩小",
+    "en": "Shrinking Sticky Header",
+    "desc": "往下卷时导航栏变矮、Logo 缩小，并加上毛玻璃底",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "CSS",
+    "style": "导航栏 页首 菜单 header navbar 滚动 缩小 吸附 毛玻璃 Sticky Shrink Header On Scroll",
+    "uses": [
+      "scroll",
+      "ui"
+    ],
+    "tag": "Sticky",
+    "txt": "LOGO",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "页首导航栏固定在最上方（sticky）。在页面顶端时导航栏较高、Logo 较大、背景透明；一旦往下卷超过一点距离，导航栏平滑变矮、Logo 缩小，并出现半透明的毛玻璃背景与淡淡的阴影，卷回顶端时恢复原状。约 0.35 秒过场。（做法：监听 scroll，scrollY > 某个值时加上 .shrink class；CSS 对 padding、font-size、background、box-shadow 做 transition，背景用 backdrop-filter:blur）"
+  },
+  {
+    "id": 118,
+    "zh": "通知堆叠",
+    "en": "Toast Stack",
+    "desc": "通知从右下角依序弹入堆叠，几秒后滑出消失",
+    "comp": "card",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "通知 提示 讯息 吐司 弹出 Toast Notification Snackbar Alert Stack",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "Toast",
+    "txt": "已储存变更",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "操作完成时，画面右下角弹出一则通知（左边勾选圆形图标、中间讯息、右边「刚刚」时间），从下方带一点缩放弹性地进场；新通知会叠在下面，旧的往上推；最多同时显示 3 则，每则约 3.4 秒后往右滑出淡掉，其余通知平滑补位。（CSS + JS：通知外层用 display:grid + grid-template-rows 1fr→0fr 做高度收合，让补位平滑；进场用 keyframes translateY + scale；离场加 .out class 后再移除元素）"
+  },
+  {
+    "id": 119,
+    "zh": "悬停放大光标",
+    "en": "Hover Expand Cursor",
+    "desc": "小圆点光标移到作品上时放大成写著文字的圆",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "光标 自订光标 放大 悬停 VIEW 查看 Custom Cursor Hover Expand Portfolio",
+    "uses": [
+      "ui"
+    ],
+    "tag": "Custom cursor",
+    "txt": "VIEW",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "隐藏系统光标，改用一颗小圆点跟著鼠标移动（带一点延迟感）；当光标移到作品缩图上时，小圆点平滑放大成约 3 倍大的圆，圆中央出现「VIEW」之类的提示文字，作品本身也微微缩小回应；离开作品时再缩回小圆点、文字淡出。放大约 0.35 秒、缓出。（做法：容器设 cursor:none；自订光标用 position:fixed + transform 跟随 mousemove；hover 目标时加 class，让内层圆 scale(0.16→1)、文字 opacity 0→1；触控装置上应关闭此效果）"
+  },
+  {
+    "id": 120,
+    "zh": "清单悬停预览图",
+    "en": "Hover Image Reveal",
+    "desc": "滑过作品清单时，预览图跟著光标浮出并随移动倾斜",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "光标 清单 列表 预览 图片 浮出 跟随 Hover Image Reveal List Preview Follow Cursor Portfolio",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "Hover preview",
+    "txt": "品牌识别 网站设计 包装 插画",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一份大字作品清单（每列左边作品名、右边编号，列与列之间有细分隔线），未选中的列文字较淡；光标滑到某一列时，该列文字变清楚并稍微往右推，同时一张该作品的预览图从小放大浮现在光标旁边并跟著光标移动，左右移动越快、图片往移动方向倾斜越多；换到另一列时预览图换成另一张，离开清单时图片缩小淡出。（做法：预览图 position:absolute + pointer-events:none，mousemove 时 translate 到光标位置，rotate 依水平速度计算并设上限；图片切换用 opacity / scale 过场）"
+  },
+  {
+    "id": 121,
+    "zh": "光标拖尾轨迹",
+    "en": "Cursor Trail",
+    "desc": "光标后面拖著一条渐细渐淡的线条",
+    "comp": "cursor",
+    "when": [
+      "hover",
+      "loop"
+    ],
+    "tech": "Canvas",
+    "style": "光标 拖尾 轨迹 线条 残影 Cursor Trail Line Comet Canvas",
+    "uses": [
+      "ui",
+      "bg"
+    ],
+    "tag": "Canvas trail",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "光标移动时，后方拖著一条平滑的线条轨迹，越靠近光标越粗越清楚、越尾端越细越透明，像彗星尾巴；光标停下时，尾巴会逐渐收回到光标位置；光标本身是一颗小圆点。（Canvas 2D：每帧把光标坐标推入阵列并只保留最近约 28 点，依序画线段，线宽与透明度随索引递增；依 devicePixelRatio 设定画布；容器 cursor:none）"
+  },
+  {
+    "id": 122,
+    "zh": "点击涟漪扩散",
+    "en": "Click Ripple",
+    "desc": "在画面任何位置点击，都会从点击处扩散出波纹",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "光标 点击 涟漪 波纹 回馈 Click Ripple Wave Feedback Material",
+    "uses": [
+      "ui"
+    ],
+    "tag": "Click ripple",
+    "txt": "点任何地方",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "在区块内任何位置点击时，从点击处同时扩散出一个半透明实心圆与一圈外框环（外框稍晚 0.12 秒），两者从 0 放大到约一个拇指大小的数倍并淡出，约 0.85 秒、强烈减速，给使用者清楚的点击回馈；可以快速连点，波纹会重叠。（做法：pointerdown 时在点击坐标建立圆形元素，CSS keyframes 做 scale(0→1) + opacity(1→0)，动画结束后移除元素）"
+  },
+  {
+    "id": 123,
+    "zh": "旋转文字环光标",
+    "en": "Rotating Text Cursor",
+    "desc": "一圈环状文字绕著光标持续旋转",
+    "comp": "cursor",
+    "when": [
+      "hover",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "光标 文字环 环状文字 旋转 圆形文字 Rotating Text Ring Circular Text Cursor Badge SCROLL",
+    "uses": [
+      "ui",
+      "logo"
+    ],
+    "tag": "SVG textPath",
+    "txt": "SCROLL · EXPLORE",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "隐藏系统光标，改成一个小圆点，外围是一圈沿圆形排列的文字（例如「SCROLL · EXPLORE ·」重复），文字环持续慢慢旋转（约 8 秒一圈），整组带一点延迟感地跟著光标移动；背景的大标题保持很淡，让光标成为焦点。（做法：SVG 圆形 path + textPath，用 textLength 让文字刚好绕满一圈；外层 transform 跟随光标，内层 svg 用 CSS 旋转动画）"
+  },
+  {
+    "id": 124,
+    "zh": "手电筒局部探照",
+    "en": "Flashlight Reveal",
+    "desc": "画面一片暗，只有光标附近像手电筒一样照出隐藏内容",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "光标 手电筒 探照 聚光灯 揭示 遮罩 Flashlight Spotlight Reveal Mask Cursor Hidden",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS mask",
+    "txt": "找到我了",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "整个区块几乎是暗的，大标题只隐约可见；光标所在位置像手电筒一样照出一个边缘柔和的圆形范围，范围内显示出藏在下面、更鲜明的版本（清楚的标题与渐变背景），手电筒跟著光标移动，探照到哪就揭示到哪。（做法：上下两层相同版面，上层是鲜明版本，用 mask:radial-gradient(circle at var(--mx) var(--my), #000 55%, transparent) 只露出光标附近；mousemove 时更新 --mx、--my）"
+  },
+  {
+    "id": 125,
+    "zh": "柔和上浮",
+    "en": "Gentle Fade Up",
+    "desc": "区块内元素依阅读顺序由上到下轻轻浮现",
+    "comp": "layout",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "区块 段落 标题 上浮 淡入 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy Canva 风格 Canva Rise 上升",
+    "uses": [
+      "hero"
+    ],
+    "tag": "Fade up",
+    "txt": "让设计说故事",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一个内容区块（小标、主标题、两行内文、按钮）进场时，依照由上到下的阅读顺序，每个元素从下方约 18px、完全透明的状态轻轻浮上并淡入，元素之间间隔约 0.14 秒，每个约 0.9 秒、平顺减速（power2.out），没有弹跳也没有缩放，让视线自然地从标题被带到按钮。（GSAP：fromTo y:18 / opacity:0 → y:0 / opacity:1，stagger 0.14；实际网站搭配 ScrollTrigger 在区块进入画面时播放一次即可）"
+  },
+  {
+    "id": 126,
+    "zh": "逐行淡入",
+    "en": "Soft Line Fade",
+    "desc": "段落一行一行从微模糊变清楚，带出阅读节奏",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "段落 内文 逐行 模糊 文案 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy Canva 风格 Canva Fade Clarify 淡入 清晰",
+    "uses": [
+      "hero"
+    ],
+    "tag": "Line fade",
+    "txt": "好的动态 不是抢走目光 而是轻轻带著视线 往下一步走",
+    "bg": "cream",
+    "added": "2026-10-16",
+    "prompt": "一段多行文案进场时，每一行依序从下方约 10px、略带模糊且透明的状态，慢慢变清楚并淡入，行与行之间间隔约 0.28 秒（比一般 stagger 慢，接近阅读速度），每行约 1.1 秒、平顺减速，整体安静、有呼吸感，适合品牌理念或引言段落。（GSAP：每行一个元素或用 SplitText type lines，fromTo y:10 / opacity:0 / filter:blur(4px) → 清晰，stagger 0.28，ease power2.out）"
+  },
+  {
+    "id": 127,
+    "zh": "时间轴延伸",
+    "en": "Timeline Draw",
+    "desc": "一条线往下延伸，碰到哪个步骤就出现哪一步",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "时间轴 流程 步骤 历程 线条 延伸 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "Timeline",
+    "txt": "需求访谈 概念发想 设计制作 上线交付",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "垂直时间轴：左侧一条细线从顶端慢慢往下延伸（约 2.4 秒、缓入缓出），每当线延伸到某个节点，该节点的圆点、标题与说明文字列就从左侧约 10px 轻轻滑入淡出现，让视线跟著线一路往下读完流程。（GSAP：线条 scaleY 0→1、transform-origin 顶端；各节点依序在对应时间点 fromTo x:-10 / opacity:0；实际网站可用 ScrollTrigger scrub 让线条长度跟著滚动进度）"
+  },
+  {
+    "id": 128,
+    "zh": "Z 字阅读动线",
+    "en": "Z-pattern Reveal",
+    "desc": "首页版面依 Z 字阅读顺序依序出现",
+    "comp": "layout",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "首页 Hero 版面 Z 字 F 字 阅读模式 Logo 导航 图片 行动按钮 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "hero"
+    ],
+    "tag": "Z-pattern",
+    "txt": "让动线自然发生",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "首页 Hero 进场时，元素依照 Z 字阅读动线依序淡入上浮：左上 Logo → 右上导航菜单 → 左侧主标题与内文 → 右侧主视觉图片 → 左下行动按钮 → 右下次要链接，每个元素间隔约 0.4 秒、从下方约 12px 轻轻浮现，节奏平均、没有夸张位移，让使用者的视线照著设计好的顺序移动。（预览中的细线只是示意 Z 字路径，实际网站不需要。GSAP：依阅读顺序排列元素阵列，fromTo y:12 / opacity:0，stagger 0.42，ease power2.out）"
+  },
+  {
+    "id": 129,
+    "zh": "步骤依序连接",
+    "en": "Connected Steps",
+    "desc": "步骤卡之间的连接线画过去后，下一步才出现",
+    "comp": "card",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "步骤 流程 1 2 3 连接线 教学 结帐 Onboarding 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "Steps",
+    "txt": "选择方案 填写资料 完成付款",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "三张横向排列的步骤卡（编号 01、02、03＋标题＋一条说明文字列），进场时第一张先从下方约 14px 淡入，接著一条细连接线由左往右画到第二张，第二张才淡入，再画线到第三张，第三张淡入；节奏平稳，让使用者清楚理解「先做什么、再做什么」。（GSAP：timeline 依序串接，卡片 fromTo y:14 / opacity:0，连接线 scaleX 0→1、transform-origin 左侧，ease power1.inOut / power2.out）"
+  },
+  {
+    "id": 130,
+    "zh": "行动按钮提示",
+    "en": "Gentle CTA Cue",
+    "desc": "内容出现后，按钮外围轻轻扩散光晕，把视线带到按钮",
+    "comp": "button",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "CTA 行动呼吁 按钮 提示 光晕 扩散 注意力 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "emph",
+      "ui"
+    ],
+    "tag": "CTA cue",
+    "txt": "免费试用",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "内容区块（标题、两行内文、按钮）先依序柔和地淡入上浮；全部出现后约 0.3 秒，行动按钮外围轻轻扩散出一圈半透明光晕并淡掉，连续两次，同时按钮微微上浮 3px 再回原位，像是温和地提醒「下一步在这里」，之后保持静止，不持续闪烁。（GSAP：先 stagger 淡入，再用 tween CSS 变数 --ring 0→1 控制 ::after 的 box-shadow 扩散与透明度，repeat:1；整段只播放一次）"
+  },
+  {
+    "id": 131,
+    "zh": "柔边遮罩揭示",
+    "en": "Soft Mask Reveal",
+    "desc": "图片由左到右被一道柔和的渐变边缘揭开",
+    "comp": "media",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "图片 照片 遮罩 柔边 渐变 揭示 羽化 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "hero",
+      "trans"
+    ],
+    "tag": "Soft mask",
+    "txt": "",
+    "bg": "cream",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "图片进场时，一道带羽化边缘的渐变遮罩由左往右慢慢扫过，把图片柔和地揭开（不是硬切的直线），同时图片从 1.08 倍、稍微偏左的位置慢慢缩回原尺寸定位，约 1.9–2.3 秒、平顺减速，比硬边遮罩更安静、更有质感。（CSS + GSAP：外框 mask:linear-gradient(90deg, #000 var(--p), transparent calc(var(--p) + 25%))，用 GSAP tween --p 从 -25 到 100；内层图片 scale 1.08→1、x -8→0）"
+  },
+  {
+    "id": 132,
+    "zh": "左右交错淡入",
+    "en": "Zigzag Cascade",
+    "desc": "图文列表左右交错出现，视线呈 Z 字往下走",
+    "comp": "card",
+    "when": [
+      "enter",
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "图文 列表 左右 交错 Z 字 往下 介绍 特色 温和 柔和 轻柔 引导 动线 视线 阅读顺序 低调 Subtle Gentle Soft Entrance Visual Flow Hierarchy",
+    "uses": [
+      "ui"
+    ],
+    "tag": "Zigzag",
+    "txt": "关于 作品 服务 联络",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "上下排列的图文列，左右交错配置（第一列图左文右、第二列图右文左，以此类推），进场时由上到下依序出现，每一列从它所在的那一侧往内轻轻滑入约 20px 并淡入，间隔约 0.35 秒、每列约 0.9 秒、平顺减速，视线因此呈 Z 字一路往下阅读。（GSAP：fromTo x 依索引正负交替 ±20 / opacity:0，stagger 0.35，ease power2.out；实际网站可用 ScrollTrigger.batch 让每列卷到时才出现）"
+  },
+  {
+    "id": 133,
+    "zh": "上传 SVG 描绘",
+    "en": "Draw Your SVG",
+    "desc": "上传自己的线条 SVG，看它像用笔一笔一笔画出来",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "SVG 上传 自订 线条 描边 手绘 笔画 Logo 插画 Line Drawing Stroke Draw Upload Custom",
+    "uses": [
+      "logo",
+      "emph"
+    ],
+    "tag": "DrawSVG・上传",
+    "txt": "",
+    "bg": "cream",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "把我提供的线条 SVG（贴在这段说明后面）做成「像用笔画出来」的进场：每条路径依照原本的绘制顺序一笔接一笔描出来，每笔的描绘时间依长度分配（长的线画久一点、短的快一点），笔画之间稍微重叠衔接，整体约 3 秒、缓入缓出；画完停留后可淡出重播，或只播放一次。所有图形改为只描边、不填色，线端与转角使用圆角。（GSAP：DrawSVGPlugin，对每个 path / line / polyline / circle 依序 fromTo drawSVG \"0%\"→\"100%\"，duration 依 getTotalLength() 比例计算；纯 CSS 也可用 stroke-dasharray + stroke-dashoffset 做到）"
+  },
+  {
+    "id": 134,
+    "zh": "手写签名",
+    "en": "Signature Writing",
+    "desc": "一颗笔尖沿著签名路径书写，最后补上一道底线",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "签名 手写 草写 书写 笔尖 Signature Handwriting Cursive Pen Write On",
+    "uses": [
+      "logo",
+      "hero"
+    ],
+    "tag": "DrawSVG・MotionPath",
+    "txt": "",
+    "bg": "cream",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "一个草写签名的线条路径，从起笔处开始被慢慢写出来，路径最前端有一颗小圆点笔尖跟著移动，像真的有人在书写（约 2.6 秒、缓入缓出）；签名写完后笔尖消失，下方再快速划出一道微弯的底线收尾。适合作品集 Hero 或品牌签名。（GSAP：DrawSVGPlugin 描绘签名路径，同时用 MotionPathPlugin 让笔尖圆点沿同一条路径移动，两者时间与 ease 相同；签名需是单笔的描边路径，不是外框字）"
+  },
+  {
+    "id": 135,
+    "zh": "线条插画逐笔描绘",
+    "en": "Line Illustration Draw",
+    "desc": "线条插画一笔一笔画完，最后主体淡淡浮现",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "插画 线条插画 逐笔 描绘 手绘 图解 Line Art Illustration Draw Sketch",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "DrawSVG",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "一张由多条线组成的线条插画（例如一杯冒著热气的咖啡：杯碟、杯身、把手、三缕热气），依照由下往上、由主体到细节的顺序一笔一笔描出来，每笔约 0.9 秒、间隔约 0.32 秒；全部画完后，主体淡淡地补上一层半透明填色，热气线条轻轻上下飘动一次。整体安静、有手作感。（GSAP：DrawSVGPlugin 对各路径 stagger 描绘；填色用另一个相同形状的 path 从 opacity 0 淡入）"
+  },
+  {
+    "id": 136,
+    "zh": "图标描边 hover",
+    "en": "Icon Stroke Redraw",
+    "desc": "滑过线条图标时，笔画重新描一次并微微上浮",
+    "comp": "shape",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "图标 icon 线条图标 hover 重绘 描边 菜单 导航 Icon Stroke Draw Hover Menu",
+    "uses": [
+      "ui"
+    ],
+    "tag": "DrawSVG hover",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "一排线条图标（首页、搜寻、爱心、通知），每个放在圆角方框内；鼠标移到某个图标上时，该图标的线条从头重新描绘一次（约 0.7 秒，多笔画依序错开 0.12 秒），方框边框与线条同时切换成强调色，图标微微上浮 6px 再回来。（GSAP：pointerenter 时对该图标的 path / circle fromTo drawSVG \"0%\"→\"100%\"，加 overwrite:true 避免快速滑过时打架）"
+  },
+  {
+    "id": 137,
+    "zh": "流程连线流动",
+    "en": "Flowing Connectors",
+    "desc": "节点之间的虚线持续流动，小圆点沿线传递",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流程图 架构图 节点 连线 虚线 流动 资料流 Flow Diagram Connector Dashed Line Data Flow",
+    "uses": [
+      "data",
+      "bg"
+    ],
+    "tag": "stroke-dashoffset",
+    "txt": "使用者 前端 后端 资料库",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "流程图或系统架构图中，各节点（圆形＋下方标签）之间用平滑曲线连接，连线是虚线且虚线持续朝资料流动的方向移动，另外有小圆点沿著每条连线来回传递，表达资料正在流动；速度平稳、循环不停。（CSS：path 设 stroke-dasharray，用 keyframes 持续改变 stroke-dashoffset；小圆点用 SVG animateMotion 或 CSS offset-path 沿同一条路径移动，各条错开起始时间）"
+  },
+  {
+    "id": 138,
+    "zh": "波浪分隔线",
+    "en": "Wave Divider",
+    "desc": "区块底部多层波浪以不同速度缓慢流动",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "波浪 分隔线 区块分隔 水波 海浪 Wave Divider Section Separator Liquid",
+    "uses": [
+      "bg",
+      "trans"
+    ],
+    "tag": "SVG wave",
+    "txt": "波浪分隔",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "两个区块之间用波浪形状分隔，波浪由 3 层组成，后层较淡较高、前层较实较低，三层以不同速度（约 6、9、13 秒一轮）左右缓慢流动、方向不完全相同，形成有深度的水波感，无缝循环。（CSS：每层是一个宽度 200%、内含两个完整波长的 SVG path，用 translateX(0 → -50%) 的 linear 无限动画做到无缝；不同层设定不同 animation-duration 与方向）"
+  },
+  {
+    "id": 139,
+    "zh": "圆环进度",
+    "en": "Circular Progress",
+    "desc": "圆环描到指定百分比，中间数字同步累加",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "进度 圆环 百分比 仪表 数据 统计 Progress Ring Donut Percentage Gauge Stats",
+    "uses": [
+      "data"
+    ],
+    "tag": "DrawSVG",
+    "txt": "专案完成度",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一个圆环进度图，底下有一圈低对比的轨道，进场时进度弧线从正上方开始顺时针描到指定百分比（例如 78%），线端圆角；中间的百分比数字从 0 同步累加到 78%，下方小字标示项目名称；约 1.8 秒、缓入缓出，停在结果。（GSAP：DrawSVGPlugin drawSVG \"0%\"→\"0% 78%\"，SVG 整体 rotate(-90deg) 让起点在上方；数字 tween 一个物件数值 + onUpdate 写入，与弧线同时间、同 ease）"
+  },
+  {
+    "id": 140,
+    "zh": "勾选完成",
+    "en": "Success Checkmark",
+    "desc": "先画一个圆，再勾选并轻弹，最后浮出成功讯息",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "成功 完成 勾选 勾选 确认 提交 付款 状态 Success Check Done Confirm Tick",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "DrawSVG",
+    "txt": "付款成功",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "提交或付款完成时的成功状态：先描出一个圆（约 0.8 秒），接著在圆内快速划出一个勾选（约 0.45 秒），勾选完成的瞬间整个图标轻轻弹大 8% 再回来，同时下方的「付款成功」文字从下方 8px 淡入。干净、明确、让人安心。（GSAP：DrawSVGPlugin 依序描绘 circle 与勾的 path；图标 scale 1→1.08 yoyo；文字 fromTo y:8 / opacity:0）"
+  },
+  {
+    "id": 141,
+    "zh": "开关切换",
+    "en": "Toggle Switch",
+    "desc": "圆钮滑到另一侧时略微拉长，轨道跟著切换状态",
+    "comp": "control",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "开关 切换 switch toggle 设定 iOS 圆钮 App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS switch",
+    "txt": "通知提醒",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "App 设定页的开关：点击时圆钮从一侧滑到另一侧，滑动过程中圆钮会先横向拉长再缩回（像有弹性的果冻），抵达时略微过冲后定位；轨道同时切换成开启状态的强调色，关闭时回到低对比的状态。约 0.35 秒。（CSS：button role=\"switch\"，圆钮用 left 的 transition 搭配 cubic-bezier(.5,1.4,.5,1) 做过冲，另用 keyframes 在 50% 时加宽；记得更新 aria-checked）"
+  },
+  {
+    "id": 142,
+    "zh": "下拉刷新",
+    "en": "Pull to Refresh",
+    "desc": "往下拉列表，转圈图标出现，放开后载入并弹回",
+    "comp": "layout",
+    "when": [
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "下拉 刷新 刷新 列表 手势 Pull Refresh Spinner Gesture App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Pull to refresh",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "手机列表页顶端往下拉时，列表跟著手指往下移（越拉阻力越大），上方露出一个圆形载入图标，图标的旋转角度跟著下拉距离增加；放开后图标持续旋转表示载入中，完成后列表平滑弹回顶端，最新一笔资料短暂高亮后淡回。（GSAP：手势用 Draggable 或 Observer 取得下拉距离并乘上阻尼系数；放开后 timeline：spinner 旋转 → 列表 y 回 0（power3.out）→ 新项目背景淡出）"
+  },
+  {
+    "id": 143,
+    "zh": "底部抽屉",
+    "en": "Bottom Sheet",
+    "desc": "背景变暗，菜单从底部带一点弹性滑上来",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "底部抽屉 底部菜单 弹出 分享 动作菜单 Bottom Sheet Action Sheet Drawer Modal App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Bottom sheet",
+    "txt": "分享到",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "点击「分享」等操作后，画面加上一层半透明遮罩逐渐变暗，菜单面板从萤幕底部滑上来并带一点点回弹（约 0.6 秒），面板顶端有一条小把手，里面的选项依序从下方 8px 淡入；关闭时面板快速往下滑出（约 0.35 秒、加速）、遮罩淡出。（GSAP：面板 yPercent 100→0，ease back.out(1.1)；选项 stagger 0.06；关闭用 power2.in；实际 App 可让使用者拖拽把手往下关闭）"
+  },
+  {
+    "id": 144,
+    "zh": "底部导航栏切换",
+    "en": "Tab Bar Indicator",
+    "desc": "点选分页时，胶囊指示器拉长滑到新位置，图标轻弹",
+    "comp": "layout",
+    "when": [
+      "switch",
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "底部导航栏 分页 tab bar 导航 指示器 切换 Bottom Navigation Indicator Gooey App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Tab bar",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-16",
+    "prompt": "App 底部的胶囊形导航栏有 4 个图标，目前分页底下有一颗胶囊指示器；点选另一个分页时，指示器先往目标方向拉长、同时覆盖新旧两个位置（约 0.18 秒），再收缩到新分页（约 0.34 秒、减速），像液体一样流过去；新分页的图标同时从 0.7 倍弹回原尺寸，图标与指示器形成反差。（GSAP：两段 timeline 改变指示器的 x 与 width；图标 scale 用 back.out(3)）"
+  },
+  {
+    "id": 145,
+    "zh": "滑动删除",
+    "en": "Swipe to Delete",
+    "desc": "列表项目往左滑露出删除，滑到底就收合移除",
+    "comp": "card",
+    "when": [
+      "drag",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "滑动 删除 左滑 列表 手势 收合 Swipe Delete Gesture List Dismiss App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Draggable",
+    "txt": "会议提醒 帐单通知 新讯息",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "列表项目可以用手指往左滑，项目后方露出警示色的「删除」按钮；滑动距离小于一半时放开会弹回原位，超过门槛（约 30%）放开时，项目整个往左滑出画面，接著这一列高度收合为 0，下面的项目平滑补上。（GSAP：Draggable type:\"x\" 并限制只能往左、edgeResistance 0.8；onRelease 判断门槛后 xPercent:-100，再 tween height 到 0；手机上设定 touch-action:pan-y 让上下滚动不受影响）"
+  },
+  {
+    "id": 146,
+    "zh": "按钮载入成功",
+    "en": "Loading Button",
+    "desc": "按下后按钮缩成圆形转圈，完成时勾选再恢复",
+    "comp": "button",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "按钮 载入 提交 转圈 成功 勾选 状态 Loading Button Submit Spinner Success Morph App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Loading state",
+    "txt": "提交订单",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "点击「提交」按钮时，按钮先轻轻按下（缩到 95%），文字淡出，按钮宽度收缩成一个圆形（约 0.4 秒），圆形中出现旋转的载入圈；完成后载入圈消失，换成一个被画出来的勾选，按钮轻弹一下；停留约 0.8 秒后再展开回原本宽度、文字淡入。防止重复点击，也让使用者清楚知道状态。（GSAP：timeline 依序 tween width、spinner rotation、DrawSVG 勾选；宽度用固定单位做 fromTo）"
+  },
+  {
+    "id": 147,
+    "zh": "数量步进器",
+    "en": "Number Stepper",
+    "desc": "按加减时按钮回馈，数字往上或往下滚动切换",
+    "comp": "control",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "数量 加减 步进器 购物车 计数 Stepper Counter Quantity Plus Minus Cart App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui",
+      "data"
+    ],
+    "tag": "Stepper",
+    "txt": "数量",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "购物车的数量选择器：左右是减号与加号圆形按钮，中间是数字；按下按钮时按钮缩小并切换成强调色作为回馈，数字依方向滚动切换——加的时候旧数字往上滑出、新数字从下方滑入，减的时候方向相反，约 0.3 秒；到达上下限时数字不再变化。（CSS：数字容器 overflow:hidden，新旧数字各用 keyframes translateY ±100% 进出，结束后移除旧元素）"
+  },
+  {
+    "id": 148,
+    "zh": "输入框浮动标签",
+    "en": "Floating Label Input",
+    "desc": "点进输入框时，提示文字缩小浮到上方，底线从中间展开",
+    "comp": "control",
+    "when": [
+      "hover",
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "输入框 表单 标签 浮动 聚焦 Floating Label Input Focus Form Material App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Floating label",
+    "txt": "电子邮件",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "表单输入框平常只显示一个像 placeholder 的提示标签；点进去（focus）时，标签缩小并往上浮到输入框上方，同时底线从中央往两侧展开成强调色，光标开始闪烁；输入内容后离开，标签会保持在上方的小字状态，清空时才回到原位。约 0.3–0.4 秒、减速。（CSS：label 绝对定位，用 :focus-within 或 :not(:placeholder-shown) 改变 top 与 font-size；底线用 transform:scaleX(0→1)）"
+  },
+  {
+    "id": 149,
+    "zh": "星星评分",
+    "en": "Star Rating",
+    "desc": "点选评分时，星星由左到右依序点亮并弹跳",
+    "comp": "control",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "评分 星星 评价 回馈 Rating Stars Review Feedback App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "Rating",
+    "txt": "帮这次体验评分",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "五颗空心星星，使用者点选第 N 颗时，第 1 到第 N 颗从左到右依序填满并各自从小弹跳放大（每颗间隔约 0.08 秒），其余维持空心；下方同步显示对应的文字回馈（例如「很好」「超赞！」）。点选较少的星数时，多出来的星星变回空心。（CSS：切换 .on 填色与 .pop 弹跳 keyframes，用 setTimeout 或 transition-delay 依索引错开；每颗星是 button 并附 aria-label）"
+  },
+  {
+    "id": 150,
+    "zh": "启动页转场",
+    "en": "Splash to Home",
+    "desc": "启动 Logo 弹出呼吸，再放大穿过画面进入首页",
+    "comp": "layout",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "启动页 开场 splash 载入 Logo 首页 转场 Launch Screen Intro Zoom Through App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "trans",
+      "logo"
+    ],
+    "tag": "Splash",
+    "txt": "M",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "App 开启时，画面中央的 Logo 从小弹出（back.out），轻轻呼吸一次；接著 Logo 加速放大到充满整个萤幕并淡出，像穿过 Logo 进入 App，底下的首页内容（主视觉卡片、列表）同时由上到下依序淡入上浮。整段约 2 秒，结束后停在首页。（GSAP：timeline：logo scale 0.6→1 → yoyo 1.06 → scale 14（power3.in）＋启动层 opacity 0 → 首页元素 stagger fromTo y:10 / opacity:0）"
+  },
+  {
+    "id": 151,
+    "zh": "错误震动提示",
+    "en": "Shake on Error",
+    "desc": "输入错误时栏位左右震动，下方滑出错误讯息",
+    "comp": "control",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "错误 震动 摇晃 验证 密码 登录 表单 Shake Error Validation Wrong Password Login App 手机 行动装置 微互动 Mobile App Micro-interaction",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "密码错误，请再试一次",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "登录时密码错误，输入框左右快速震动几下（像摇头说不，约 0.45 秒，幅度由小到大再变小），边框同时切换成错误提示色，下方的错误讯息从上方 4px 淡入滑出；修正输入后边框与讯息恢复。（CSS：keyframes 以 translateX 做 10%–90% 的左右来回，cubic-bezier(.36,.07,.19,.97)；重播前先移除 class 并触发 reflow；可搭配手机震动 navigator.vibrate）"
+  },
+  {
+    "id": 152,
+    "zh": "滚动逐字点亮",
+    "en": "Scroll Text Reveal",
+    "desc": "段落的字随著滚动一个个由淡转亮",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "逐字 点亮 段落 文案 Apple 官网 Text Reveal Highlight On Scroll 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "hero",
+      "scroll"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "好的动态设计会在你滚动时一个字一个字亮起来，带著视线往下读完这段话。",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一段大字级的文案固定在画面中央，一开始所有字都很淡；使用者往下滚动时，字从第一个开始依序变清楚，滚动进度＝已点亮的比例，往回卷时再依序变淡，像 Apple 官网的文案呈现。（GSAP：SplitText 拆字，fromTo opacity 0.15→1、stagger 0.1、ease none，绑 ScrollTrigger scrub:true；区块用 pin 或 position:sticky 固定，外层高度约 3–4 个视窗）"
+  },
+  {
+    "id": 153,
+    "zh": "滚动放大全幅图片",
+    "en": "Scroll Zoom to Full",
+    "desc": "小图随滚动放大到充满画面，最后浮出标题",
+    "comp": "media",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "图片 放大 全幅 全萤幕 展开 Zoom Image Expand Full Screen Fullbleed 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "hero",
+      "scroll",
+      "trans"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "走进风景",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "画面中央一张带圆角的小图（约 4 成宽），随著往下滚动逐渐放大到充满整个画面，圆角同时缩成直角，图片内容则从 1.3 倍慢慢缩回原尺寸（避免放大时看起来糊），放大到后段时标题从下方淡入叠在图片上；往回卷时全部倒退。（GSAP：timeline 绑 ScrollTrigger scrub:true，区块 pin 或 sticky；tween width / height / borderRadius 与内层 scale；也可改用 clip-path inset 做）"
+  },
+  {
+    "id": 154,
+    "zh": "吸附堆叠卡片",
+    "en": "Sticky Stacking Cards",
+    "desc": "卡片一张张卷上来叠住，下面那张缩小变暗",
+    "comp": "card",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "卡片 堆叠 吸附 sticky 叠起来 服务介绍 Stacking Cards Sticky Stack Deck 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "ui",
+      "scroll"
+    ],
+    "tag": "Sticky・scrub",
+    "txt": "研究 设计 开发 上线",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一组大卡片依序往下排，每张卡片卷到画面顶端附近时会黏住（每张的停留位置往下错开一点，看得到前一张的边缘），下一张卡片卷上来叠在上面时，被盖住的那张同步缩小到约 90% 并变暗，形成一叠卡片的景深；往回卷时恢复。（CSS position:sticky + top 依索引递增；GSAP 每张卡片一个 ScrollTrigger，以「下一张卡片进入画面到抵达顶端」为范围 scrub scale 与 brightness）"
+  },
+  {
+    "id": 155,
+    "zh": "数据卷到才计数",
+    "en": "Count Up on Scroll",
+    "desc": "数据区块卷进画面时，数字才从零开始累加",
+    "comp": "card",
+    "when": [
+      "scroll",
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "数据 统计 计数 数字 成果 KPI Count Up Stats Numbers On Scroll 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "data",
+      "scroll"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "完成专案 客户满意度 平均评分",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "页面中段的成果数据区（三格：数字＋说明），卷到数据区进入画面约 80% 位置时，三格依序从下方淡入，数字同时从 0 累加到目标值（例如 128、99%、4.9，可有小数），约 1.6 秒、减速；卷回上方离开时重置，下次卷到再播一次（或只播一次）。（GSAP：ScrollTrigger.create { start:\"top 80%\", onEnter, onLeaveBack }，数字 tween 物件数值 + onUpdate，用 toFixed 控制小数位）"
+  },
+  {
+    "id": 156,
+    "zh": "往下卷隐藏导航栏",
+    "en": "Hide Header on Scroll",
+    "desc": "往下卷时导航栏收起，往回卷时立刻滑出",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "导航栏 页首 菜单 header navbar 隐藏 显示 方向 Headroom Hide On Scroll Down Show On Scroll Up 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "ui",
+      "scroll",
+      "app"
+    ],
+    "tag": "ScrollTrigger direction",
+    "txt": "LOGO",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "页首导航栏固定在顶端；使用者往下滚动（阅读内容）时导航栏往上滑出画面让出空间，一旦往上卷（想找菜单）就立刻从顶端滑回来，在最顶端时一定显示；约 0.35 秒、减速。手机版很常用。（做法：比较目前与上一次的 scrollY 判断方向，或用 ScrollTrigger 的 self.direction；切换 class 让 header translateY(-100%)，加 transition）"
+  },
+  {
+    "id": 157,
+    "zh": "滚动绘制路径",
+    "en": "Scroll Draw Path",
+    "desc": "一条曲线随滚动一路画下去，串起各个段落",
+    "comp": "shape",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "路径 曲线 线条 绘制 时间轴 旅程 故事 Scroll Path Draw SVG Line Journey Story 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "scroll",
+      "data"
+    ],
+    "tag": "DrawSVG scrub",
+    "txt": "起点 探索 成长 抵达",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "页面背景有一条左右蜿蜒、贯穿整段内容的曲线，底下先有一条很淡的轨迹；往下滚动时，强调色的线条沿著轨迹一路画下去，卷到哪画到哪，往回卷时线条缩回；沿线的几个节点（圆点＋标题）在线条接近时从两侧交错淡入。适合品牌故事、旅程、历程介绍。（GSAP：DrawSVGPlugin drawSVG 0%→100% 绑 ScrollTrigger scrub；SVG 高度与内容同高、preserveAspectRatio:none；节点各自用 toggleActions 淡入）"
+  },
+  {
+    "id": 158,
+    "zh": "图框内视差",
+    "en": "Image Parallax in Frame",
+    "desc": "图片在框里移动得比滚动慢，产生深度",
+    "comp": "media",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "图片 视差 图框 照片 景深 Image Parallax Frame Inner Parallax Gallery 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "scroll",
+      "hero"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "清晨 午后 夜晚",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "一列上下排列的图片，每张图片外框固定、裁切超出的部分，图片本身比外框高一些；滚动时图片在框内以较慢的速度反向位移（从上偏到下偏约 ±12%），看起来像窗外的风景，比整块一起滚动更有深度；图片下方有简短说明。（GSAP：外框 overflow:hidden，内层图高约 128%，每张图一个 ScrollTrigger，start \"top bottom\"、end \"bottom top\"，scrub yPercent -12→12）"
+  },
+  {
+    "id": 159,
+    "zh": "滚动横移大字",
+    "en": "Scroll Marquee Text",
+    "desc": "三行大字随滚动左右反向移动，中间一行空心",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "大字 横移 跑马灯 反向 标题 Scroll Marquee Big Type Horizontal Text Kinetic 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "bg",
+      "scroll",
+      "hero"
+    ],
+    "tag": "ScrollTrigger scrub",
+    "txt": "MOTION LIBRARY",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "画面中有三行超大字级的重复文字（中间那行是空心描边），滚动时第一、三行往左移、第二行往右移，移动距离完全跟著滚动进度（停止滚动就停住），形成有张力的版面节奏。（GSAP：timeline 绑 ScrollTrigger scrub:0.6，各行 fromTo xPercent 0↔-40；区块 pin 或 sticky）"
+  },
+  {
+    "id": 160,
+    "zh": "章节主题切换",
+    "en": "Section Theme Switch",
+    "desc": "卷到不同章节时，整个页面背景与文字配置跟著切换",
+    "comp": "bg",
+    "when": [
+      "scroll",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "背景 主题 切换 章节 区块 Section Theme Background Change On Scroll Chapters 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "bg",
+      "scroll",
+      "trans"
+    ],
+    "tag": "ScrollTrigger toggle",
+    "txt": "序章 理念 作品 联络",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "页面分成几个章节，每个章节有自己的背景与文字配色主题；当某个章节卷到画面中线时，整个页面的背景与文字在约 0.6 秒内平滑过渡到该章节的主题，往回卷时切回前一个，让每一章有明确的氛围转换。（GSAP：每个章节一个 ScrollTrigger，start \"top 50%\"、end \"bottom 50%\"，onToggle 时切换 CSS 变数或 class；CSS 对 background / color 加 transition）"
+  },
+  {
+    "id": 161,
+    "zh": "圆形扩张转场",
+    "en": "Circle Reveal Transition",
+    "desc": "滚动时圆形遮罩从中央扩大，揭开下一章",
+    "comp": "layout",
+    "when": [
+      "scroll",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "转场 圆形 遮罩 扩张 揭开 章节 Circle Reveal Clip Path Transition Section 滚动 滚动 scroll ScrollTrigger scrub 滚动触发",
+    "uses": [
+      "trans",
+      "scroll"
+    ],
+    "tag": "clip-path scrub",
+    "txt": "第二章",
+    "bg": "dark",
+    "added": "2026-10-16",
+    "prompt": "两个章节之间的转场：滚动时下一章从画面中央以一个圆形遮罩出现，圆形随滚动进度从 0 扩大到盖满整个画面，同时上一章的标题慢慢缩小变淡，下一章的标题从 1.2 倍缩回原尺寸；往回卷时圆形缩回。（GSAP：timeline 绑 ScrollTrigger scrub，区块 pin 或 sticky；tween clipPath \"circle(0% at 50% 50%)\" → \"circle(75% at 50% 50%)\"）"
+  },
+  {
+    "id": 162,
+    "zh": "链接底线滑入",
+    "en": "Underline Slide Link",
+    "desc": "滑过链接时底线从左长出，离开时往右收走",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "链接 底线 菜单 导航 link underline nav menu hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "首页 作品 关于 联络",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "导航栏的文字链接，鼠标移入时一条细底线从左往右长出，鼠标移出时底线继续往右收走（不是原路缩回），像一道光扫过；约 0.45 秒、缓入缓出。（CSS：::after 做底线，transform:scaleX(0)；hover 时 scaleX(1) 且 transform-origin:left，非 hover 时 transform-origin:right，transition cubic-bezier(.7,0,.2,1)）"
+  },
+  {
+    "id": 163,
+    "zh": "空心字填满",
+    "en": "Outline Text Fill",
+    "desc": "滑过空心大字时，从左到右被填满成实心",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "空心字 描边 填满 大标 outline stroke text fill hover hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "hero",
+      "ui"
+    ],
+    "tag": "background-clip",
+    "txt": "DESIGN MOTION PLAY",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "几行超大字级的空心描边文字，鼠标移到某一行时，那一行从左到右被填满成实心（像墨水灌进去），移开时再从右往左退回空心；约 0.6 秒、缓入缓出，适合作品集标题或菜单。（CSS：文字 -webkit-text-stroke 描边、color:transparent；背景用单色 linear-gradient，background-clip:text，hover 时 background-size 0%→100% 加 transition）"
+  },
+  {
+    "id": 164,
+    "zh": "卡片 3D 翻面",
+    "en": "Flip Card",
+    "desc": "滑过卡片时 3D 翻到背面，显示更多资讯",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "卡片 翻转 翻面 正反面 3D flip card hover back side hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS 3D",
+    "txt": "品牌 网站 插画",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排作品卡片，正面是主视觉与标题；鼠标移入时卡片以垂直轴 3D 翻转 180 度到背面，背面显示「查看专案 →」等行动文字，翻转带一点过冲回弹；移出时翻回正面。约 0.7 秒。（CSS：外层 perspective，内层 transform-style:preserve-3d + transition transform，hover 时 rotateY(180deg)；正反两面 backface-visibility:hidden，背面预先 rotateY(180deg)）"
+  },
+  {
+    "id": 165,
+    "zh": "图片圆形展开",
+    "en": "Circle to Card Image",
+    "desc": "圆形缩图在滑过时展开成直式圆角卡片并浮出标题",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "图片 圆形 展开 缩图 头像 团队 image shape expand circle hover hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS hover",
+    "txt": "清晨 午后 夜晚",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排圆形的图片缩图，鼠标移到其中一张时，圆形平滑变成较高的直式圆角矩形（同时往下长高），图片内容从 1.18 倍缩回原尺寸、看到更多画面，下方标题淡入；移开时恢复圆形。约 0.55 秒、减速。适合团队成员或作品分类。（CSS：外框 border-radius 50%→小圆角、height 同步 transition；内层图片 transform:scale 1.18→1；标题 opacity / translateY）"
+  },
+  {
+    "id": 166,
+    "zh": "Dock 放大菜单",
+    "en": "Dock Magnify",
+    "desc": "光标扫过一排图标时，靠近的图标放大并推开邻居",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "Dock 放大 图标 菜单 macOS 工具列 magnify icons toolbar hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS + JS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "像 macOS Dock 的一排圆角图标：光标在图标列附近左右移动时，最靠近光标的图标放大到约 1.9 倍，左右邻近的图标依距离递减地跟著放大，形成平滑的放大波峰，并把其他图标往两侧推开；光标离开时全部恢复原尺寸。（做法：mousemove 时计算每个图标中心与光标的水平距离，scale = 1 + 0.9 × max(0, 1 − 距离/影响范围)，写入 CSS 变数控制 width / height，让排版自然推开；加短 transition 让变化顺滑）"
+  },
+  {
+    "id": 167,
+    "zh": "菜单滑块跟随",
+    "en": "Sliding Nav Highlight",
+    "desc": "滑过菜单项目时，背景胶囊滑块跟著移到该项目",
+    "comp": "layout",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "菜单 导航 滑块 胶囊 highlight 跟随 nav pill hover indicator tabs hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS + JS",
+    "txt": "首页 作品 服务 文章 联络",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "胶囊形导航栏，鼠标移到某个项目时，一颗胶囊背景滑块从原本位置平滑滑过去并改变宽度贴合该项目，文字同时切换成与滑块反差的颜色；鼠标离开整个菜单时滑块回到目前所在的页面项目。约 0.4 秒，带一点点过冲。（做法：pointerenter 时读取项目的 offsetLeft 与 offsetWidth，设定滑块的 translateX 与 width，transition cubic-bezier(.2,.9,.3,1.1)）"
+  },
+  {
+    "id": 168,
+    "zh": "展开式图片面板",
+    "en": "Expanding Panels",
+    "desc": "一排窄图片面板，滑过的那一片展开变宽并显示标题",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "图片 面板 展开 手风琴 相册 gallery accordion expanding panels flex hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS flex",
+    "txt": "山林 花海 夜空 夕照 海岸",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排等宽的直条图片面板，鼠标移到某一片时，它平滑展开成约其他片 4 倍宽，其他面板同步缩窄，展开完成后该片左下角的标题淡入；移到另一片时顺畅地交棒。约 0.6 秒、减速。适合作品分类或图库入口。（CSS：容器 display:flex，每片 flex:1，hover 时 flex:4，transition flex；图片用 object-fit:cover 避免变形；标题加 transition-delay）"
+  },
+  {
+    "id": 169,
+    "zh": "提示框弹出",
+    "en": "Tooltip Pop",
+    "desc": "滑过图标时，提示框从下方带弹性弹出",
+    "comp": "control",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "提示框 tooltip 说明 小提示 气泡 popover hover hint hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS hover",
+    "txt": "说明 资讯 分享",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排圆形图标按钮，鼠标移到某个图标时，上方弹出一个带小三角箭头的提示框，从约 60% 大小、略低的位置以箭头为原点弹性放大并上移到定位（约 0.3 秒，带一点过冲），移开时淡出缩回。（CSS：提示框 position:absolute，transform-origin 设在箭头处，hover 时 scale(0.6)→1 + translateY + opacity，transition cubic-bezier(.3,1.5,.5,1)；记得 pointer-events:none 避免闪烁）"
+  },
+  {
+    "id": 170,
+    "zh": "逐字跳动",
+    "en": "Letter Hover Bounce",
+    "desc": "滑过文字时，碰到的每个字各自弹跳一下",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "文字 逐字 跳动 弹跳 俏皮 letter bounce hover playful hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "HOVER ME 试试看",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "标题文字拆成一个个字，光标滑过哪个字，那个字就往上弹跳一下并短暂变成强调色（约 0.5 秒、弹性），光标快速横扫时会形成一串波浪；每个字的动画各自独立，结束后回到原位。（做法：每个字包 inline-block 的 span，pointerenter 时移除再加上动画 class 以重播，animationend 时移除；keyframes 在 30% 时 translateY(-35%) scale(1.12)）"
+  },
+  {
+    "id": 171,
+    "zh": "边框描绘按钮",
+    "en": "Border Draw Button",
+    "desc": "滑过按钮时，四条边框依序画出围住按钮",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "按钮 边框 描边 线条 画出 border draw outline button hover hover 悬停 鼠标移入 滑过 互动",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS transition",
+    "txt": "了解更多",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "平时只有很淡细框的按钮，鼠标移入时，强调色的边框从左上角开始依序画出：上边往右 → 右边往下 → 下边往左 → 左边往上，每段约 0.18 秒，接起来把按钮围住，画完后文字也换成强调色；鼠标移出时以相反顺序收回。（CSS：四个绝对定位的线条元素，各自用 scaleX / scaleY 搭配不同 transform-origin；用 transition-delay 安排顺序，hover 与非 hover 状态的 delay 相反）"
+  },
+  {
+    "id": 172,
+    "zh": "星空穿越",
+    "en": "Warp Speed",
+    "desc": "星星从中心往外飞成光线，光标移入时加速",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "星空 星星 穿越 太空 光速 隧道 Starfield Warp Hyperspace Space Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "Canvas 3D",
+    "txt": "加速前进",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "Hero 背景是一片往镜头飞来的星星：每颗星星从画面中心附近出发，越靠近观者越亮、越大，并拉出放射状的短光线，像太空船加速穿越；光标移入区块时速度平滑加快，而且消失点会微微往光标方向偏移，移开后缓缓回到巡航速度。前景标题保持清楚。（Canvas 2D：每颗星有 x、y、z，每帧 z 递减，投影坐标 = 中心 + x/z × 焦距，从上一帧投影位置画线到这一帧；画面用半透明底色覆盖做出残影）"
+  },
+  {
+    "id": 173,
+    "zh": "流场线条",
+    "en": "Flow Field",
+    "desc": "上千条细线顺著看不见的气流缓慢流动，光标会搅动气流",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "流场 气流 线条 生成艺术 有机 Flow Field Generative Art Perlin Noise Lines Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "Canvas trails",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "背景布满数百个看不见的小粒子，每个粒子依照所在位置的「流向」（由平滑变化的噪声或三角函数决定，且随时间缓慢改变）前进并留下很细的轨迹，轨迹慢慢淡出，整体像风或水流的纹理不断流动；光标附近的流向会被扭转，形成被搅动的漩涡。（Canvas 2D：每帧先用低透明度的底色覆盖画面制造拖尾，再让每个粒子依 angle = f(x, y, t) 前进一小段并画线；粒子寿命到了或出界就重生；可用 simplex noise 让流场更自然）"
+  },
+  {
+    "id": 174,
+    "zh": "飘落花瓣",
+    "en": "Falling Petals",
+    "desc": "花瓣缓缓旋转飘落，光标经过会把花瓣吹开",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "花瓣 樱花 飘落 下雪 天气 季节 Petals Sakura Snow Weather Falling Particles Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "Canvas particles",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "背景有数十片花瓣从上方缓缓飘落，每片都会左右摆荡、翻转（用缩放模拟翻面）并各自旋转，速度大小略有差异；光标经过时会依移动方向与速度把附近的花瓣吹开，之后花瓣慢慢回到自然飘落。也可以换成雪花、雨滴等天气粒子。（Canvas 2D：每片花瓣有位置、速度、角度与摆荡相位；光标速度 = 本帧与上一帧坐标差，距离内的花瓣依距离加上推力，再逐渐衰减；落出画面底部就回到顶端重生）"
+  },
+  {
+    "id": 175,
+    "zh": "数字雨",
+    "en": "Matrix Rain",
+    "desc": "一行行字元像下雨一样往下落，带残影拖尾",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "Canvas",
+    "style": "数字雨 骇客 程式码 字元 矩阵 科技 Matrix Code Rain Hacker Digital Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg"
+    ],
+    "tag": "Canvas text",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "整个区块被一栏栏往下落的字元填满（片假名、数字、英文），每栏速度一致、起点不同，最前端的字最亮，后面的字逐渐变暗拉出拖尾；落到底部后随机回到顶端重新开始。科技、骇客感。（Canvas 2D：栏数 = 宽度 ÷ 字级，每栏记录目前的 y；每约 55ms 用半透明底色覆盖整个画面一次，再在每栏目前位置画一个随机字元，y 往下一格，超出画面后随机重置）"
+  },
+  {
+    "id": 176,
+    "zh": "融合球",
+    "en": "Metaballs",
+    "desc": "几颗圆球漂浮移动，靠近时像液体一样黏在一起",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "融合球 液体 黏液 有机 熔岩灯 Metaballs Liquid Blob Gooey Lava Lamp Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "Canvas field",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "背景有几颗大小不一的圆球缓慢漂浮、碰到边界反弹，当两颗球靠近时边缘会像液体一样平滑地黏在一起、拉出连接的颈部，分开时再断开；其中一颗会跟著光标移动，可以去「黏」其他球。像熔岩灯的有机感。（Canvas：在低分辨率格子上计算每格的场强 Σ r²/d²，大于门槛就填色、边缘做柔和过渡，再放大绘制到画布；或用 CSS filter blur + contrast 的 gooey 技巧）"
+  },
+  {
+    "id": 177,
+    "zh": "文字粒子化",
+    "en": "Particle Text",
+    "desc": "文字由许多小点组成，光标靠近会被吹散，离开后聚回",
+    "comp": "text",
+    "when": [
+      "hover",
+      "enter"
+    ],
+    "tech": "Canvas",
+    "style": "文字 粒子 点阵 吹散 聚合 互动标题 Particle Text Interactive Typography Scatter Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "Canvas particles",
+    "txt": "HELLO",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "大标题由上千个小方点组成：进场时点从画面各处飞来聚合成文字；光标靠近时，附近的点被推开散落，离开后像弹簧一样聚回原位，被推离原位的点暂时改用强调色。适合作品集首页的互动标题。（Canvas 2D：先把文字画在离屏画布，每隔数个像素取样不透明的点当目标位置；每个粒子以弹簧力回到目标、受光标距离产生排斥力并加阻尼）"
+  },
+  {
+    "id": 178,
+    "zh": "磁力点阵",
+    "en": "Magnetic Dot Grid",
+    "desc": "满版小圆点，光标经过时被推开并放大",
+    "comp": "bg",
+    "when": [
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "点阵 圆点 网格 磁力 排斥 互动背景 Dot Grid Repel Magnetic Interactive Background Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg",
+      "ui"
+    ],
+    "tag": "Canvas spring",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "背景是整齐排列的细小圆点，光标移动时，附近的圆点被往外推开并变大、改用强调色，距离越近推得越远，离开后以弹簧般的动作回到原位，形成跟著光标流动的凹陷。低调但很有互动感的背景。（Canvas 2D：每个点记录原始位置，目标位置 = 原位 + 远离光标方向 × 影响系数，用速度 + 阻尼做弹簧回弹；大小与透明度依距离插值）"
+  },
+  {
+    "id": 179,
+    "zh": "水波涟漪",
+    "en": "Water Ripple",
+    "desc": "光标滑过或点击的地方，画面像水面一样泛起涟漪",
+    "comp": "bg",
+    "when": [
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "水波 涟漪 水面 波纹 折射 Water Ripple Wave Refraction Liquid Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "Canvas pixels",
+    "txt": "水面",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "整个区块像一面水，光标滑过时沿路产生细小波纹，点击时产生较大的涟漪，波纹会向外扩散、互相干涉并逐渐平息，水面下的图文会跟著波纹折射扭曲；没有互动时偶尔自动滴下一滴水。（Canvas：在低分辨率上用两个高度缓冲区做经典水波算法 next = (四邻平均×2 − prev) × 阻尼；绘制时依高度梯度偏移取样底图的像素，再放大到画布）"
+  },
+  {
+    "id": 180,
+    "zh": "刮刮乐揭示",
+    "en": "Scratch Reveal",
+    "desc": "用光标或手指刮开表层，露出底下的内容",
+    "comp": "card",
+    "when": [
+      "drag"
+    ],
+    "tech": "Canvas",
+    "style": "刮刮乐 刮开 揭晓 抽奖 优惠券 游戏化 Scratch Card Reveal Lottery Coupon Gamification Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "ui",
+      "emph",
+      "app"
+    ],
+    "tag": "Canvas erase",
+    "txt": "包邮优惠券",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "卡片上覆盖一层带金属渐变质感与「刮开看看」字样的表层，使用者按住鼠标或手指拖过的地方会被刮掉（圆头粗笔刷），露出底下的奖项或优惠内容；刮开面积超过约一半时，剩下的表层自动淡出，完整揭晓。适合抽奖、优惠券、活动页。（Canvas 2D：表层画在 canvas 上，拖拽时用 globalCompositeOperation = \"destination-out\" 沿路径画线擦除；定期取样 getImageData 的透明比例判断是否揭晓；手机设 touch-action:none）"
+  },
+  {
+    "id": 181,
+    "zh": "烟火",
+    "en": "Fireworks",
+    "desc": "点击的位置升起烟火并炸开，没操作时自动施放",
+    "comp": "bg",
+    "when": [
+      "hover",
+      "loop"
+    ],
+    "tech": "Canvas",
+    "style": "烟火 庆祝 爆炸 粒子 活动 节庆 Fireworks Celebration Particles Explosion Click Canvas 粒子 particles requestAnimationFrame 互动背景",
+    "uses": [
+      "emph",
+      "bg"
+    ],
+    "tag": "Canvas particles",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "夜空背景，点击任一位置时，从画面底部发射一枚烟火往上升到点击处，抵达后炸开成数十颗火花，火花向四周散开、受重力下坠、阻力减速并逐渐淡出，留下短暂拖尾；没有操作时会随机自动施放。适合活动页、完成庆祝。（Canvas 2D：火箭用 ease-out 插值上升，爆炸时产生粒子阵列，每帧更新速度（×阻力、+重力）与寿命；画面每帧用半透明底色覆盖做拖尾）"
+  },
+  {
+    "id": 182,
+    "zh": "呼吸",
+    "en": "Breathe",
+    "desc": "元素缓慢放大缩小，像在呼吸一样循环",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "呼吸 脉动 放大缩小 待机 Pulse Breathing Idle Canva 风格 Canva Breathe 呼吸 简报 社群贴文 动画",
+    "uses": [
+      "emph",
+      "logo"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "深呼吸",
+    "bg": "cream",
+    "added": "2026-10-17",
+    "prompt": "文字或元素持续缓慢地放大到约 1.07 倍再缩回，同时透明度在 0.82 与 1 之间轻微起伏，一个循环约 3.2 秒、前后都缓入缓出，像在呼吸，适合强调重点或待机状态。（CSS：keyframes 0%/100% scale(1)、50% scale(1.07)，ease-in-out，infinite）"
+  },
+  {
+    "id": 183,
+    "zh": "漂移",
+    "en": "Drift",
+    "desc": "文字从侧边淡入后持续缓慢漂移，再淡出",
+    "comp": "text",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "漂移 缓慢 横移 淡入淡出 简报 Drift Slow Slide Fade Canva 风格 Canva Drift 漂移 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "trans"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "慢慢漂移",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "文字从右侧约 12% 的位置淡入并快速减速，之后没有停下，而是以非常慢的等速持续往左漂移，最后一边漂移一边淡出；整段约 4 秒，给人安静流动的感觉，适合简报或社群贴文的标题。（CSS：keyframes 前 20% 用减速曲线淡入，20%–80% 线性小幅位移，最后淡出）"
+  },
+  {
+    "id": 184,
+    "zh": "平移",
+    "en": "Pan",
+    "desc": "图片带动态模糊从侧边快速滑入，停留后滑出另一侧",
+    "comp": "media",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "平移 滑入 滑出 动态模糊 转场 Pan Slide Motion Blur Transition Canva 风格 Canva Pan 平移 简报 社群贴文 动画",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "旅行日记",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "图片卡片从画面左外侧快速滑入（约 0.6 秒、先快后慢），滑动时带一点动态模糊，到位后清晰停留；最后再加速往右侧滑出并带模糊。像镜头快速平移，适合照片切换或转场。（CSS：keyframes translateX(-140%)→0→140%，搭配 filter:blur 在移动段出现，cubic-bezier(.7,0,.2,1)）"
+  },
+  {
+    "id": 185,
+    "zh": "翻滚",
+    "en": "Tumble",
+    "desc": "每个字从缩小状态旋转翻滚著登场",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "翻滚 旋转 登场 逐字 俏皮 Tumble Spin Rotate In Canva 风格 Canva Tumble 翻滚 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "翻滚登场",
+    "bg": "acc",
+    "added": "2026-10-17",
+    "prompt": "每个字从约 0.2 倍大、逆时针旋转 200 度的状态，一边转正一边放大登场，最后略微过冲（转过头 10 度、放大到 1.08）再回正，字与字之间依序延迟约 0.08 秒，俏皮有活力。（CSS：每个字 inline-block，keyframes rotate(-200deg) scale(.2) → rotate(10deg) scale(1.08) → none，animation-delay 依索引递增）"
+  },
+  {
+    "id": 186,
+    "zh": "霓虹闪烁",
+    "en": "Neon Flicker",
+    "desc": "文字像霓虹灯管一样不规则闪烁后点亮",
+    "comp": "text",
+    "when": [
+      "loop",
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "霓虹 灯管 闪烁 发光 招牌 夜店 Neon Glow Flicker Sign Canva 风格 Canva Neon 霓虹 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "logo",
+      "emph"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "OPEN",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "文字像刚通电的霓虹灯管：先暗著，接著不规则地快速闪两下，然后稳定点亮并带有多层外发光（内层较亮、外层扩散）；之后大部分时间稳定发光，偶尔再短暂闪一下，增加真实感。适合招牌、夜晚主题。（CSS：keyframes 在少数百分比切换 opacity 与 text-shadow 做不规则闪烁；发光用 2–3 层不同半径的 text-shadow；圆体或粗体字效果较好）"
+  },
+  {
+    "id": 187,
+    "zh": "剪贴簿",
+    "en": "Scrapbook",
+    "desc": "照片、胶带、贴纸和标题一个个歪歪地贴上来",
+    "comp": "card",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "剪贴簿 拼贴 手帐 照片 贴纸 胶带 Scrapbook Collage Sticker Photo Journal Canva 风格 Canva Scrapbook 剪贴簿 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "我的夏天",
+    "bg": "cream",
+    "added": "2026-10-17",
+    "prompt": "像手帐拼贴的版面：两张拍立得照片、一段纸胶带、一个圆形贴纸和手写感标题，依序一个个「贴」上来——每个元素从稍大、略高的位置快速落下，带各自的小角度歪斜，落定时轻微弹一下（约 0.5 秒，间隔约 0.28 秒），停留后一起淡出。温暖、手作感。（CSS：每个元素用 CSS 变数设定自己的旋转角度与延迟，keyframes translateY(-30%) scale(1.25) → scale(.95) → 1，保持 rotate(var(--r))）"
+  },
+  {
+    "id": 188,
+    "zh": "合并",
+    "en": "Merge",
+    "desc": "文字上下两半分别从左右滑入，合成完整的字",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "合并 拼合 上下 切半 左右 滑入 Merge Split Halves Join Canva 风格 Canva Merge 合并 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "trans"
+    ],
+    "tag": "clip-path",
+    "txt": "合而为一",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "标题被水平切成上下两半：上半部从左侧、下半部从右侧同时滑入并淡入，在中间精准对齐合成完整的文字（约 0.9 秒、强烈减速），停留后淡出。（CSS：同一段文字放两份，分别用 clip-path:inset(0 0 50% 0) 与 inset(50% 0 0 0) 只显示上半与下半，各自用 translateX(∓35%) → 0 的 keyframes）"
+  },
+  {
+    "id": 189,
+    "zh": "展开",
+    "en": "Spread",
+    "desc": "字叠在一起从模糊中往两侧展开成正常字距",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "CSS",
+    "style": "展开 字距 扩散 模糊 聚焦 Spread Letter Spacing Tracking Expand Canva 风格 Canva Spread 展开 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "letter-spacing",
+    "txt": "展开",
+    "bg": "cream",
+    "added": "2026-10-17",
+    "prompt": "文字一开始字距极度紧缩、所有字叠在一起并且模糊透明，接著字距平滑展开到正常宽度，同时变清晰、淡入（约 1.1 秒、减速），像从中心散开成形；停留后淡出。（CSS：keyframes letter-spacing:-0.55em → 0.06em，搭配 filter:blur(6px)→0 与 opacity）"
+  },
+  {
+    "id": 190,
+    "zh": "滑行",
+    "en": "Skate",
+    "desc": "文字像溜冰一样斜著滑进来，煞车后摆正",
+    "comp": "text",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "滑行 溜冰 倾斜 煞车 速度感 Skate Skew Slide Brake Canva 风格 Canva Skate 滑行 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "trans"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "滑行进场",
+    "bg": "acc",
+    "added": "2026-10-17",
+    "prompt": "文字从左侧高速滑入时整体往前倾斜（skewX 约 -28 度），抵达时稍微滑过头并往反方向倾斜（像煞车时身体往后仰），接著摆正停住；离场时再加速往右滑出并重新前倾。有速度感与重量感。（CSS：keyframes 依序 translateX(-70%) skewX(-28deg) → translateX(4%) skewX(14deg) → skewX(-4deg) → none，离场段用加速曲线）"
+  },
+  {
+    "id": 191,
+    "zh": "缓慢推镜",
+    "en": "Ken Burns",
+    "desc": "图片持续缓慢放大并微微平移，像纪录片的推镜",
+    "comp": "media",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "推镜 慢速 放大 平移 相片 纪录片 Ken Burns Slow Zoom Pan Photo Canva 风格 Canva Photo Zoom 相片放大 简报 社群贴文 动画",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "海岸线",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "照片在固定的外框内非常缓慢地放大（约 9 秒放大到 1.22 倍）并同时往一侧轻微平移，然后再慢慢退回，来回循环，像纪录片中对静态照片的推镜，让静态图片产生生命感；图片上的标题保持不动。（CSS：外框 overflow:hidden，内层图片 keyframes scale(1)→scale(1.22) translate(-4%, 2%)，ease-in-out，alternate infinite，transform-origin 设在主体附近）"
+  },
+  {
+    "id": 192,
+    "zh": "Logo 组合登场",
+    "en": "Logo Build Reveal",
+    "desc": "标志的圆、方块、圆点依序画出组合，再滑出品牌名",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "Logo 标志 品牌 开场 组合 描绘 Logo Reveal Brand Intro Build SVG 图形",
+    "uses": [
+      "logo",
+      "hero"
+    ],
+    "tag": "DrawSVG",
+    "txt": "STUDIO",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "品牌标志依序组合登场：外圈的圆先被描出来（约 0.9 秒），接著中间旋转 45 度的方块描边并填入强调色，中心圆点从 0 弹出放大，最后品牌名称从左侧 12px 滑入淡出现；停留后整体淡出。适合网站开场或影片片头。（GSAP：DrawSVGPlugin 依序描绘 circle 与 rect，fill-opacity 0→1；圆点 scale 用 back.out(3)；文字 fromTo x:-12 / opacity:0）"
+  },
+  {
+    "id": 193,
+    "zh": "音讯波形",
+    "en": "Audio Waveform",
+    "desc": "一排长条像音讯波形一样随机跳动",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "音讯 波形 音乐 播放器 等化器 Podcast Audio Waveform Equalizer Visualizer SVG 图形",
+    "uses": [
+      "data",
+      "ui",
+      "app"
+    ],
+    "tag": "SVG bars",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "音讯播放器中的波形：一排细长圆角长条以中线为基准上下伸缩，每根长条高度随机、速度略有不同且持续变化，像正在播放的声音；左侧圆形播放按钮、右侧显示时间。（GSAP：对所有 rect tween scaleY:\"random(.12,1)\"、duration:\"random(.22,.5)\"，repeat:-1、yoyo:true、repeatRefresh:true 让每次重复都重新取乱数，transformOrigin 置中）"
+  },
+  {
+    "id": 194,
+    "zh": "渐变光流线条",
+    "en": "Flowing Gradient Stroke",
+    "desc": "线条上的渐变持续流动，一道光点沿线绕行",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "渐变 线条 流动 光点 彗星 无限符号 Gradient Stroke Flow Comet Infinity Loop SVG 图形",
+    "uses": [
+      "bg",
+      "logo"
+    ],
+    "tag": "SVG gradient",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "一条封闭的无限符号形曲线，线条本身是多色渐变，渐变沿著线条方向持续流动；同时有一小段明亮的光点像彗星一样沿著线条绕行并带微微发光。适合品牌装饰或科技感背景。（SVG：linearGradient 设 gradientUnits=\"userSpaceOnUse\"、spreadMethod=\"repeat\"，用 animateTransform 平移 gradientTransform；光点用第二条相同路径，stroke-dasharray 一短段实线、keyframes 改 stroke-dashoffset）"
+  },
+  {
+    "id": 195,
+    "zh": "液体填充图标",
+    "en": "Liquid Fill Icon",
+    "desc": "图标内的液面带著波浪慢慢上升，百分比同步增加",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "液体 填充 波浪 进度 百分比 载入 Liquid Fill Wave Progress Loading Icon SVG 图形",
+    "uses": [
+      "data",
+      "ui",
+      "app"
+    ],
+    "tag": "SVG clipPath",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "一个爱心形状的图标，内部的液体带著两层互相交错流动的波浪，液面从底部慢慢上升到填满，中央的百分比数字从 0% 同步增加到 100%；液面以外保留图标外框。可用于上传进度、目标达成率。（SVG：用 clipPath 把波浪限制在图标形状内；波浪 path 宽度为两个波长，CSS translateX 无缝循环；液面高度用 GSAP 控制外层 g 的 y，数字同步 tween）"
+  },
+  {
+    "id": 196,
+    "zh": "雷达扫描",
+    "en": "Radar Sweep",
+    "desc": "扫描扇形持续绕圈，扫过的位置亮起光点",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "雷达 扫描 搜寻 定位 科技 地图 Radar Scan Sweep Ping Search Tech SVG 图形",
+    "uses": [
+      "data",
+      "bg"
+    ],
+    "tag": "SVG radar",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "雷达画面：几圈同心圆与十字准线，一个半透明的扇形扫描区持续顺时针绕圈（约 3 秒一圈），扫描线经过的位置会亮起光点并短暂放大，接著逐渐淡出，等下一圈扫过再亮。适合搜寻中、定位、科技风仪表板。（SVG + CSS：扇形 path 放在 g 中以中心旋转；每个光点的 animation-delay 依照它的角度换算成扫描线抵达的时间）"
+  },
+  {
+    "id": 197,
+    "zh": "折线图绘制",
+    "en": "Line Chart Draw",
+    "desc": "折线由左到右画出，资料点依序弹出，下方面积淡入",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "折线图 图表 数据 成长 趋势 Dashboard Line Chart Graph Data Visualization SVG 图形",
+    "uses": [
+      "data"
+    ],
+    "tag": "DrawSVG",
+    "txt": "月营收成长",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "折线图进场：背景有淡淡的水平格线，折线由左到右描绘出来（约 1.6 秒），每个资料点在线条经过时依序从 0 弹出，线条画到后段时，线下方的面积以渐变淡入，最后在终点上方浮出成长数值标签。（GSAP：DrawSVGPlugin 描绘折线 path；资料点 stagger 时间 = 描绘时间 ÷ 点数；面积用同样路径加上底边封闭并填入由上到下渐淡的渐变；实际网站可搭配 ScrollTrigger 卷到时播放）"
+  },
+  {
+    "id": 198,
+    "zh": "长条图成长",
+    "en": "Bar Chart Grow",
+    "desc": "长条依序由下往上长出并略微回弹，数值同步累加",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "长条图 柱状图 图表 数据 统计 Dashboard Bar Chart Column Graph Data SVG 图形",
+    "uses": [
+      "data"
+    ],
+    "tag": "Stagger",
+    "txt": "每月浏览次数",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "长条图进场：每根长条依序（间隔 0.1 秒）从底线往上长出并略微过冲回弹，长条顶端的数值同时从 0 累加到实际数字，下方显示月份标签。适合报表、成果页。（GSAP：长条 transform-origin 底部、fromTo scaleY 0→1、ease back.out(1.6)；数值 tween 物件数值 + onUpdate；可搭配 ScrollTrigger 卷到时播放）"
+  },
+  {
+    "id": 199,
+    "zh": "圆饼图分段",
+    "en": "Donut Chart Segments",
+    "desc": "环圈图一段接一段画出，图例依序滑入",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "圆饼图 环圈图 甜甜圈图 比例 图表 数据 Donut Pie Chart Segments Data SVG 图形",
+    "uses": [
+      "data"
+    ],
+    "tag": "DrawSVG",
+    "txt": "流量来源",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "环圈图（甜甜圈图）进场：从正上方开始，第一个分类的弧段顺时针画出，接著下一段从前一段的终点接续画出，依序完成整圈，每段之间保留细小间隙，各段用不同的分类色；中央显示总计与标题，右侧图例依序从右滑入。（GSAP：每段是一个完整圆圈，用 DrawSVGPlugin 的 drawSVG \"起点% 起点%\" → \"起点% 终点%\" 画出指定区段；SVG rotate(-90deg) 让起点在上方）"
+  },
+  {
+    "id": 200,
+    "zh": "几何载入动画",
+    "en": "Geometric Loader",
+    "desc": "圆形、方形、三角形依序弹跳翻转，作为载入中提示",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "载入 读取 loading 等待 几何 弹跳 Loader Spinner Geometric Shapes Bounce SVG 图形",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "载入中提示：三个描边的几何图形（圆形、方形、三角形）排成一列，依序像波浪一样先压扁蓄力、跳起并翻转 360 度、落地时再压扁回弹，循环播放，比一般转圈图标更有个性。（CSS：同一组 keyframes 包含 scale 压扁、translateY 跳起、rotate 翻转，三个图形用 animation-delay 错开 0.18 秒）"
+  },
+  {
+    "id": 201,
+    "zh": "SVG 滤镜水波扭曲",
+    "en": "Turbulence Distortion",
+    "desc": "文字像隔著水面一样持续波动扭曲",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "滤镜 扭曲 水波 液态 热浪 迷幻 SVG Filter Turbulence Displacement Distortion Liquid SVG 图形",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "feTurbulence",
+    "txt": "水波扭曲",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "大标题像隔著水面或热浪一样持续波动扭曲，扭曲的纹理与强度缓慢变化，文字仍可辨识但带有液态、迷幻的感觉。（SVG filter：feTurbulence 产生噪声、feDisplacementMap 依噪声位移原图，用 animate 让 baseFrequency 与 scale 在数值间循环；在 HTML 元素上以 CSS filter:url(#id) 套用；注意效能，避免套在大面积或大量元素上）"
+  },
+  {
+    "id": 202,
+    "zh": "页面转场帘幕",
+    "en": "Curtain Page Transition",
+    "desc": "切换页面时三片帘幕依序落下盖住，再往下收走露出新页",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "页面转场 换页 帘幕 遮罩 SPA 路由 Page Transition Curtain Wipe Router 版面 页面 网页结构",
+    "uses": [
+      "trans"
+    ],
+    "tag": "Timeline",
+    "txt": "首页 作品 关于",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "点击导航切换页面时，三片直条状的帘幕从上方依序（间隔约 0.08 秒）落下盖住整个画面，此时在背后替换成新页面，接著三片帘幕再依序往下收走，新页面的标题与内容区块由上到下淡入上浮。整段约 1.4 秒，让换页有完整的节奏感。（GSAP：帘幕 yPercent -101→0→101，stagger 0.08，ease power3.inOut；在两段之间的 callback 切换内容；SPA 可搭配 Barba.js 或框架的路由转场 hook）"
+  },
+  {
+    "id": 203,
+    "zh": "汉堡菜单展开",
+    "en": "Hamburger Menu Reveal",
+    "desc": "三条线变成叉叉，全萤幕菜单从按钮处圆形扩散展开",
+    "comp": "layout",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "汉堡菜单 菜单 全萤幕 导航 手机版 叉叉 Hamburger Menu Overlay Fullscreen Nav Toggle 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "clip-path",
+    "txt": "首页 作品 服务 联络",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "点击右上角的汉堡菜单按钮时，三条线变形成叉叉（上下两条旋转 ±45 度并移到中间、中间那条缩短淡出），同时全萤幕菜单以按钮位置为圆心用圆形遮罩扩散展开，菜单项目由上到下依序从下方滑入淡出现（间隔约 0.07 秒）；再点一次则反向收合。约 0.6 秒、缓入缓出。（CSS：切换一个 open class；菜单层 clip-path:circle(0% at 按钮位置) → circle(150%)；线条用 top 与 rotate 的 transition；项目 transition-delay 依索引递增）"
+  },
+  {
+    "id": 204,
+    "zh": "侧边抽屉推移",
+    "en": "Push Side Drawer",
+    "desc": "开启菜单时整个内容页缩小推到右侧，露出底下的菜单",
+    "comp": "layout",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "侧边菜单 抽屉 推移 缩小 off-canvas 手机 Side Drawer Push Menu Off Canvas Scale 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transform",
+    "txt": "首页 作品 服务 联络",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "点击汉堡图标时，目前的内容页整体往右推并缩小到约 86%、加上圆角与阴影，像卡片一样被推开，露出藏在底下的菜单，菜单项目从左侧依序滑入淡出现；再点一次内容页滑回来盖住菜单。约 0.55 秒、缓入缓出。（CSS：内容层 transform:translateX(38%) scale(.86)、transform-origin 左侧中间，border-radius 一起 transition；菜单项目 transition-delay 错开）"
+  },
+  {
+    "id": 205,
+    "zh": "弹出视窗",
+    "en": "Modal Dialog",
+    "desc": "背景模糊变暗，视窗从稍小稍低的位置弹性浮出",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "弹窗 对话框 视窗 确认 modal dialog popup 背景模糊 Overlay 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "确定要提交吗？",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "点击按钮后，背景加上一层半透明遮罩并轻微模糊（约 0.35 秒淡入），对话框从 90% 大小、略低于中心的位置以带一点过冲的弹性浮到正中央，内容包含标题、说明与取消／确定两颗按钮；点击遮罩或任一按钮时，对话框淡出缩回、遮罩淡出。（CSS：开关一个 open class；遮罩 opacity + backdrop-filter:blur；对话框 transform:translate(-50%,-40%) scale(.9) → translate(-50%,-50%) scale(1)，transition cubic-bezier(.3,1.4,.5,1)；记得处理焦点与 Esc 键关闭）"
+  },
+  {
+    "id": 206,
+    "zh": "手风琴问答",
+    "en": "Accordion FAQ",
+    "desc": "点开问题时答案区平滑展开，加号转成叉叉，同时收起其他题",
+    "comp": "layout",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "手风琴 常见问题 FAQ 展开 收合 折叠 Accordion Collapse Expand Details 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "grid-template-rows",
+    "txt": "如何下单？ 运费怎么算？ 可以退货吗？",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "常见问题列表，每题右侧有一个加号；点开某一题时，答案区的高度从 0 平滑展开到内容高度（不是瞬间跳出），加号同时旋转 135 度变成叉叉，其他已展开的题目同步收起，一次只开一题。约 0.45 秒、缓入缓出。（CSS：答案外层 display:grid + grid-template-rows:0fr → 1fr 的 transition，内层 overflow:hidden；加号用两条线组成并 rotate；也可用 details/summary 搭配 JS）"
+  },
+  {
+    "id": 207,
+    "zh": "分页标签切换",
+    "en": "Directional Tabs",
+    "desc": "底线指示器滑到新分页，内容依切换方向左右滑动交替",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "分页 页签 标签 tab 切换 方向 内容 Tabs Directional Slide Indicator 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "GSAP",
+    "txt": "设计 开发 行销",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一组分页标签，点选其他分页时，标签下方的底线指示器平滑滑到新标签并调整成它的宽度；内容区依切换方向滑动——往右边的分页切时，旧内容往左滑出淡出、新内容从右侧滑入淡入，往左切则相反，让使用者感受到分页的前后顺序。约 0.45 秒。（GSAP：比较新旧索引决定方向 d，旧内容 xPercent → -30×d 并淡出后移除，新内容从 xPercent 30×d 进来；指示器用 offsetLeft / offsetWidth 设定 transform 与 width）"
+  },
+  {
+    "id": 208,
+    "zh": "作品筛选重排",
+    "en": "Filterable Grid",
+    "desc": "切换分类时，不符合的作品缩小消失，其他作品平滑补位",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "筛选 分类 作品集 格状 重排 补位 Filter Grid Portfolio Isotope Reflow Flip 版面 页面 网页结构",
+    "uses": [
+      "ui"
+    ],
+    "tag": "Flip",
+    "txt": "品牌 网站 插画",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "作品集上方有分类标签（全部／品牌／网站／插画），点选分类时，不符合的作品缩小淡出，符合的作品从原本位置平滑移动到新的排列位置补满空位，重新出现的作品从小放大淡入；选中的分类标签切换成强调状态。约 0.6 秒。（GSAP：Flip.getState 记录所有卡片 → 切换 display → Flip.from，设定 absolute:true、onEnter / onLeave 处理出现与消失的缩放淡入淡出）"
+  },
+  {
+    "id": 209,
+    "zh": "Bento 格局展开",
+    "en": "Bento Grid Expand",
+    "desc": "滑过便当盒格局的某一格，那一格变大、其他格同步让位",
+    "comp": "layout",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "Bento 便当盒 格局 网格 展开 放大 特色介绍 Bento Grid Expand Hover Feature 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS grid",
+    "txt": "设计 开发 策略 品牌 数据 社群",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "Bento（便当盒）式的 3×2 格局，鼠标移到某一格时，该格所在的栏与列放大（栏宽约 2.4 倍、列高约 1.8 倍），其他格同步缩小让位，整个格局平滑重新分配，放大那一格的标题也同步变大；鼠标离开后恢复平均。约 0.55 秒、缓入缓出。（CSS：容器 grid-template-columns / rows 用 fr 值，hover 时以 JS 改写目标栏列的 fr，并对 grid-template-columns 与 grid-template-rows 加 transition）"
+  },
+  {
+    "id": 210,
+    "zh": "左右分割滚动",
+    "en": "Split Screen Scroll",
+    "desc": "右侧文字往下卷，左侧固定的图片跟著切换对应的段落",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "分割画面 左右 双栏 固定 图片切换 说故事 Split Screen Sticky Image Scrollytelling 版面 页面 网页结构",
+    "uses": [
+      "scroll",
+      "hero"
+    ],
+    "tag": "Sticky・ScrollTrigger",
+    "txt": "清晨 午后 夜晚",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "画面分成左右两栏：左栏是固定不动（sticky）的大图区，右栏是一段段可以滚动的文字章节；每当右侧某一章节卷到画面中段时，左侧图片交叉淡入成对应章节的图片，并从略为放大的状态缩回原尺寸，形成图文同步的说故事体验。（CSS position:sticky + GSAP ScrollTrigger：每个章节 start \"top 55%\"、end \"bottom 55%\"，onToggle 切换左侧对应图片的 active class；图片用 opacity 与 scale 的 transition）"
+  },
+  {
+    "id": 211,
+    "zh": "回到顶部进度环",
+    "en": "Back to Top Progress",
+    "desc": "滚动后右下角浮出按钮，外圈显示阅读进度，点了回到顶部",
+    "comp": "layout",
+    "when": [
+      "scroll",
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "回到顶部 顶端 进度环 阅读进度 滚动进度 Back To Top Scroll Progress Ring Button 版面 页面 网页结构",
+    "uses": [
+      "ui",
+      "scroll"
+    ],
+    "tag": "DrawSVG scrub",
+    "txt": "阅读进度",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "长文章页面往下卷超过一小段后，右下角的圆形按钮从 0 弹性放大出现，按钮外圈是一条随整页滚动比例画满的进度环（从正上方顺时针），中间是向上箭头；点击时页面平滑卷回顶部，回到顶端附近时按钮缩小消失。（GSAP：DrawSVGPlugin 绑 ScrollTrigger scrub 画进度环，onUpdate 依 progress 切换显示；点击用 gsap.to(window,{scrollTo:0}) 或 window.scrollTo({top:0,behavior:\"smooth\"})）"
+  },
+  {
+    "id": 212,
+    "zh": "焦点卡片轮播",
+    "en": "Focus Carousel",
+    "desc": "中间的卡片放大清楚，两侧缩小变淡，左右切换",
+    "comp": "card",
+    "when": [
+      "switch",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "轮播 carousel slider 焦点 中间放大 coverflow 作品 轮播图 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS transition",
+    "txt": "品牌 网站 插画 包装 摄影",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一组卡片横向排列成轮播，目前这张置中、最大、完全清楚，左右相邻的卡片缩小到约 82% 并变半透明，再外侧的更小更淡；切换时所有卡片一起平滑滑到新位置并改变大小（约 0.6 秒、缓入缓出），下方有左右箭头与圆点指示器（目前那点拉长），可自动播放，点两侧卡片也能直接切到它。（CSS：每张卡片依「与目前索引的距离」设定 translateX、scale、opacity、z-index，加 transition；超出范围时取最近的循环方向）"
+  },
+  {
+    "id": 213,
+    "zh": "左右滑卡",
+    "en": "Swipe Card Stack",
+    "desc": "最上面的卡片可以拖拽甩出，下一张补上来",
+    "comp": "card",
+    "when": [
+      "drag",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "滑卡 左滑右滑 交友 Tinder 卡片堆叠 甩出 Swipe Cards Stack Like Dislike 卡片 群组",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "Draggable",
+    "txt": "东京 京都 首尔 台南",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一叠卡片，最上面那张可以用手指或鼠标拖拽，拖拽时卡片会依水平位移跟著倾斜，往右拖时左上角浮出「喜欢」印章、往左拖时右上角浮出「略过」；放开时若超过门槛就加速往该方向甩出画面，下面的卡片依序往上补位并放大；未超过门槛则弹回原位。（GSAP Draggable：onDrag 依 x 设定 rotation 与印章透明度，onRelease 判断门槛后 tween 出画面，再把那张移到最底层并重新排列整叠）"
+  },
+  {
+    "id": 214,
+    "zh": "叠卡散开",
+    "en": "Stack Fan Out",
+    "desc": "一叠微歪的卡片，滑过时向两侧散开成一排",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "叠卡 散开 扇形 展开 作品集 Stack Spread Fan Cards Hover 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "CSS hover",
+    "txt": "企划 设计 开发 测试 上线",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "五张卡片叠成一叠，每张略微不同角度歪斜；鼠标移到这叠卡片上时，卡片以中间那张为轴向左右两侧散开成扇形一排（越外侧角度越大、略往下垂），带一点弹性回弹；鼠标离开时收回成一叠。约 0.6 秒。（CSS：每张用 CSS 变数 --i（-2 到 2）计算 translateX、rotate、translateY，hover 时改用较大的系数，transition cubic-bezier(.3,1.3,.5,1)）"
+  },
+  {
+    "id": 215,
+    "zh": "价格方案切换",
+    "en": "Pricing Toggle",
+    "desc": "月付／年付切换时，各方案价格滚动更新，推荐方案突出",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "价格 方案 订阅 月付 年付 定价表 Pricing Table Plans Toggle Monthly Yearly SaaS 卡片 群组",
+    "uses": [
+      "data",
+      "ui"
+    ],
+    "tag": "GSAP",
+    "txt": "基本 专业 企业",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "价格方案页上方有「月付／年付」切换胶囊，点击时滑块滑到另一侧；三张方案卡片的价格数字从旧值滚动累加到新值（约 0.6 秒），单位同步改成「/月」或「/年」，每张卡片依序轻轻上浮再落下；中间的推荐方案预设放大并加上框线与「推荐」标签。（GSAP：数字 tween 物件数值 + onUpdate 写入；卡片 y 的 yoyo 用 delay 依索引错开；切换胶囊用 CSS transform transition）"
+  },
+  {
+    "id": 216,
+    "zh": "卡片展开详情",
+    "en": "Card Expand Detail",
+    "desc": "点击卡片时它平滑放大成详情面板，其他卡片淡出",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "卡片 展开 详情 放大 共享元素 shared element transition Expand Detail Flip 卡片 群组",
+    "uses": [
+      "ui",
+      "trans"
+    ],
+    "tag": "Flip",
+    "txt": "作品一 作品二 作品三 作品四",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排作品卡片，点击其中一张时，它从原本的位置与大小平滑放大成填满整个区块的详情面板（左侧大图、右侧标题与说明），其他卡片同时淡出；详情内的文字在放大完成前后依序淡入；再点一次则缩回原位、其他卡片淡回。约 0.6 秒、缓入缓出。（GSAP Flip：Flip.getState 记录所有卡片 → 切换放大那张的 class（改成绝对定位填满容器与新版面）→ Flip.from 补间，nested:true 让内部元素一起变形）"
+  },
+  {
+    "id": 217,
+    "zh": "无限滚动卡片墙",
+    "en": "Infinite Card Wall",
+    "desc": "两排卡片朝相反方向无限移动，鼠标移上去就暂停",
+    "comp": "card",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "跑马灯 卡片墙 评价 客户 Logo 墙 无限 Infinite Marquee Testimonials Logo Wall 卡片 群组",
+    "uses": [
+      "bg",
+      "data"
+    ],
+    "tag": "CSS marquee",
+    "txt": "设计师 工程师 行销 创办人",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "两排评价或客户卡片横向无限循环移动，上排往左、下排往右，速度缓慢稳定；鼠标移到卡片墙上时两排都暂停，方便阅读，移开后继续。适合客户评价、合作伙伴 Logo 墙。（CSS：每排内容复制两份放在同一条轨道，keyframes translateX(0 → -50%) linear infinite 达成无缝循环，反向那排用 animation-direction:reverse；:hover 时 animation-play-state:paused）"
+  },
+  {
+    "id": 218,
+    "zh": "评论轮播",
+    "en": "Testimonial Slider",
+    "desc": "引言淡出上移换下一则，头像跟著切换，进度条计时",
+    "comp": "card",
+    "when": [
+      "switch",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "评论 推荐 客户见证 轮播 引言 Testimonial Review Quote Slider Carousel 卡片 群组",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "GSAP",
+    "txt": "王小姐 陈先生 林设计师",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "客户评价轮播：中间是一大段引言与署名，下方一排圆形头像与一条进度条；每隔约 2.6 秒，目前的引言往上淡出、下一则从下方淡入上滑，对应的头像放大并加上外框、其他头像缩小变淡，进度条从 0 重新填满计时；点击头像可直接切换到那则。（GSAP：新旧引言各自 tween y 与 opacity；进度条 scaleX 0→1、ease none，duration 与自动切换间隔相同）"
+  },
+  {
+    "id": 219,
+    "zh": "瀑布流依序落下",
+    "en": "Masonry Cascade",
+    "desc": "高低不一的瀑布流卡片，一排排带微微旋转落下就位",
+    "comp": "card",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "瀑布流 masonry Pinterest 图库 进场 落下 Masonry Grid Cascade Gallery 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "Stagger",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-17",
+    "prompt": "瀑布流（Masonry）图库进场：三栏高低不一的卡片，依照由上到下、由左到右的阅读顺序，一张张从上方约 30px 带著轻微随机旋转落下并淡入，就位时略微回弹（间隔约 0.09 秒），整面图库像被逐一摆上去。（GSAP：依每张卡片的列、栏索引排序后 stagger 0.09，fromTo y:-30 / opacity:0 / rotation:random(-6,6) → 归零，ease back.out(1.4)；实际网站可用 CSS columns 或 masonry 函式库排版）"
+  },
+  {
+    "id": 220,
+    "zh": "聚焦淡化其他",
+    "en": "Focus Dim Siblings",
+    "desc": "滑过某张卡片时它浮起，其他卡片变淡、缩小",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "聚焦 淡化 其他卡片 hover 突显 Focus Dim Siblings Highlight Spotlight 卡片 群组",
+    "uses": [
+      "ui"
+    ],
+    "tag": ":has()",
+    "txt": "入门 进阶 大师 团队",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "一排卡片，鼠标移到其中一张时，那张微微上浮并放大到 1.04 倍，其他卡片同时变淡、轻微模糊、降低饱和并缩小到 95%，让视线集中在目前这张；鼠标离开整排时全部恢复。约 0.45 秒、减速。（CSS：容器 :hover 时对 .card:not(:hover) 降低 opacity、加 filter:blur(1px) saturate(.6)、scale(.95)；被 hover 的卡片 translateY + scale；可用 :has() 支援键盘焦点）"
+  },
+  {
+    "id": 221,
+    "zh": "加入购物车飞入",
+    "en": "Add to Cart Fly",
+    "desc": "点加入购物车，商品缩图以弧线飞进购物车，数字跳一下",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "购物车 加入 电商 飞入 抛物线 回馈 Add To Cart Fly Ecommerce Shop Feedback 卡片 群组",
+    "uses": [
+      "ui",
+      "app",
+      "emph"
+    ],
+    "tag": "GSAP arc",
+    "txt": "手工陶杯",
+    "bg": "dark",
+    "added": "2026-10-17",
+    "prompt": "商品卡片按下「加入购物车」时，按钮轻按回馈，商品缩图复制一份并沿著抛物线弧线飞向右上角的购物车图标，飞行中逐渐缩小，抵达时购物车弹跳放大一下，角落的数量徽章 +1 并弹出。约 0.75 秒，给使用者明确的「已加入」回馈。（GSAP：飞行元素的 x 用 power1.in、y 用 back.in 分开 tween 形成弧线，同时 scale 1→0.15；完成后移除元素并更新徽章，徽章 scale 用 back.out(3)）"
+  },
+  {
+    "id": 222,
+    "zh": "颗粒渐变",
+    "en": "Grain Gradient",
+    "desc": "柔和的大片渐变缓慢流动，上面叠一层细微跳动的底片颗粒",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "颗粒 噪声 底片 噪点 渐变 质感 Grain Noise Film Gradient Texture 网格渐变 mesh gradient 背景 氛围",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "SVG noise",
+    "txt": "Grain",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "Hero 背景是三团大面积、边缘柔和的渐变光晕，以约 12 秒的周期缓慢交错移动、来回飘移；上方再叠一层非常细的底片颗粒（噪声）纹理，颗粒每秒跳动数次，让画面有类比印刷般的质感，前景标题保持清楚。（CSS：多个 radial-gradient 叠在同一背景，以 keyframes 动画 background-position；颗粒层用 SVG feTurbulence 产生的噪声当 background-image，mix-blend-mode:overlay、低透明度，用 steps() 的 keyframes 随机位移制造跳动）"
+  },
+  {
+    "id": 223,
+    "zh": "复古透视网格",
+    "en": "Retro Grid Horizon",
+    "desc": "地平线上一颗条纹夕阳，透视网格地板不断往前推进",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "复古 合成波 synthwave vaporwave 透视 网格 地板 地平线 夕阳 80年代 Retro Grid Horizon Perspective 背景 氛围",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "CSS 3D",
+    "txt": "RETRO WAVE",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "80 年代合成波风格的背景：画面中间是一条地平线，上方是一颗下半部被水平条纹切开的圆形夕阳并带柔光；下方是一片透视倾斜的网格地板，格线持续朝观者方向推进、远处渐隐，形成无限往前开的感觉；标题浮在夕阳上方并带微微发光。（CSS：地板是两组 linear-gradient 格线，transform:perspective + rotateX(72deg)，keyframes 让 background-position 前进一格长度无缝循环；远端用 mask 渐隐；夕阳条纹用 repeating-linear-gradient 的 mask）"
+  },
+  {
+    "id": 224,
+    "zh": "散景光点",
+    "en": "Bokeh Lights",
+    "desc": "大小不一的柔焦光点缓缓上飘、淡入淡出",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "散景 光点 柔焦 泡泡 漂浮 上飘 梦幻 Bokeh Lights Bubbles Floating Blur 背景 氛围",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "CSS blur",
+    "txt": "Bokeh",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "背景飘著十多个大小不一、带柔焦模糊的圆形光点，每个从下方以不同速度（约 7–14 秒）缓缓上飘，途中轻微左右偏移，出现时淡入、接近顶端时淡出，透明度各不相同，营造梦幻、温暖的氛围；标题在中间保持清楚。（CSS：每颗光点用 CSS 变数设定大小、水平位置、时长、负的 animation-delay 与偏移量，filter:blur，keyframes 控制 translate 与 opacity）"
+  },
+  {
+    "id": 226,
+    "zh": "同心圆扩散",
+    "en": "Pulse Rings",
+    "desc": "中心点规律脉动，一圈圈圆环向外扩散后淡出",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "同心圆 扩散 脉动 雷达 声波 直播 定位 讯号 Pulse Rings Ripple Radar Signal Live 背景 氛围",
+    "uses": [
+      "bg",
+      "emph",
+      "app"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "Live",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "画面中心有一个实心圆点规律地轻轻脉动，从它的位置不断有细圆环一圈圈向外扩散放大并逐渐变淡消失，多个圆环错开时间形成连续的波纹，像雷达、声波或「直播中」的讯号；中心圆点上可放短标签。（CSS：3–4 个圆环共用同一个 keyframes：scale 0.15 → 1.25、opacity 0.9 → 0，用负的 animation-delay 均分错开；中心点用另一个 scale 的 keyframes）"
+  },
+  {
+    "id": 227,
+    "zh": "旋转光芒",
+    "en": "Sunburst Rays",
+    "desc": "放射状光芒在标题后方缓缓旋转，中心最亮往外淡出",
+    "comp": "bg",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "光芒 放射 太阳光 旋转 庆祝 得奖 抽奖 Sunburst Rays Rotating God Rays Conic 背景 氛围",
+    "uses": [
+      "hero",
+      "emph",
+      "bg"
+    ],
+    "tag": "conic-gradient",
+    "txt": "WINNER",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "标题后方有一圈从中心向外放射的光芒条纹，整圈以约 30 秒一圈的速度缓慢旋转，中心最亮、往外渐渐融入背景，像得奖、抽奖或庆祝画面的聚光效果。（CSS：repeating-conic-gradient 画出放射条纹并放大超出容器，keyframes rotate 360deg linear infinite；上方叠一层 radial-gradient 让中心亮、边缘暗）"
+  },
+  {
+    "id": 228,
+    "zh": "闪烁星空",
+    "en": "Twinkling Sky",
+    "desc": "满天星星各自闪烁，偶尔划过一道流星，光标移动时星空微微视差",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "星空 星星 闪烁 流星 夜空 宇宙 视差 Twinkling Stars Night Sky Shooting Star Canvas particles requestAnimationFrame 互动背景 背景 氛围",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "Canvas 2D",
+    "txt": "晚安",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "夜空背景：上方深、往下带一点柔和光晕，布满两百多颗大小与亮度不同的星星，每颗以各自的速度与相位缓慢闪烁，最亮的几颗闪烁到最亮时会出现细小的十字星芒；每隔几秒有一道流星从右上斜向左下划过并拖出渐淡的尾巴；光标移动时星空依星星的远近做不同幅度的反向视差。（Canvas 2D：每颗星记录位置、半径、深度、闪烁频率与相位，亮度 = sin(时间 × 频率 + 相位)；流星用 createLinearGradient 画线段；视差位移以 lerp 平滑）"
+  },
+  {
+    "id": 229,
+    "zh": "景深视差图层",
+    "en": "Depth Parallax",
+    "desc": "前中后三层图形依距离不同幅度跟著光标反向移动，产生立体感",
+    "comp": "bg",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "视差 景深 图层 立体 鼠标 光标 Mouse Parallax Depth Layers 3D Hero 背景 氛围",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "JS parallax",
+    "txt": "Depth",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "Hero 背景由三层装饰图形组成：远层是模糊的大圆、中层是圆角方块、前层是空心圆环，标题夹在中层与前层之间；光标在区块内移动时，各层朝光标的反方向移动，越近的图层移动幅度越大（例如远层 15%、中层 45%、前层 100%），标题只微微移动，形成立体的景深感，移动带有平滑的延迟跟随。（JS：mousemove 计算光标相对于中心的比例 -0.5 ~ 0.5，每层 translate = -比例 × 该层系数，搭配 CSS transition 或 lerp 平滑）"
+  },
+  {
+    "id": 230,
+    "zh": "起伏线条",
+    "en": "Wavy Lines",
+    "desc": "一整片细线像布料般起伏，光标经过的地方被轻轻拱起",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "Canvas",
+    "style": "线条 波浪 起伏 布料 地形 等高线 Wavy Lines Wave Field Terrain Canvas 互动背景 requestAnimationFrame 背景 氛围",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "Canvas 2D",
+    "txt": "Flow",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "整个背景是约 26 条水平细线，每条线由两组不同频率的正弦波叠加而起伏，并随时间缓慢流动，相邻的线相位略错开，整片看起来像飘动的布料或地形线；其中每隔几条用较粗、较亮的线点缀；光标经过的地方，附近的线条会被平滑地往上拱起，离开后恢复。（Canvas 2D：每条线取 80 个点，y = 基准 + sin(x×f1 + t + j×相位) × A1 + sin(x×f2 − t + j×相位) × A2，再减去以光标为中心的高斯函数 × 高度）"
+  },
+  {
+    "id": 231,
+    "zh": "漂浮几何",
+    "en": "Floating Shapes",
+    "desc": "圆形、方块、三角形、圆环等几何图形在背景随机缓慢漂浮旋转",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "漂浮 几何 图形 随机 装饰 背景 Floating Shapes Geometric Random Decoration 背景 氛围",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "repeatRefresh",
+    "txt": "Shapes",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "背景散布十多个简单的几何图形：实心圆、圆角方块、三角形、空心圆环与十字，大小不一；进场时各自以弹性放大依序出现，之后每个图形持续朝随机方向缓慢漂移并旋转，每次来回都换一个新的随机目标，看起来自然不重复；标题位于中间。（GSAP：每个图形 gsap.to x / y / rotation 用 \"random(-40,40)\" 字串，duration random(3,6)、ease sine.inOut、repeat:-1、yoyo:true、repeatRefresh:true；进场 gsap.from scale:0 搭配 back.out）"
+  },
+  {
+    "id": 232,
+    "zh": "立体按压按钮",
+    "en": "3D Press Button",
+    "desc": "按钮下方有一层厚度，按下时整颗往下压、厚度消失，像实体按键",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "立体 按压 实体 按键 3D Pressable Button Push Tactile 游戏 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS :active",
+    "txt": "立即开始",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "实体按键感的按钮：按钮本体下方有一层同色系但较深的「厚度」（用不模糊的下方阴影做出），外围再有一层柔和投影；鼠标滑过时按钮微微浮起、厚度增加；按下时整颗往下压到几乎贴平、厚度与投影缩小，放开弹回。约 0.12 秒、反应俐落。（CSS：box-shadow: 0 6px 0 较深色, 0 10px 20px 半透明；:active 时 translateY(5px) 并把第一层阴影缩成 1px）"
+  },
+  {
+    "id": 233,
+    "zh": "果冻弹跳按钮",
+    "en": "Jelly Button",
+    "desc": "滑过或点击时按钮像果冻一样被压扁、拉长再弹回",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "果冻 弹跳 Q弹 压扁 拉长 Jelly Rubber Squash Stretch Bounce Button 按钮",
+    "uses": [
+      "ui",
+      "emph",
+      "app"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "点我试试",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "鼠标滑过或点击时，按钮像果冻一样先被横向压扁（宽 1.18、高 0.82），再纵向拉长（宽 0.85、高 1.15），之后幅度递减地来回晃动几次回到原状，整段约 0.7 秒，Q 弹可爱。（CSS keyframes：依序 scale(1.18,.82) → (.85,1.15) → (1.08,.92) → (.97,1.03) → (1,1)；点击触发时先移除 class、强制 reflow 再加回，才能重播）"
+  },
+  {
+    "id": 234,
+    "zh": "按钮涟漪回馈",
+    "en": "Ripple Click",
+    "desc": "从手指点下的位置扩散出一圈涟漪，Material Design 经典回馈",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "涟漪 水波 点击 回馈 Material Design Ripple Click Feedback Ink 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "JS + CSS",
+    "txt": "提交表单",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "点击按钮时，从手指（光标）按下的那个点扩散出一个圆形涟漪，涟漪半透明、由小放大到能盖住整颗按钮的大小并同时淡出，约 0.7 秒；连续点击可同时出现多个涟漪。（JS：pointerdown 时计算点击位置与到最远角落的距离 × 2 当直径，插入一个圆形 span，CSS keyframes scale 0→1、opacity 渐消，animationend 时移除；按钮 overflow:hidden）"
+  },
+  {
+    "id": 235,
+    "zh": "滑动确认",
+    "en": "Slide to Confirm",
+    "desc": "拖拽圆钮滑到底才确认，未到底会弹回，文字有流光提示",
+    "comp": "button",
+    "when": [
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "滑动 确认 解锁 付款 拖拽 Slide To Unlock Confirm Swipe Button Payment 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "Draggable",
+    "txt": "滑动以付款",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "胶囊形滑轨，左侧是一颗圆形把手（内有向右箭头），中间的提示文字有一道光从左往右扫过；使用者拖拽把手时，把手经过的轨道被填满、提示文字逐渐淡出；拖到接近最右侧放开才算确认，轨道整个填满、文字变成「完成 ✓」；未拖到底放开时把手带弹性弹回起点。（GSAP Draggable type:\"x\"、bounds 限制在轨道内，onDrag 更新填满宽度，onRelease 判断是否超过 85%；流光用 background-clip:text 加移动的渐变）"
+  },
+  {
+    "id": 236,
+    "zh": "长按确认",
+    "en": "Hold to Confirm",
+    "desc": "按住不放时进度慢慢填满，放开就退回，填满才执行，适合删除等危险操作",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "长按 按住 确认 删除 危险操作 进度 Hold To Confirm Long Press Delete Destructive 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "按住删除",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "危险操作（例如删除）用的按钮：外框样式，使用者按住不放时，一层填满从左往右以约 1.2 秒等速填满整颗按钮、按钮微微缩小；中途放开则填满快速退回、不执行；填满后按钮轻微弹一下、文字变成「已删除 ✓」。可避免误触。（CSS：填满层 transform:scaleX(0)，按住时加 class 改成 scaleX(1) 并设 transition 1.2s linear，放开时移除 class 用较短的 transition 退回；JS 在 pointerdown 开 1.2 秒计时器，pointerup / pointerleave 取消）"
+  },
+  {
+    "id": 237,
+    "zh": "箭头接力按钮",
+    "en": "Icon Slide Button",
+    "desc": "滑过时右侧箭头往右滑出，同时新箭头从左侧滑入、文字让位",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "箭头 图标 滑入 滑出 接力 Icon Slide Arrow Button Hover CTA 按钮",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS hover",
+    "txt": "了解更多",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "胶囊按钮，文字右侧有一个向右箭头；鼠标滑过时，右侧箭头往右滑出按钮并淡出，同时另一个相同的箭头从按钮左侧外滑入到文字左边，文字同步往右让出位置，像箭头接力往前推；滑开时反向回复。约 0.4 秒、缓入缓出。（CSS：按钮 overflow:hidden，两个箭头与文字各自设定 transform 与 transition，hover 时切换位移）"
+  },
+  {
+    "id": 238,
+    "zh": "霓虹呼吸按钮",
+    "en": "Neon Glow Button",
+    "desc": "外框与光晕像呼吸般忽明忽暗，滑过时填满并大量发光",
+    "comp": "button",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "霓虹 发光 光晕 呼吸 Neon Glow Pulse Button Cyberpunk 按钮",
+    "uses": [
+      "ui",
+      "emph",
+      "hero"
+    ],
+    "tag": "box-shadow",
+    "txt": "加入我们",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "霓虹风格按钮：外框细线与文字使用强调色，周围有一圈柔和的外发光与内发光，光晕以约 2.4 秒的周期像呼吸般变亮又变暗；鼠标滑过时整颗填满、文字反白，并散发出多层大范围的强烈光晕。（CSS：多层 box-shadow（含 inset）做发光，keyframes 改变光晕大小与透明度；hover 时停止呼吸动画、改成更大的多层 box-shadow，transition 0.35 秒）"
+  },
+  {
+    "id": 239,
+    "zh": "复制成功回馈",
+    "en": "Copy Feedback",
+    "desc": "按下复制后图标旋转变成勾选，上方弹出「已复制」小提示",
+    "comp": "button",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "复制 剪贴簿 勾选 提示 tooltip 回馈 Copy To Clipboard Feedback Check Code 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "npm i gsap",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "一行程式码（或文字）旁边的复制按钮：按下后，复制图标旋转缩小消失，勾选图标带弹性放大出现，按钮底色变成强调色；同时按钮上方弹出一个「已复制」的小提示框，约 1.5 秒后全部恢复原状。（CSS：两个 SVG 图标叠在同一格，用 class 切换 transform 与 opacity，transition 用带回弹的 cubic-bezier(.3,1.5,.5,1)；提示框用绝对定位在按钮上方；JS 呼叫 navigator.clipboard.writeText 后加 class、setTimeout 移除）"
+  },
+  {
+    "id": 240,
+    "zh": "展开文字按钮",
+    "en": "Expanding Button",
+    "desc": "平常只有圆形「+」图标，滑过时向右展开出文字、加号旋转",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "展开 浮动按钮 FAB 加号 图标按钮 Expanding Icon Button Floating Action Reveal Label 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS max-width",
+    "txt": "新增专案",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "浮动操作按钮平常是一颗只有「+」的圆形，鼠标滑过时按钮向右平滑展开成胶囊形，露出文字标签（例如「新增专案」），加号同时旋转 90 度；文字在展开一半后才淡入；滑开时收回成圆形。约 0.5 秒。（CSS：按钮 overflow:hidden，用 max-width 从圆的宽度过渡到较大值，文字 opacity 加 transition-delay；加号 rotate(90deg)）"
+  },
+  {
+    "id": 241,
+    "zh": "纸飞机提交",
+    "en": "Send Plane Button",
+    "desc": "按下提交，纸飞机从按钮飞走，文字换成「已提交」再恢复",
+    "comp": "button",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "提交 纸飞机 寄出 讯息 表单 成功 Send Paper Plane Submit Button Success 按钮",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "提交讯息",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "提交按钮左侧有一个纸飞机图标：按下时按钮先轻压回弹，文字往右淡出，纸飞机先往后蓄力再往右上方加速飞出按钮并消失；接著文字换成「已提交」从左滑入；约 1 秒后文字换回原本内容，纸飞机从左下方飞回原位。（GSAP timeline：按钮 scale 0.94→1、文字 x 与 opacity、纸飞机 keyframes 往右上 x/y/rotation 以 power2.in 加速，再用 add() 切换文字内容；按钮 overflow:hidden 让飞机飞出时被裁切）"
+  },
+  {
+    "id": 242,
+    "zh": "勾选框勾选",
+    "en": "Animated Checkbox",
+    "desc": "勾选时方框弹一下、勾勾像用笔画出来，项目文字加上删除线",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "勾选框 核取方块 勾选 待办 清单 todo Checkbox Check Animation Todo List 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "stroke-dashoffset",
+    "txt": "买咖啡豆 回复信件 整理桌面",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一组待办清单的勾选框：点击勾选时，方框先缩小再弹大一点（约 0.4 秒），底色填满；里面的勾勾从左下到右上像用笔画出来；右侧的项目文字变淡并加上一条删除线。取消勾选时反向回复。（CSS：隐藏原生 checkbox，自订方框与 SVG 勾勾；勾勾 path 用 stroke-dasharray 与 stroke-dashoffset 从全长变 0；:checked + 样式切换，方框用 scale 的 keyframes 弹跳；保留 :focus-visible 外框给键盘使用者）"
+  },
+  {
+    "id": 243,
+    "zh": "分段控制器",
+    "en": "Segmented Control",
+    "desc": "一排选项底下有一块滑块，点哪个就带点弹性滑过去并改变宽度",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "分段控制 切换 页签 tabs 滑块 Segmented Control Tabs Pill Switcher iOS 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "日 周 月 年",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "胶囊形的分段控制器，例如「日／周／月／年」；目前选项底下有一块实心滑块，点击其他选项时滑块带一点回弹地滑到新位置，并同时改变宽度贴合新选项的文字长度；选中的文字变成与滑块对比的颜色。约 0.45 秒。（CSS：滑块绝对定位，JS 读取被点按钮的 offsetLeft 与 offsetWidth 写进 CSS 变数，transform:translateX(var(--x)) 与 width 用 cubic-bezier(.5,1.5,.5,1) 过渡）"
+  },
+  {
+    "id": 244,
+    "zh": "密码强度条",
+    "en": "Password Strength",
+    "desc": "输入密码时下方的强度条逐格长出，依强弱改变并显示提示",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "密码 强度 注册 验证 表单 Password Strength Meter Signup Validation 表单 控件",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "JS + CSS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "密码输入框下方有四格强度条：使用者输入时即时计算强度（长度是否达 8 字、有无大写、数字、符号），符合越多条件就有越多格从左往右长出；强度越高，格子的视觉越强烈，下方文字依序显示「太弱／普通／不错／很强」；输入框右侧有显示／隐藏密码的眼睛按钮；输入框聚焦时外框亮起。（JS：input 事件计算分数 0–4，设定 data-level 与每格的 class；新亮起的格子用 scaleX 0→1 的 keyframes 长出）"
+  },
+  {
+    "id": 245,
+    "zh": "滑杆数值气泡",
+    "en": "Range Slider Bubble",
+    "desc": "拖拽滑杆时上方弹出数值气泡，跟著把手移动，放开时缩回",
+    "comp": "control",
+    "when": [
+      "drag"
+    ],
+    "tech": "CSS",
+    "style": "滑杆 拉杆 数值 气泡 范围 音量 Range Slider Tooltip Bubble Value Input 表单 控件",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "input range",
+    "txt": "音量",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "范围滑杆：已拖过的轨道部分填满；按住或拖拽把手时，把手微微放大，正上方弹出一个带小三角的数值气泡，气泡跟著把手水平移动并即时显示数字；放开时气泡缩小淡出。（CSS：自订 input[type=range] 的轨道与 ::-webkit-slider-thumb；轨道填满用背景 linear-gradient 搭配 CSS 变数百分比；气泡为绝对定位的 output，left = 把手宽度 / 2 + (轨道宽 − 把手宽) × 百分比，以 scale 与 opacity 做弹出）"
+  },
+  {
+    "id": 246,
+    "zh": "验证码输入",
+    "en": "OTP Input",
+    "desc": "四格验证码，输入一格自动跳下一格；正确时依序跳起，错误时整排抖动",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "验证码 OTP 一次性密码 简讯 登录 PIN Code Input Verification Auto Focus 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "JS + CSS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "四格验证码输入框：每格只能输入一个数字，输入后该格轻弹一下并自动跳到下一格，在空格按倒退键会回到上一格并清除；四格填满后自动验证：正确时每格依序向上跳起并填满底色，错误时整排左右抖动、外框变成警示样式。（JS：每格 maxLength=1、inputMode=\"numeric\"，input 事件后 focus 下一格，keydown Backspace 处理倒退；结果用 class 触发 CSS keyframes，跳起用 animation-delay 错开；手机上字级至少 16px 避免自动放大）"
+  },
+  {
+    "id": 247,
+    "zh": "展开搜寻框",
+    "en": "Expanding Search",
+    "desc": "平常只有一个放大镜圆钮，点下后向左展开成搜寻框",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "搜寻 放大镜 展开 收合 导航栏 Expanding Search Bar Icon Input Header 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "搜寻作品…",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "导航栏上的搜寻：平常只是一颗圆形放大镜按钮，点击后按钮向左平滑展开成长条搜寻框（约 0.5 秒），输入框内的文字在展开一半后才淡入，放大镜旋转 90 度并外围亮起一圈框线；输入框失去焦点且没有内容时收回成圆钮。（CSS：容器 overflow:hidden，width 从圆钮宽度过渡到展开宽度，cubic-bezier(.6,0,.2,1)；input opacity 搭配 transition-delay；JS 切换 class 并 focus 输入框）"
+  },
+  {
+    "id": 248,
+    "zh": "下拉菜单展开",
+    "en": "Dropdown Reveal",
+    "desc": "点开下拉菜单时面板从上方弹出，选项一个接一个滑入，箭头翻转",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "下拉菜单 菜单 展开 选项 依序 Dropdown Select Menu Stagger Reveal 表单 控件",
+    "uses": [
+      "ui"
+    ],
+    "tag": "transition-delay",
+    "txt": "台北 台中 高雄 花莲 台南",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "下拉菜单：点击菜单按钮时，右侧箭头翻转 180 度，下方的选项面板从上缘带点回弹地展开（scaleY 0.6 → 1、淡入），里面的选项一个接一个（每个间隔约 0.05 秒）往下滑入淡入；滑过选项时背景淡淡亮起；选择后面板收起、按钮显示选中的值。（CSS：面板 transform-origin:top，transition 用 cubic-bezier(.3,1.3,.5,1)；每个选项设 --i，展开时 transition-delay: calc(var(--i) × 0.05s)）"
+  },
+  {
+    "id": 249,
+    "zh": "标签输入",
+    "en": "Tag Input",
+    "desc": "输入文字按 Enter 变成弹出的标签，按 × 或倒退键时标签缩小消失",
+    "comp": "control",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "标签 tag chip 输入 关键字 兴趣 Tag Input Chips Token Field 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "JS + CSS",
+    "txt": "设计 动态 前端 插画 品牌",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "标签输入框：使用者输入文字后按 Enter（或逗号），文字变成一颗胶囊标签，从 0 带回弹放大出现在输入光标前方；每颗标签右侧有 × 按钮，点击或在空白输入框按倒退键时，最后一颗标签缩小淡出并让后面的内容平滑补位；整个框聚焦时外框亮起。（JS：keydown 处理 Enter／逗号／Backspace，新增元素插在 input 前；CSS keyframes：进场 scale 0→1 用 cubic-bezier(.3,1.6,.5,1)，退场 scale→0 并用负的 margin-right 收合，animationend 后移除元素）"
+  },
+  {
+    "id": 250,
+    "zh": "水滴单选",
+    "en": "Liquid Radio",
+    "desc": "切换单选项时，选中的圆点被拉长成水滴滑到新选项，再弹回圆形",
+    "comp": "control",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "单选 radio 选项 水滴 液态 拉伸 Liquid Radio Button Gooey Morph 表单 控件",
+    "uses": [
+      "ui"
+    ],
+    "tag": "GSAP elastic",
+    "txt": "标准寄送 快速到货 门市自取",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一组直向排列的单选项，被选中的圆点是一颗独立的实心小圆：切换选项时，小圆先被拉长成上下延伸的水滴形，沿直线滑到新选项的圆圈中心，抵达后以弹性晃动恢复成圆形，像液体一样流过去；被选中的外圈同时改变样式。（GSAP timeline：先 scaleY 2.2 / scaleX 0.7，同时 tween y 到新位置 power3.inOut，最后 scaleX/scaleY 回 1 用 elastic.out(1.2,0.5)；原生 radio 隐藏但保留键盘操作）"
+  },
+  {
+    "id": 251,
+    "zh": "拖放上传",
+    "en": "File Drop Upload",
+    "desc": "档案拖进区块时框线亮起、图标上浮；放下后出现档案列，进度条跑完勾选",
+    "comp": "control",
+    "when": [
+      "drag",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "上传 档案 拖放 拖拽 进度条 Drag Drop File Upload Dropzone Progress 表单 控件",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "档案拖放上传区：虚线框中间有上传图标与「拖拽档案到这里」；档案被拖进区块上方时，框线变实、底色淡淡亮起、图标往上浮；放下后区块轻弹一下，底部从下方弹出一列档案资讯（档名 + 进度条），进度条约 1.3 秒跑满，右侧勾选图标弹出，停留一秒后档案列上移淡出。点击区块也可以选档案。（JS：dragenter/dragover 加 class，drop 读取档名；GSAP timeline 串接弹跳、档案列进场、进度条 scaleX 0→1、勾选 back.out）"
+  },
+  {
+    "id": 252,
+    "zh": "反色差值光标",
+    "en": "Blend Difference Cursor",
+    "desc": "一颗圆形光标，经过文字时放大，重叠的地方颜色反转",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "反色 反转 混合模式 difference 光标 圆形 Blend Mode Invert Cursor Hero 光标 鼠标",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "mix-blend-mode",
+    "txt": "INVERT",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "光标替换成一颗实心圆，以平滑的延迟跟随鼠标；圆形使用「差异」混合模式，与底下的文字重叠时，文字和背景的颜色互相反转；当光标移到大标题上时，圆形平滑放大约三倍，让反转范围覆盖更多文字，离开标题后缩回。（CSS：圆形元素 mix-blend-mode:difference、pointer-events:none；JS 每帧以 lerp 追上鼠标坐标，并侦测是否在标题范围内以插值改变 scale；容器 cursor:none 隐藏原生光标）"
+  },
+  {
+    "id": 253,
+    "zh": "磁吸黏性光标",
+    "en": "Sticky Cursor",
+    "desc": "光标靠近按钮时被吸附，变形包住整颗按钮，按钮也被轻轻拉动",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "黏性 吸附 磁吸 变形 包覆 导航 Sticky Cursor Magnetic Morph Nav 光标 鼠标",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "GSAP",
+    "txt": "作品 关于 联络",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "导航栏的一排按钮，光标是一颗小圆：光标靠近某颗按钮时，小圆被「吸」过去，变形成圆角长方形把整颗按钮包起来，且位置仍随鼠标在按钮内轻微偏移；按钮本身也朝鼠标方向被轻轻拉动、文字与底色反转；移开按钮时小圆缩回、按钮弹回原位。（GSAP：mousemove 判断光标是否在按钮范围内（含一点外扩），在范围内就 tween 光标的 x/y/width/height 到按钮中心与尺寸 + 偏移 × 0.12，否则 tween 回小圆；按钮 x/y = 偏移 × 0.15，power3.out）"
+  },
+  {
+    "id": 254,
+    "zh": "速度形变拉伸光标",
+    "en": "Velocity Stretch Cursor",
+    "desc": "圆形光标依移动速度沿著方向拉长，停下来时恢复圆形",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "速度 拉伸 拉长 弹性 方向 Velocity Stretch Squash Cursor Elastic 光标 鼠标",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "JS rAF",
+    "txt": "Stretch",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一颗圆形光标以平滑延迟跟随鼠标，每帧计算移动速度：移动越快，圆形越沿著移动方向被拉长、垂直方向变扁，像有弹性的果冻；鼠标停下时慢慢恢复成正圆。（JS requestAnimationFrame：位置 lerp 追上目标；速度 = 这帧位移长度，角度 = atan2(dy,dx)；transform = translate → rotate(角度) → scale(1 + 速度系数, 1 − 速度系数 × 0.45)，速度系数本身也 lerp 避免抖动）"
+  },
+  {
+    "id": 255,
+    "zh": "上下文情境标签光标",
+    "en": "Contextual Cursor",
+    "desc": "光标移到不同内容上，变成对应动作的大圆圈加文字，例如播放、查看、拖拽",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "情境 标签 光标 播放 查看 拖拽 作品集 Contextual Label Cursor View Play Drag Portfolio 光标 鼠标",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "JS + CSS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "作品集的卡片区，平常光标是一个小圆点；移到不同类型的内容上时，小圆点弹性放大成一个实心大圆，中间显示对应的图标，下方浮出动作文字，例如影片显示「▶ 播放」、作品显示「↗ 查看」、轮播显示「⇆ 拖拽」；离开内容时缩回小圆点。（JS：每个区块用 data-cursor 属性设定文字与图标，mousemove 侦测目前所在区块并更新光标内容；CSS：大圆 scale 0 → 1 用 cubic-bezier(.3,1.5,.5,1)、文字淡入上移）"
+  },
+  {
+    "id": 256,
+    "zh": "十字准星坐标光标",
+    "en": "Crosshair Cursor",
+    "desc": "横竖两条细线跟著光标，旁边即时显示坐标数字",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "十字 准星 坐标 瞄准 科技 蓝图 Crosshair Coordinates Cursor Blueprint Tech 光标 鼠标",
+    "uses": [
+      "ui",
+      "data",
+      "hero"
+    ],
+    "tag": "JS + CSS",
+    "txt": "Precision",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "带淡淡格线的背景上，一条横线与一条直线跨满整个区块、交会在光标位置，交点有一个小圆圈；光标右下方有一个小标签，用等宽字体即时显示目前的 X、Y 坐标数字（换算成 1920 × 1080），靠近边缘时标签自动往内收，不会超出画面。适合科技、设计工具或作品集首页。（JS：mousemove 时用 transform 移动两条线与标签，坐标 = 光标位置 / 容器宽高 × 1920、1080，padStart 补零）"
+  },
+  {
+    "id": 257,
+    "zh": "视线跟踪眨眼大眼",
+    "en": "Following Eyes",
+    "desc": "一对大眼睛的眼珠一直盯著光标转，偶尔眨眼",
+    "comp": "cursor",
+    "when": [
+      "hover",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "眼睛 眼珠 跟随 盯著 可爱 吉祥物 404 Googly Eyes Follow Cursor Mascot 光标 鼠标",
+    "uses": [
+      "ui",
+      "logo"
+    ],
+    "tag": "JS atan2",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "一对大眼睛（眼白 + 眼珠，眼珠带一个小反光点），眼珠一直朝光标的方向转动：光标越远，眼珠越靠近眼眶边缘，光标在眼睛正前方时眼珠回到中间；每隔几秒两眼一起快速眨眼一次（眼睛垂直压扁再恢复，约 0.15 秒）。适合吉祥物、404 页面或趣味互动。（JS：每只眼睛以中心点计算 atan2 角度，距离取 min(1, 距离 / 范围) × 最大偏移，用 transform 移动眼珠；眨眼用 scaleY 的 class 切换）"
+  },
+  {
+    "id": 258,
+    "zh": "放大镜透镜光标",
+    "en": "Magnifier Lens",
+    "desc": "光标变成圆形放大镜，镜片里的内容放大显示",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "放大镜 放大 镜片 细节 商品 Magnifier Lens Zoom Loupe Cursor Product 光标 鼠标",
+    "uses": [
+      "ui"
+    ],
+    "tag": "JS + CSS",
+    "txt": "放大检视",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "光标变成一个带外框与阴影的圆形放大镜，镜片内显示光标下方内容放大约 2.2 倍的画面，移动时镜片内容同步平移，让小字或商品细节看得清楚。（JS + CSS：在镜片内放一份内容的复本，设定与原内容同宽高、transform-origin:0 0，transform = translate(半径 − 光标x × 倍率, 半径 − 光标y × 倍率) scale(倍率)；镜片 border-radius:50%、overflow:hidden、pointer-events:none）"
+  },
+  {
+    "id": 260,
+    "zh": "黏液水滴融合拖尾",
+    "en": "Gooey Trail",
+    "desc": "一串圆球跟著光标，彼此像黏液一样融合拉丝",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "黏液 融合 拖尾 液态 Gooey Blob Trail Cursor SVG Filter Liquid 光标 鼠标",
+    "uses": [
+      "hero",
+      "bg"
+    ],
+    "tag": "SVG goo filter",
+    "txt": "Gooey",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "光标后方跟著一串大小递减的圆球，第一颗紧跟鼠标、后面每颗跟著前一颗，形成一条尾巴；圆球之间透过模糊加对比的滤镜融合在一起，看起来像一团黏液被拉长、拉出细丝，停下来时又缩回一团。前景文字使用混合模式，被黏液盖到的部分反转。（SVG filter：feGaussianBlur stdDeviation 约 6 + feColorMatrix 将 alpha 放大（例如 0 0 0 22 −9）形成 goo 效果，套在包住所有圆球的容器上；JS 每帧让每颗圆球 lerp 追前一颗）"
+  },
+  {
+    "id": 261,
+    "zh": "点击喷洒粒子彩带",
+    "en": "Click Confetti Pop",
+    "desc": "在画面任何地方点击，就从那里喷出爱心星星等小图案再落下",
+    "comp": "cursor",
+    "when": [
+      "hover"
+    ],
+    "tech": "GSAP",
+    "style": "点击 喷出 爱心 星星 彩纸 回馈 可爱 Click Burst Hearts Confetti Pop Particles 光标 鼠标",
+    "uses": [
+      "emph",
+      "ui"
+    ],
+    "tag": "GSAP keyframes",
+    "txt": "Click!",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "在区块内任何地方点击时，从点击位置喷出约 7 个小图案（爱心、星星、小花），各自往上方扇形范围飞出、大小与角度随机，飞到最高点后一边往下掉一边淡出；同时点击处有一圈细圆环扩散消失。适合可爱风格的网站或按赞回馈。（GSAP：每个小图案 fromTo 从点击点 scale 0，keyframes 第一段往随机角度与距离飞出 power3.out，第二段往下并 opacity 0；动画结束移除元素）"
+  },
+  {
+    "id": 262,
+    "zh": "框内微放大",
+    "en": "Hover Zoom in Frame",
+    "desc": "滑过图片时，图片在固定的框内慢慢微放大，标题从底部浮上来",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "hover 放大 缩放 图片放大 框内 固定框 overflow hidden 作品集 商品图 Image Zoom Hover Scale Thumbnail Gallery 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "海边 山林 城市",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一排图片卡片，每张图片放在固定尺寸、圆角的框里（overflow:hidden）：鼠标滑过时，框的大小不变，里面的图片以约 0.8 秒、减速的曲线慢慢放大到 1.1 倍；框底部的标题列（带由透明到半透明的渐变底）同时从下方略微上移并变得完全清楚；滑开时图片缓缓缩回。（CSS：容器 overflow:hidden；img 设 transition: transform .8s cubic-bezier(.2,.7,.2,1)，容器 :hover 时 img transform:scale(1.1)；标题 translateY 与 opacity 一起过渡）"
+  },
+  {
+    "id": 263,
+    "zh": "滑过放大检视",
+    "en": "Hover Zoom & Pan",
+    "desc": "滑过图片时放大两倍，放大的位置跟著光标移动，看商品细节",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "放大 检视 细节 商品图 电商 跟随光标 平移 Zoom Pan Hover Product Detail Ecommerce 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "transform-origin",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "商品大图：鼠标移进图片时，图片在原本的框内平滑放大到约 2.2 倍，而且放大的中心点跟著光标位置移动——光标移到左上就看左上的细节，移到右下就看右下；鼠标离开时缩回原尺寸。右下角有「滑过看细节」的小提示，放大时淡出。（JS + CSS：mousemove 时把 transform-origin 设为光标在图片中的百分比位置，容器 :hover 时 scale(2.2)，transition 0.5 秒；容器 overflow:hidden、cursor:zoom-in）"
+  },
+  {
+    "id": 264,
+    "zh": "低饱和唤醒",
+    "en": "Saturate on Hover",
+    "desc": "图片平常是低饱和、偏暗，滑过时恢复鲜艳并微微放大",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "灰阶 去色 饱和度 唤醒 滤镜 作品集 团队照片 Grayscale Saturate Filter Hover Team 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS filter",
+    "txt": "春 夏 秋",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一排团队或作品照片，平常呈现低饱和、略暗的样子，让整排画面安静统一；鼠标滑过某张时，该张在约 0.6 秒内恢复完整的饱和度与亮度，并在框内微微放大到 1.05 倍，底部的名字标签浮上来。（CSS：img 预设 filter: grayscale(.9) brightness(.8)，:hover 时 filter:none 并 scale(1.05)，filter 与 transform 一起 transition）"
+  },
+  {
+    "id": 265,
+    "zh": "商品图切换",
+    "en": "Image Swap on Hover",
+    "desc": "电商商品卡片滑过时，换成第二张角度的照片，下方圆点跟著切换",
+    "comp": "media",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "商品 电商 第二张图 换图 切换 Image Swap Hover Product Card Ecommerce Second Image 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "亚麻衬衫",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "电商商品卡片：上方是商品主图，鼠标滑过卡片时，第二张（例如穿搭或背面角度）的照片淡入并从 1.08 倍缩回原尺寸，主图同时淡出并微微放大，形成柔和的换图；图片下方的两个小圆点指示器跟著切换目前是第几张；卡片下方显示商品名称与价格。（CSS：两张图叠在同一个框内绝对定位，:hover 时交换 opacity 与 scale，transition 约 0.5–0.7 秒）"
+  },
+  {
+    "id": 266,
+    "zh": "滑过预览影片",
+    "en": "Hover to Play Video",
+    "desc": "影片缩图平常静止，滑过时播放键缩小消失、画面开始播放、进度条前进",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "影片 预览 自动播放 缩图 播放键 YouTube Video Preview Hover Play Thumbnail 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "旅行纪录",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "影片缩图卡片：平常画面稍暗、静止，中间有一个圆形播放键，右下角显示片长；鼠标滑过时，播放键缩小淡出，画面变亮并开始播放（示意中以缓慢推镜代替），底部出现一条进度条开始前进；滑开时暂停并回到静止状态。（实作：hover 时呼叫 video.play()、离开时 pause() 并把 currentTime 归零；播放键用 scale 与 opacity 过渡；video 设 muted、playsinline 才能自动播放）"
+  },
+  {
+    "id": 267,
+    "zh": "点图放大灯箱",
+    "en": "Lightbox Zoom",
+    "desc": "点一下缩图，它从原位置平滑放大到画面中央，背景变暗；再点缩回",
+    "comp": "media",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "灯箱 lightbox 放大 图片检视 相册 Modal Zoom Gallery Photo Viewer Flip 图片 媒体",
+    "uses": [
+      "ui",
+      "trans"
+    ],
+    "tag": "Flip",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "一排正方形缩图，点击任一张时，那张图从原本的位置与大小平滑放大到画面中央的大尺寸（约 0.55 秒、缓入缓出），同时背后铺上一层半透明遮罩让其他内容变暗；点击大图或遮罩时，图片平滑缩回原本在缩图列中的位置，遮罩淡出。（GSAP Flip：Flip.getState 记录缩图 → 加上「放大」的 class（改为绝对定位置中、较大尺寸）→ Flip.from 补间；收回时反向；遮罩用 opacity transition）"
+  },
+  {
+    "id": 268,
+    "zh": "缩图列相册",
+    "en": "Thumbnail Gallery",
+    "desc": "点下方缩图，大图从侧边推入换张并微微缩回，指示条滑到目前缩图",
+    "comp": "media",
+    "when": [
+      "switch",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "相册 缩图 大图 商品图 轮播 Gallery Thumbnails Slider Product Images Carousel 图片 媒体",
+    "uses": [
+      "ui"
+    ],
+    "tag": "GSAP",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "商品相册：上方一张大图，下方一排缩图；点击某张缩图时，新的大图从对应方向（往后点从右、往前点从左）推入，旧图往反方向稍微移出，新图内部同时从 1.25 倍缓缓缩回原尺寸，增加景深感；缩图列中目前那张变得完全不透明，其他半透明，下方一条指示条滑动并对齐目前缩图；也可以自动轮播。（GSAP：新图 fromTo xPercent ±100 → 0，旧图 to xPercent ∓30，power3.inOut 0.6 秒；指示条用 CSS transform 与 width 过渡）"
+  },
+  {
+    "id": 269,
+    "zh": "切片转场",
+    "en": "Slice Transition",
+    "desc": "图片被切成直条，一条上一条下依序滑走，露出下一张",
+    "comp": "media",
+    "when": [
+      "switch",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "切片 直条 转场 换图 百叶窗 Slice Strips Image Transition Slideshow Venetian 图片 媒体",
+    "uses": [
+      "trans",
+      "hero"
+    ],
+    "tag": "GSAP stagger",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "图片轮播的转场：目前的图片被切成 6 条等宽的直条，换下一张时，这些直条依序（每条间隔约 0.06 秒）一条往上、一条往下交错滑出画面，露出底下的下一张图，下一张图同时从 1.15 倍慢慢缩回原尺寸。（实作：每条直条是 overflow:hidden 的容器，里面放同一张图并往左位移「条宽 × 索引」使拼起来是完整一张；GSAP 对所有直条 yPercent ±110、stagger 0.06、power3.in）"
+  },
+  {
+    "id": 270,
+    "zh": "拍立得洗牌",
+    "en": "Photo Stack Shuffle",
+    "desc": "一叠微歪的拍立得照片，点一下最上面那张被抽走、塞回最底下",
+    "comp": "media",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "拍立得 照片 堆叠 洗牌 相册 Polaroid Photo Stack Shuffle Deck 图片 媒体",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "一叠拍立得风格的照片（四周带宽边框、下方较宽处写小标题），每张以不同角度微微歪斜地叠在一起；点击时最上面那张往右被抽出并旋转，接著回到整叠的最底下，其他照片同时调整位置与角度补上，形成洗牌的效果，可以一直点下去。（GSAP timeline：最上面那张 x +120%、rotation 18 → 调整 z-index 排到最底 → 回到堆叠位置；每张依堆叠顺序设定 rotation 与 x/y 的小偏移）"
+  },
+  {
+    "id": 271,
+    "zh": "故障错位图片",
+    "en": "Glitch Image",
+    "desc": "滑过时图片分出两层色版左右错位、一段段闪烁，像讯号不良",
+    "comp": "media",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "故障 glitch 错位 色版 讯号 赛博 Glitch Image RGB Split Distortion Cyberpunk 图片 媒体",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "CSS clip-path",
+    "txt": "SIGNAL",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "鼠标滑过图片时触发故障效果：图片叠出两个不同色版的复本，以「滤色」混合模式叠在原图上，各自左右错开几个百分比，并用 clip-path 只显示随机的水平条带，快速跳动闪烁；原图本身也小幅左右抖动；中间的标题文字出现左右错开的两道色边；滑开后恢复正常。（CSS：两个复本用 filter:sepia + saturate + hue-rotate 做成不同色版、mix-blend-mode:screen；keyframes 搭配 steps() 改变 transform 与 clip-path: inset(...)）"
+  },
+  {
+    "id": 272,
+    "zh": "滚动翻转卡片",
+    "en": "Scroll Flip Card",
+    "desc": "往下卷时卡片立体翻转到背面，同时微微放大",
+    "comp": "card",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "翻转 翻面 3D 卡片 正反面 滚动 Scroll Flip Card 3D RotateY 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "ui"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "背面的故事",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一张卡片位于画面中央，正面是图片、背面是文字（背面使用强调色）：使用者往下滚动时，卡片依滚动进度沿著垂直轴立体翻转 180 度，同时从 0.85 倍放大到 1 倍，卷到一半时刚好侧面朝向观者，卷完时完整显示背面；往回卷则翻回正面。（GSAP ScrollTrigger scrub：容器 pin 或 sticky，timeline fromTo rotationY 0 → 180；父层设 perspective，卡片 transform-style:preserve-3d，正反两面 backface-visibility:hidden，背面预先 rotateY(180deg)）"
+  },
+  {
+    "id": 273,
+    "zh": "滚动旋转立方体",
+    "en": "Scroll Rotating Cube",
+    "desc": "一个 3D 立方体随滚动旋转，每一面写著不同的关键字",
+    "comp": "shape",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "立方体 3D 旋转 方块 cube 滚动 Scroll Rotate Cube Faces 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "hero"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "设计 开发 动态 品牌 策略 测试",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "画面中央一个 3D 立方体，六个面各写一个关键字并使用不同的主题色：随著使用者往下滚动，立方体略微俯视（rotateX −20 度）并绕垂直轴旋转，依滚动进度转过 270 度，让各面依序转到正前方。（GSAP ScrollTrigger scrub：立方体 transform-style:preserve-3d，六个面以 rotateY / rotateX ± 90 度加 translateZ(边长的一半) 组成；滚动时 tween rotationY）"
+  },
+  {
+    "id": 274,
+    "zh": "穿越大字转场",
+    "en": "Zoom Through Text",
+    "desc": "巨大的标题随滚动不断放大，镜头像穿过字母进入下一个画面",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "放大 穿越 大字 镜头 转场 Zoom Through Text Scale Scroll Transition 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "trans",
+      "hero"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "一个巨大的英文标题（例如 ZOOM）在画面中央，使用者往下滚动时标题开始放大，越卷放大越快（加速曲线），最后放大到数十倍，镜头像是穿过字母中间的空隙，画面被字母填满后转成下一段内容（下一段在后方淡入并从 0.8 倍放大到 1 倍）。（GSAP ScrollTrigger scrub：sticky 区块内 fromTo scale 1 → 38，ease power2.in，transform-origin 对准要穿过的字母空隙；下一段内容在进度 70% 后淡入）"
+  },
+  {
+    "id": 275,
+    "zh": "滚动速度倾斜",
+    "en": "Scroll Velocity Skew",
+    "desc": "图片列表在快速滚动时跟著速度歪斜，停下来就回正",
+    "comp": "media",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "倾斜 歪斜 速度 惯性 skew 滚动 Scroll Velocity Skew Images List 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "ui"
+    ],
+    "tag": "getVelocity",
+    "txt": "山 海 城 林",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一列可滚动的图片卡片，平常排列整齐；当使用者快速滚动时，所有卡片依滚动速度沿垂直方向歪斜（skewY），卷得越快歪得越多，方向跟著滚动方向，最大约 12 度；滚动减速或停止时平滑回正，带出惯性与速度感。（GSAP：ScrollTrigger.create 的 onUpdate 中取得 self.getVelocity()，换算成角度并 clamp，用 gsap.quickTo(元素, \"skewY\", {duration:.5, ease:\"power3.out\"}) 平滑设定）"
+  },
+  {
+    "id": 276,
+    "zh": "散落文字聚合",
+    "en": "Scattered Assemble",
+    "desc": "散落在四处、翻转缩放的字母，随著滚动飞回原位组成标题",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "散落 聚合 组合 字母 飞回 拼凑 Scattered Letters Assemble Scroll 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "hero",
+      "logo"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "ASSEMBLE",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "标题的每个字母一开始随机散落在画面各处，各自带著不同的旋转角度、缩放大小并且透明；使用者往下滚动时，字母以随机顺序依序飞回原本的位置、转正、恢复大小与不透明度，组合成完整的标题；往回卷又会散开。（GSAP ScrollTrigger scrub：SplitText 拆字，timeline.from(字母, { x/y/rotation/scale 用函式回传随机值, opacity:0, stagger:{each:.02, from:\"random\"} })）"
+  },
+  {
+    "id": 277,
+    "zh": "滚动形状变形",
+    "en": "Scroll Shape Morph",
+    "desc": "一个图形随滚动依序变形成星星、爱心、方块，边变边转",
+    "comp": "shape",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "变形 形状 morph 星星 爱心 SVG 滚动 Scroll Shape Morph 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "emph"
+    ],
+    "tag": "MorphSVG",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-19",
+    "prompt": "画面中央一个实心的圆形 SVG 图形，随著使用者往下滚动，依序平滑变形成五角星、爱心、圆角方块，每次变形同时旋转 90 度；变形进度完全由滚动控制，往回卷会反向变回去。（GSAP MorphSVGPlugin + ScrollTrigger scrub：timeline 依序 to(path, {morphSVG: 下一个形状的 d, rotation:\"+=90\", transformOrigin:\"50% 50%\"})）"
+  },
+  {
+    "id": 278,
+    "zh": "滚动扇形展开",
+    "en": "Scroll Fan Out",
+    "desc": "叠在一起的卡片随滚动展开成一把扇子",
+    "comp": "card",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "扇形 展开 卡片 叠卡 作品 滚动 Scroll Fan Out Cards Spread 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "hero"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "海边 山林 夜空 午后 城市",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "五张图片卡片一开始整齐叠成一叠；使用者往下滚动时，卡片以底部下方的一点为轴，像打开一把扇子一样向左右两侧展开：中间那张不动，越外侧旋转角度越大（每张约相差 14 度），同时往两侧与下方位移；往回卷则收回成一叠。（GSAP ScrollTrigger scrub：卡片 transform-origin: 50% 120%，fromTo rotation / x / y 用函式依索引 (i − 中间索引) 计算）"
+  },
+  {
+    "id": 279,
+    "zh": "模糊对焦",
+    "en": "Blur to Focus",
+    "desc": "段落标题卷进画面时由模糊变清楚，卷出时又慢慢糊掉",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "模糊 对焦 清晰 blur 景深 滚动 Blur To Focus Scroll Depth 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "hero"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "慢慢 看清楚 再离开",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "一段长页面中的几个大标题：每个标题从画面下方卷进来时是模糊、透明、略小的，越接近画面中央越清楚，在中央时完全清晰；继续往上卷出画面时又逐渐模糊、淡出并略微放大，像相机对焦扫过，引导视线停在目前的段落。（GSAP ScrollTrigger scrub：每个标题 start \"top bottom\"、end \"bottom top\"，timeline 先 fromTo filter blur(12px) → blur(0)、opacity 0 → 1、scale .92 → 1，再 to blur(12px)、opacity 0、scale 1.06）"
+  },
+  {
+    "id": 280,
+    "zh": "沿曲线跑的文字",
+    "en": "Text Along Path",
+    "desc": "一行文字沿著弯曲的线条移动，滚动决定它跑到哪里",
+    "comp": "text",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "曲线 路径 文字 跑马灯 textPath 波浪 滚动 Text On Path Curve Scroll 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "bg",
+      "emph"
+    ],
+    "tag": "SVG textPath",
+    "txt": "Follow the curve",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "画面中有一条横跨的弯曲波浪线（淡淡的细线），一行文字贴著这条曲线排列；使用者往下滚动时，文字沿著曲线从右边流向左边，弯曲的地方文字跟著转弯，滚动速度决定文字移动速度，往回卷则倒退。（SVG：<path id> + <text><textPath href=\"#id\">；GSAP ScrollTrigger scrub tween textPath 的 startOffset 属性从 100% → −100%）"
+  },
+  {
+    "id": 281,
+    "zh": "对开门转场",
+    "en": "Split Doors Reveal",
+    "desc": "整个画面从中间切开成左右两扇门，随滚动往两侧拉开，露出下一段",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "对开 开门 拉开 分割 转场 揭开 Split Doors Curtain Reveal Scroll Transition 滚动触发 ScrollTrigger",
+    "uses": [
+      "scroll",
+      "trans"
+    ],
+    "tag": "ScrollTrigger",
+    "txt": "欢迎光临",
+    "bg": "dark",
+    "added": "2026-10-19",
+    "prompt": "两段内容之间的转场：前一段是一整面强调色的画面，中间有一个巨大的字；使用者往下滚动时，这个画面从正中央垂直切开成左右两扇门（大字也跟著被切成两半），两扇门随滚动进度往左右两侧滑开，露出后面的下一段内容，下一段同时从 0.8 倍放大并变清楚。（GSAP ScrollTrigger scrub：左右两个各宽 50%、overflow:hidden 的区块，内部各放一份宽度 200% 的同一个大字（左边靠左、右边靠右对齐）让它看起来是同一个字；timeline 让两扇门 xPercent −100 / 100）"
+  },
+  {
+    "id": 282,
+    "zh": "上下切开文字",
+    "en": "Split Text Hover",
+    "desc": "滑过时标题沿水平中线切成上下两半，往反方向错开，中间露出一行小字",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "切开 分割 上下 错开 标题 clip-path Split Text Slice Hover Reveal hover 悬停 滑过",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "clip-path",
+    "txt": "SPLIT",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一个大标题，鼠标滑过时沿著文字的水平中线被切成上下两半：上半部往左上错开、下半部往右下错开（约 0.5 秒、缓入缓出），两半之间裂开的缝隙中，一行小字（例如 OPEN）垂直展开淡入；滑开时两半合回。（CSS：同一段文字叠两层，一层 clip-path: inset(0 0 50% 0) 只露上半、另一层 inset(50% 0 0 0) 只露下半，:hover 时各自 transform 往反方向位移）"
+  },
+  {
+    "id": 283,
+    "zh": "字距展开",
+    "en": "Letter Spacing Expand",
+    "desc": "滑过时字母间距慢慢拉开、字重变粗，像深呼吸一样",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "字距 拉开 字重 呼吸 菜单 导航 Letter Spacing Tracking Expand Weight Hover Menu hover 悬停 滑过",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "letter-spacing",
+    "txt": "ABOUT WORK CONTACT",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "导航栏或大型菜单的文字：鼠标滑过某个项目时，字母间距平滑地从 0 拉开到约 0.35em，字重从细变粗、文字变得更清楚，像深呼吸一样展开；滑开时收回。约 0.5 秒、减速曲线。（CSS：transition letter-spacing 与 font-weight（使用可变字体效果最平顺），:hover 改变数值）"
+  },
+  {
+    "id": 284,
+    "zh": "清单列滑入填满",
+    "en": "List Row Fill",
+    "desc": "滑过清单某一列时，底色从左边刷进来，文字往右让位、箭头滑出",
+    "comp": "layout",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "清单 列表 服务项目 菜单 底色 填满 箭头 List Row Hover Fill Sweep Arrow Services Menu hover 悬停 滑过",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "品牌识别 网站设计 动态影像 包装设计",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一份服务项目清单，每列有编号、项目名称、右侧箭头，列与列之间有细分隔线：鼠标滑过某一列时，一块实心底色从左边刷进来填满整列，项目名称往右移一点让位，右侧箭头从左边滑入出现，文字颜色反转以保持可读；滑开时底色往右收走。约 0.5 秒。（CSS：每列内一个绝对定位的底色层 transform:scaleX(0)，hover 时 scaleX(1) 且 transform-origin 从 left；离开时 transform-origin 改成 right，形成「左进右出」）"
+  },
+  {
+    "id": 285,
+    "zh": "图标微动画",
+    "en": "Icon Micro-animations",
+    "desc": "滑过图标时各自做出符合意思的小动作：铃铛摇、爱心跳、齿轮转、垃圾桶掀盖",
+    "comp": "shape",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "图标 icon 微动画 铃铛 爱心 齿轮 垃圾桶 Icon Micro Animation Bell Heart Gear Trash Hover hover 悬停 滑过",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "一排功能图标按钮（通知、收藏、设定、删除），鼠标滑过时图标的底色亮起，并各自做出符合意思的微动画：铃铛以顶端为轴左右摇晃几下后停住；爱心填满并跳动一下；齿轮的齿转 90 度并带一点回弹；垃圾桶的盖子以左端为轴掀开一个角度。让界面更有生命力又不干扰。（CSS：SVG 图标的特定部位设 transform-origin（SVG 内元素记得 transform-box:fill-box），:hover 时套用各自的 keyframes 或 transform transition）"
+  },
+  {
+    "id": 286,
+    "zh": "资讯面板滑上",
+    "en": "Card Info Slide Up",
+    "desc": "图片卡片平常只露出标题，滑过时资讯面板从底部滑上来，图片同时上移放大",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "卡片 资讯 面板 滑上 说明 作品 Card Info Slide Up Overlay Details Hover hover 悬停 滑过",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "海边 山林 夜空",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一排直式图片卡片，平常卡片底部只露出一条标题列；鼠标滑过时，底部的半透明雾面资讯面板整个滑上来，显示标题、简短说明与「查看 →」链接，同时背后的图片微微上移并放大；滑开时面板滑回只剩标题。约 0.5 秒。（CSS：面板 transform: translateY(calc(100% − 标题列高度))，:hover 时 translateY(0)；面板用半透明底色 + backdrop-filter:blur；图片 scale 1.08 + translateY）"
+  },
+  {
+    "id": 287,
+    "zh": "社群图标填满",
+    "en": "Social Icon Fill",
+    "desc": "圆形社群图标滑过时底色从下往上填满，图标往上换成另一个、按钮微微浮起",
+    "comp": "button",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "社群 图标 icon 填满 页尾 IG Threads Social Icon Fill Hover Footer hover 悬停 滑过",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS hover",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "页尾的一排圆形社群图标（外框细线、中间是线条图标）：鼠标滑过某个图标时，实心底色从圆形底部往上升起填满，原本的图标往上滑出，同一个图标的反色版本从下方滑入取代，整颗按钮微微往上浮起；滑开时反向回复。约 0.45 秒。（CSS：圆形 overflow:hidden，底色层 translateY(101%) → 0；两个图标叠在同一格，一个往上移出、一个从下方移入）"
+  },
+  {
+    "id": 288,
+    "zh": "萤光笔划记",
+    "en": "Highlighter Hover",
+    "desc": "段落中的重点词滑过时，背后像用萤光笔由左往右划过一道",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "萤光笔 标记 划重点 highlight 重点 Highlighter Marker Hover Emphasis Text hover 悬停 滑过",
+    "uses": [
+      "emph"
+    ],
+    "tag": "background-size",
+    "txt": "好的 设计 是 让人 一眼 看懂",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一段文字中的几个重点词，鼠标滑过时，背后像用萤光笔从左往右快速划过一道带点斜角、略低于字中线的色块，文字颜色同时反转以保持可读；滑开时色块收回。约 0.55 秒。（CSS：mark 元素背景用 linear-gradient 画出带斜边的色带，background-size 从 0% 过渡到 100%，background-position 偏下让它像手划的萤光笔）"
+  },
+  {
+    "id": 289,
+    "zh": "全息闪卡",
+    "en": "Holographic Card",
+    "desc": "收藏卡跟著光标立体倾斜，表面的炫彩箔光和反光跟著角度流动",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "全息 闪卡 炫彩 箔 卡牌 宝可梦 倾斜 反光 Holographic Foil Card Tilt Glare Shiny Trading Card hover 悬停 滑过",
+    "uses": [
+      "hero",
+      "ui"
+    ],
+    "tag": "mix-blend-mode",
+    "txt": "HOLO",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一张收藏卡（上方图片、下方标题与编号），跟著光标在 3D 空间中倾斜（最大约 13 度）；卡片表面有一层炫彩的全息箔光，箔光的位置跟著光标移动，倾斜越多箔光越明显，另外还有一团柔和反光跟著光标位置；光标离开时卡片回正、箔光淡化。（CSS + JS：mousemove 计算光标在卡片上的相对位置 0~1，设定 rotateX/rotateY 与 CSS 变数 --px、--py；箔光层是 repeating-linear-gradient 的炫彩条纹、mix-blend-mode:color-dodge，background-position 用 --px/--py；反光层是 radial-gradient 叠 overlay；父层 perspective）"
+  },
+  {
+    "id": 290,
+    "zh": "链接预览卡",
+    "en": "Link Preview Popover",
+    "desc": "滑过文章中的链接时，上方弹出一张小卡，预览链接页面的图片与标题",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "链接 预览 弹出 小卡 popover tooltip 超链接 Link Preview Hover Card Wiki hover 悬停 滑过",
+    "uses": [
+      "ui"
+    ],
+    "tag": ":has()",
+    "txt": "设计规范",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "文章段落中的一个带底线的链接：鼠标滑过（或键盘聚焦）时，链接正上方以小弹性弹出一张预览小卡，卡片内有链接页面的缩图、标题与网址，从略小、略低、透明的状态放大上移出现；滑开时缩回淡出。适合博客、维基或作品集的外部链接。（CSS：预览卡绝对定位在链接上方 transform-origin 底部中央，scale .9 + translateY → none，transition 用 cubic-bezier(.3,1.4,.5,1)；用 :has(a:hover) 或 :focus-within 触发）"
+  },
+  {
+    "id": 291,
+    "zh": "表格十字高亮",
+    "en": "Table Crosshair Highlight",
+    "desc": "滑过表格某一格时，整列与整栏淡淡亮起，该格放大突显",
+    "comp": "control",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "表格 资料 列 栏 高亮 十字 Table Row Column Highlight Crosshair Hover Data hover 悬停 滑过",
+    "uses": [
+      "data",
+      "ui"
+    ],
+    "tag": "JS + CSS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "资料表格：鼠标滑过某一格时，该格所在的整列与整栏都淡淡亮起形成十字，被指到的那一格填满强调底色、文字加粗并微微放大，让人快速对照列标题与栏标题；移动到其他格时十字跟著移动，离开表格时全部恢复。（JS：pointerover 时找出 td 的 cellIndex 与所在的 tr，分别加上 class；CSS：.row 与 .col 用很淡的半透明底色，被指到的格子用强调底色 + scale(1.12)，transition 0.25 秒）"
+  },
+  {
+    "id": 292,
+    "zh": "手写描绘",
+    "en": "Handwriting Draw",
+    "desc": "文字的笔画像用笔一笔一笔写出来，写完后填满",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "手写 签名 笔画 描绘 书写 Handwriting Signature Stroke Draw Text SVG 文字 标题 动态文字",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "stroke-dashoffset",
+    "txt": "Thank you",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一段文字（例如签名或 Thank you）用手写风格字体呈现，一开始只看到空白，接著文字的轮廓笔画沿著字形一笔一笔被描绘出来（约 2.4 秒），像有人正在用笔书写；笔画描完后，字的内部再淡入填满。（SVG：<text> 设 stroke 与 fill；用 stroke-dasharray 等于大于路径总长的值，stroke-dashoffset 从总长补间到 0；描完后 fill-opacity 0 → 1。若要更精准可把文字转成 path 再用 DrawSVG）"
+  },
+  {
+    "id": 293,
+    "zh": "字重波浪",
+    "en": "Weight Wave",
+    "desc": "每个字的粗细轮流变化，像一道波浪从左扫到右",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "字重 粗细 可变字体 波浪 呼吸 Variable Font Weight Wave Breathing 文字 标题 动态文字",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "variable font",
+    "txt": "WEIGHT",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "标题的每个字的字重在最细与最粗之间来回变化，相邻的字依序延迟，看起来像一道粗细的波浪从左往右不断扫过，最粗的时候字同时变成强调色。（CSS：使用支援可变字重的字体，每个字拆成独立元素，共用一个 keyframes 在 font-weight 100 ↔ 900 之间变化，animation-delay 依索引递增）"
+  },
+  {
+    "id": 294,
+    "zh": "光源投影字",
+    "en": "Light Source Shadow",
+    "desc": "光标像一盏灯，文字的长阴影永远朝光标的反方向延伸",
+    "comp": "text",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "光源 投影 阴影 长阴影 立体 光标 Light Source Long Shadow Cursor 3D Text 文字 标题 动态文字",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "text-shadow",
+    "txt": "SHADOW",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "区块中有一个大标题，光标位置是一颗发光的小光源：文字背后有一道由多层阴影组成的长阴影，阴影永远朝「远离光标」的方向延伸，越远的层颜色越淡；光标移动时阴影方向即时跟著转动，像光源在绕著文字移动。（JS：mousemove 计算光标相对于文字中心的方向向量，产生 18 层 text-shadow，每层偏移 = 方向 × 层数，颜色依层数逐渐变淡）"
+  },
+  {
+    "id": 295,
+    "zh": "图片填字",
+    "en": "Image Filled Text",
+    "desc": "大字里面填的是一张风景图片，图片在字里缓慢平移缩放",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "图片 填字 镂空 背景 文字遮罩 Image Text Background Clip Knockout Mask 文字 标题 动态文字",
+    "uses": [
+      "hero"
+    ],
+    "tag": "background-clip",
+    "txt": "WILD",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一个超大、超粗的英文标题，字的内部填满一张风景照片（字以外的地方看不到图片），照片在字里面缓慢地平移并微微放大，约 9 秒来回一次，像透过文字形状的窗户看风景；字外缘有一条极淡的细描边。（CSS：color:transparent + background-image + background-clip:text，keyframes 改变 background-position 与 background-size）"
+  },
+  {
+    "id": 296,
+    "zh": "逐字模糊浮现",
+    "en": "Blur In Letters",
+    "desc": "每个字从模糊、略大的状态依序变清楚并落定",
+    "comp": "text",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "模糊 浮现 逐字 柔和 进场 Blur In Letters Soft Reveal Stagger 文字 标题 动态文字",
+    "uses": [
+      "hero"
+    ],
+    "tag": "SplitText",
+    "txt": "慢慢浮现",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "标题的每个字依序从「模糊、透明、略大、略低」的状态变成清楚并落到定位，每个字间隔约 0.07 秒，整体柔和、有质感；停留一段时间后依序模糊淡出再重播。（GSAP + SplitText：fromTo 字元 {opacity:0, filter:\"blur(10px)\", y:\".25em\", scale:1.15} → {opacity:1, filter:\"blur(0px)\", y:0, scale:1}，ease power2.out、stagger 0.07）"
+  },
+  {
+    "id": 297,
+    "zh": "划掉改写",
+    "en": "Strike & Rewrite",
+    "desc": "一个词被一笔划掉，上面再用手写字一个字一个字写出新的词",
+    "comp": "text",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "划掉 删除线 改写 修正 手写 文案 Strikethrough Rewrite Correction Copywriting 文字 标题 动态文字",
+    "uses": [
+      "emph",
+      "hero"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "便宜 实惠",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "文案中原本的一个词（例如「便宜」），先被一条略微倾斜的粗线从左到右一笔划掉，原词变淡；接著在它下方用手写风格的字体、以强调色一个字一个字弹出新的词（例如「实惠」），像有人亲手修改文案，用来强调更好的说法。（GSAP timeline：删除线元素 scaleX 0 → 1、transform-origin:left；原词 opacity 降到 0.4；新词用 SplitText 拆字，依序从下方 back.out 弹出）"
+  },
+  {
+    "id": 298,
+    "zh": "聊天讯息出现",
+    "en": "Chat Message Pop",
+    "desc": "对方先出现「输入中」的三个点，接著变成讯息，再弹出你的回复",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "聊天 讯息 对话框 泡泡 输入中 打字中 客服 Chat Bubble Typing Indicator Message Pop 文字 标题 动态文字",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "有的！欢迎询问 😊",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "模拟聊天界面：左侧先出现对方的对话泡泡，里面是三个依序上下跳动的点（输入中…），约 1.4 秒后泡泡变成一则讯息（例如「在吗？想问一下～」）并轻弹一下；接著右侧以强调色弹出你的回复泡泡（从右下角放大出现）；停留后一起上移淡出，再重新开始。（GSAP timeline：泡泡 scale 0 → 1、transform-origin 设在泡泡尾巴的角落、ease back.out；三个点用 CSS keyframes 错开 animation-delay）"
+  },
+  {
+    "id": 299,
+    "zh": "残影堆叠",
+    "en": "Echo Stack",
+    "desc": "文字后面叠著好几层空心的复制，依序往斜后方展开再收回",
+    "comp": "text",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "残影 堆叠 复制 空心 立体 回声 Echo Stack Outline Layers Repeat Text 文字 标题 动态文字",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "ECHO",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一个粗体大标题，后面叠著 5 层同样文字的空心描边复制，每层描边越后面越淡；动画时这些复制层依序（每层延迟约 0.06 秒）往右上方斜向展开，形成像回声或立体阶梯的残影，停留一下再收回到与原字重叠，来回循环。（CSS：多个 span 叠在同一格 grid，用 CSS 变数 --i 计算 translate 距离、描边透明度与 animation-delay；-webkit-text-stroke 做空心字）"
+  },
+  {
+    "id": 301,
+    "zh": "多语问候切换",
+    "en": "Multilingual Greeting",
+    "desc": "不同语言的「你好」轮流出现，模糊淡入淡出，外框宽度平滑跟著变",
+    "comp": "text",
+    "when": [
+      "switch",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "多语 问候 你好 Hello 切换 国际 Multilingual Greeting Hello Languages Rotate 文字 标题 动态文字",
+    "uses": [
+      "hero"
+    ],
+    "tag": "GSAP",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "Hero 标题位置轮流显示不同语言的「你好」（Hello、你好、こんにちは、Bonjour、Hola、안녕하세요、Ciao），每隔约 1.6 秒切换：旧的词往上模糊淡出，新的词从下方模糊淡入变清楚；因为每个词长度不同，包住文字的容器宽度会平滑地缩放到新词的宽度，让后面跟著的小圆点也平滑移动，而不是瞬间跳动。（GSAP：先量出新词的宽度（隐藏的量测元素），容器 width tween 到新宽度 power3.inOut；文字 opacity、filter:blur、y 做淡出淡入）"
+  },
+  {
+    "id": 302,
+    "zh": "拖拽排序清单",
+    "en": "Drag to Reorder",
+    "desc": "拖住某一列上下移动，其他列自动让位，放开时弹回定位并更新编号",
+    "comp": "card",
+    "when": [
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "拖拽 排序 重新排列 清单 待办 sortable Drag Reorder List Sortable 卡片 群组",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "Draggable",
+    "txt": "企划 设计 开发 上线",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一份可以拖拽排序的清单，每列左侧有拖拽把手、右侧有顺序编号：按住某一列时它微微放大并浮起（加深阴影与外框），可以上下拖动；拖过其他列的位置时，被经过的列自动平滑地往上或往下让位；放开时被拖的列带点弹性落到新位置，所有编号依新顺序更新。（GSAP Draggable type:\"y\"：拖拽时依 y ÷ 列高算出目标索引，改变阵列顺序并让其他列 tween 到 索引 × 列高；放开时 back.out 对齐）"
+  },
+  {
+    "id": 304,
+    "zh": "多选卡片",
+    "en": "Selectable Cards",
+    "desc": "点卡片选取时出现框线与勾选，底部弹出「已选 N 项」的操作列",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "选取 多选 勾选 卡片 操作列 Selectable Cards Multi Select Checkbox Action Bar 卡片 群组",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "JS + CSS",
+    "txt": "海边 山林 夜空 午后",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一排可多选的图片卡片：点击卡片时，卡片外围出现强调色框线并轻微缩小，图片在框内微放大，右上角的圆形勾选框填满并画出勾勾（带回弹）；只要有选取，画面底部就从下方弹出一条胶囊形操作列，显示「已选 N 项」（数字变动时上下滚动）与「下一步 →」按钮；全部取消时操作列滑回隐藏。（JS 切换 aria-pressed，CSS 依 [aria-pressed=true] 改变框线、scale 与勾勾的 stroke-dashoffset；操作列 translateY 与 opacity transition）"
+  },
+  {
+    "id": 305,
+    "zh": "边框聚光网格",
+    "en": "Border Spotlight Grid",
+    "desc": "光标在卡片群之间移动时，靠近的卡片边框和内部被一团光照亮",
+    "comp": "card",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "边框 聚光 光晕 网格 功能介绍 SaaS Linear Border Spotlight Glow Grid Feature Cards 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "radial-gradient",
+    "txt": "速度 安全 协作 整合 分析 支援",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "功能介绍区的一组卡片排成网格，每张卡片的边框是细细的一圈：光标在整个区块内移动时，每张卡片都在「光标相对于自己的位置」画一团柔和的光，所以靠近光标的卡片边框被照亮成强调色、内部也带淡淡光晕，远离的卡片几乎不亮；光标在卡片之间移动，光会自然地跨越相邻卡片的边框。（CSS：卡片外层 padding 1px 当边框，背景 radial-gradient(circle at var(--x) var(--y), 强调色, 透明)；内层用另一个较淡的 radial-gradient；JS 在容器 mousemove 时为每张卡片计算相对坐标写入 --x、--y）"
+  },
+  {
+    "id": 306,
+    "zh": "3D 环形轮播",
+    "en": "3D Ring Carousel",
+    "desc": "卡片围成一圈在 3D 空间缓慢旋转，可以用鼠标左右拖转",
+    "comp": "card",
+    "when": [
+      "loop",
+      "drag"
+    ],
+    "tech": "GSAP",
+    "style": "3D 环形 旋转木马 轮播 圆环 Ring Carousel 3D Rotate Gallery Drag 卡片 群组",
+    "uses": [
+      "hero",
+      "ui"
+    ],
+    "tag": "GSAP 3D",
+    "txt": "海边 山林 夜空 午后 城市 森林 湖畔 沙漠",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "八张图片卡片在 3D 空间中围成一个圆环，整个圆环以约 24 秒一圈的速度缓慢自转，前方的卡片较大较近、后方的较小较远，背面朝向观者的卡片隐藏；使用者可以按住左右拖拽转动圆环，放开后从目前角度继续自转。（CSS 3D：容器 perspective，圆环 transform-style:preserve-3d，每张卡片 rotateY(i × 360/N) translateZ(半径)、backface-visibility:hidden；GSAP 让圆环 rotationY 循环，Draggable 拖拽时暂停并依位移设定角度）"
+  },
+  {
+    "id": 307,
+    "zh": "翻牌配对游戏",
+    "en": "Memory Match",
+    "desc": "点两张卡片翻开，一样就留下并弹一下，不一样就翻回去",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "翻牌 配对 记忆 游戏 小游戏 互动 Memory Match Card Game Flip Pairs 卡片 群组",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "JS + CSS",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "一个 4 × 2 的翻牌记忆小游戏：所有卡片背面朝上，点击时卡片以 3D 翻转显示正面图案；翻开两张后，若图案相同，两张留在正面、底色变成强调色并弹一下；若不同，停留约 0.8 秒后两张一起翻回背面；下方文字显示配对进度，全部配对成功后显示庆祝文字并洗牌重来。（CSS：卡片 transform-style:preserve-3d，正反两面 backface-visibility:hidden，.on 时 rotateY(180deg)；JS 管理翻开的卡片与配对判断）"
+  },
+  {
+    "id": 308,
+    "zh": "数据仪表卡片",
+    "en": "Stat Cards",
+    "desc": "三张数据卡片依序浮上来，数字累加、迷你折线图画出、成长率淡入",
+    "comp": "card",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "仪表板 数据 统计 KPI 折线 sparkline 后台 Dashboard Stat Cards KPI Sparkline Count Up 卡片 群组",
+    "uses": [
+      "data",
+      "ui"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "后台仪表板的三张数据卡片（营收、订单、转换率）：进场时依序从下方浮上淡入（间隔约 0.12 秒），每张卡片中的大数字从 0 累加到目标值（含千分位与小数），下方的迷你折线图从左到右画出，最后成长百分比从左侧淡入。（GSAP timeline：卡片 from y:30、opacity:0、stagger；数字用物件 tween + onUpdate 格式化；折线 polyline 用 DrawSVG 0% → 100%（或 stroke-dashoffset））"
+  },
+  {
+    "id": 309,
+    "zh": "翻页书",
+    "en": "Page Flip Book",
+    "desc": "点一下书页就以书脊为轴立体翻到左边，翻完再一起翻回第一页",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "翻页 书本 书页 杂志 型录 电子书 Page Flip Book Magazine Catalog 3D 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "GSAP 3D",
+    "txt": "序章 旅程 相遇 尾声",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "像一本书：右侧是一叠书页，每页正面有图片与页码；点击时最上面那页以左侧书脊为轴，在 3D 空间中翻到左边（约 0.9 秒、缓入缓出），翻到一半时可以看到书页的立体角度，翻过去后显示该页的背面；一页一页翻完后，所有书页依序快速翻回第一页。（CSS 3D：每页 transform-origin:left、transform-style:preserve-3d，正反两面 backface-visibility:hidden、背面 rotateY(180deg)；GSAP tween rotationY 0 → −180，并在翻页时调整 z-index 让翻过去的页叠在最上面）"
+  },
+  {
+    "id": 310,
+    "zh": "照片堆展开",
+    "en": "Stack to Grid",
+    "desc": "一叠散乱的照片，点一下平滑排成整齐的网格，再点收回成一叠",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "照片 堆叠 展开 网格 相册 整理 Photo Pile Stack To Grid Spread Flip 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "Flip",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-20",
+    "prompt": "一叠散乱的照片（每张带宽边框、随机歪斜不同角度、叠在中央）：点击后，照片一张接一张（间隔约 0.04 秒）平滑地飞到整齐的 3 × 2 网格位置并转正；再点一次则从网格飞回成散乱的一叠。约 0.7 秒、缓入缓出。（GSAP Flip：Flip.getState(照片) → 切换容器的 class（从绝对定位堆叠改成 grid 排列、rotate 归零）→ Flip.from(state, {absolute:true, stagger:.04})）"
+  },
+  {
+    "id": 311,
+    "zh": "对折邀请卡",
+    "en": "Folding Card",
+    "desc": "像实体卡片一样，封面以左边为轴立体打开，露出里面的图片和文字",
+    "comp": "card",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "卡片 对折 邀请卡 贺卡 打开 3D Folding Greeting Invitation Card Open 卡片 群组",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "GSAP 3D",
+    "txt": "YOU ARE INVITED",
+    "bg": "dark",
+    "added": "2026-10-20",
+    "prompt": "一张对折的邀请卡：一开始只看到封面（强调色底、大标题与「点一下打开」），点击时封面以左侧为轴，在 3D 空间中往左翻开 180 度（约 0.9 秒），封面背面是一张图片，右侧露出卡片内页的邀请文字与日期；整张卡片同时往右平移，让打开后的整体保持置中；再点一次则阖上。（CSS 3D：容器 perspective；封面 transform-origin:left、preserve-3d，正面与背面 backface-visibility:hidden、背面 rotateY(180deg)；GSAP timeline 同时 tween 封面 rotationY 0 → −180 与卡片 xPercent 0 → 50，play / reverse 切换）"
+  },
+  {
+    "id": 312,
+    "zh": "顶部载入进度条",
+    "en": "Top Loading Bar",
+    "desc": "换页时页面顶端一条细线快速跑到一半、慢慢爬，载完冲到底消失，内容再依序浮现",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "载入 进度条 顶部 换页 NProgress YouTube Loading Bar Page Load Progress 版面 页面",
+    "uses": [
+      "trans",
+      "ui"
+    ],
+    "tag": "GSAP",
+    "txt": "文章标题",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "网站换页或载入内容时，页面最顶端出现一条细细的强调色进度条（带微光）：先快速跑到约 30%，接著慢慢爬到约 70%（给人「正在载入」的感觉），载入完成时迅速冲到 100% 并淡出；同时页面内容（标题、段落、卡片）依序从下方淡入浮现。（GSAP timeline：进度条 transform-origin:left，scaleX 0 → .3（power2.out）→ .7（较慢）→ 1（快），再 opacity 0；内容 stagger 淡入）"
+  },
+  {
+    "id": 313,
+    "zh": "步骤进度条",
+    "en": "Step Progress",
+    "desc": "多步骤表单上方的步骤圆点，完成的勾选、目前这步放大，连接线跟著填满",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "步骤 进度 多步骤 表单 结帐 精灵 Stepper Multi Step Form Wizard Progress Checkout 版面 页面",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "帐号 资料 付款 完成",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "多步骤表单（例如注册或结帐）上方的步骤指示：一排圆形步骤编号以一条线连接，已完成的步骤圆点填满并以回弹出现勾勾，目前这一步外圈亮起并略为放大，未到的步骤维持淡色；连接线的填满长度跟著步骤平滑延伸；下方有「上一步／下一步」按钮。（CSS：连接线内层 transform:scaleX(目前索引 / (总数 − 1))，transition 0.5 秒；步骤以 .done / .on class 切换样式，勾勾用 scale 0 → 1 的 keyframes）"
+  },
+  {
+    "id": 314,
+    "zh": "大型下拉菜单",
+    "en": "Mega Menu",
+    "desc": "滑过导航栏项目时，下方展开一大块多栏菜单，各栏依序滑入",
+    "comp": "layout",
+    "when": [
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "大型菜单 下拉 导航栏 多栏 mega menu Dropdown Navigation Header 版面 页面",
+    "uses": [
+      "ui"
+    ],
+    "tag": "CSS transition",
+    "txt": "品牌设计 网站开发 动态影像 社群经营 案例分享 设计指南",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "网站导航栏：鼠标滑到「产品」时，下方展开一整块宽版的大型菜单面板（从略高处滑下并淡入），面板内分成三栏：两栏是带小图标的链接清单，一栏是精选图片卡；三栏依序（间隔约 0.06 秒）往上滑入；鼠标离开导航区时面板收起。（CSS：面板预设 opacity 0、translateY(−8px)、pointer-events:none，父层 :hover 或 .open 时恢复；每栏设 transition-delay 形成依序出现）"
+  },
+  {
+    "id": 315,
+    "zh": "推入换页",
+    "en": "Push Navigation",
+    "desc": "点清单项目，新页面从右边推进来、旧页面往左退并变暗；按返回则反向",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "推入 换页 返回 导航 iOS 堆叠 Push Pop Navigation Stack Page Transition App 版面 页面",
+    "uses": [
+      "trans",
+      "app"
+    ],
+    "tag": "GSAP",
+    "txt": "设定 通知 隐私 关于",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "模拟 App 的页面堆叠导航：点击清单中的某一项时，详细页面从右侧整页推入（带左侧阴影），原本的清单页同时往左移动约 30% 并变暗，像被新页面盖过去；点左上角「‹ 返回」时反向：详细页往右退出，清单页移回原位并恢复亮度。约 0.5 秒、缓入缓出。（GSAP：新页 xPercent 100 → 0，旧页 xPercent 0 → −30 并 filter: brightness(.6)；返回时相反）"
+  },
+  {
+    "id": 316,
+    "zh": "空状态插画",
+    "en": "Empty State",
+    "desc": "没有搜寻结果时，空箱子弹跳落下、盖子掀开冒出问号，文字与按钮依序出现",
+    "comp": "layout",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "空状态 无结果 找不到 404 插画 Empty State No Results Illustration 版面 页面",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "找不到相关效果",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "搜寻没有结果或清单为空时的空状态：一个简单的箱子插画从上方落下并弹跳停住，接著箱子的盖子以一角为轴掀开，里面冒出一个问号并上下轻轻漂浮；下方的标题、说明文字与「浏览全部」按钮依序淡入上移；之后盖子阖上、问号消失。让空白画面不冷冰冰并引导下一步。（GSAP timeline：插画 from y:-20 ease bounce.out → 盖子 rotation −28 back.out → 问号 from scale 0 → 文字 stagger 淡入 → 问号 yoyo 漂浮）"
+  },
+  {
+    "id": 317,
+    "zh": "Cookie 同意横幅",
+    "en": "Cookie Banner",
+    "desc": "底部弹出 Cookie 同意卡片，饼干图标晃一下；按下按钮后缩回滑走",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "GSAP",
+    "style": "Cookie 同意 横幅 隐私 GDPR 提示 Consent Banner Privacy Notice 版面 页面",
+    "uses": [
+      "ui"
+    ],
+    "tag": "GSAP",
+    "txt": "这个网站使用 Cookie",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "网站底部的 Cookie 同意卡片：进入页面时卡片从下方带回弹滑上来，左侧的饼干图标从小、歪斜的状态弹性转正放大；卡片内有标题、简短说明与两个按钮（只用必要／全部接受）；按下任一按钮时按钮轻压一下，卡片随即往下滑出并淡出。（GSAP：卡片 fromTo yPercent 140 → 0、ease back.out(1.4)；图标 rotation −40 → 0、scale .4 → 1、ease elastic.out；关闭时 yPercent → 140、power3.in）"
+  },
+  {
+    "id": 318,
+    "zh": "浮动按钮展开菜单",
+    "en": "Speed Dial FAB",
+    "desc": "右下角的「+」按钮点开时转成「×」，上方依序弹出几个小动作按钮和标签",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "浮动按钮 FAB 展开 快捷 动作 Speed Dial Floating Action Button Menu 版面 页面",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-21",
+    "prompt": "画面右下角的圆形浮动按钮（+）：点击时按钮旋转 135 度变成 ×，背景铺上一层半透明遮罩，上方由下往上依序弹出三个小圆形动作按钮，每个左侧带一个文字标签（例如新增笔记、拍照、分享链接），出现时从小、略低的位置带回弹放大；再点一次或点遮罩则依相反顺序收回。（CSS：.open 时主按钮 rotate(135deg)；每个动作项设 --i，transform: translateY + scale 过渡，transition-delay 依索引计算，收合时顺序相反）"
+  },
+  {
+    "id": 319,
+    "zh": "无限滚动载入",
+    "en": "Infinite Scroll",
+    "desc": "卷到底时出现转圈的「载入更多」，新内容接著一张张浮上来",
+    "comp": "layout",
+    "when": [
+      "scroll"
+    ],
+    "tech": "GSAP",
+    "style": "无限滚动 载入更多 分页 动态墙 Infinite Scroll Load More Feed Pagination 版面 页面",
+    "uses": [
+      "ui",
+      "app",
+      "scroll"
+    ],
+    "tag": "GSAP",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-21",
+    "prompt": "社群动态墙或文章列表的无限滚动：使用者卷到清单底部时，底部出现一个转圈的载入指示与「载入更多…」，约一秒后新的一批卡片接在清单后面，从下方依序（间隔约 0.12 秒）淡入浮上，使用者可以继续往下卷。（实作：IntersectionObserver 观察清单底部的哨兵元素，进入画面时显示载入指示并请求下一页；新卡片插入后用 GSAP from y:24、opacity:0、stagger 进场）"
+  },
+  {
+    "id": 320,
+    "zh": "侧栏收合",
+    "en": "Collapsible Sidebar",
+    "desc": "后台侧边栏按一下收成只剩图标，文字淡出，主内容区同步变宽",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "侧边栏 收合 展开 后台 仪表板 Collapsible Sidebar Nav Dashboard Admin 版面 页面",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "CSS transition",
+    "txt": "首页 报表 讯息 设定",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "后台界面左侧的侧边栏：点击侧栏顶端的收合按钮时，侧栏宽度平滑缩窄到只容得下图标（约 0.45 秒），每个项目的文字同时往左淡出，右侧主内容区同步变宽；再点一次展开时文字淡入回来；目前所在的项目有淡淡的强调底色。（CSS：侧栏 width transition，cubic-bezier(.6,0,.2,1)；项目文字 opacity 与 translateX 过渡，white-space:nowrap + overflow:hidden 避免换行；主内容 flex:1 自动填满）"
+  },
+  {
+    "id": 321,
+    "zh": "指令面板",
+    "en": "Command Palette",
+    "desc": "按 ⌘K 跳出搜寻面板，边打字边筛选指令，选中的那项亮起、按 Enter 执行",
+    "comp": "layout",
+    "when": [
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "指令面板 快捷键 搜寻 Cmd K Command Palette Spotlight Quick Search 版面 页面",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "GSAP timeline",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-21",
+    "prompt": "类似 ⌘K 的指令面板：按下快捷键时，背景模糊变暗，画面上方中央弹出一个搜寻面板（从略小略高处放大出现），输入框有闪烁光标，下方列出所有指令；使用者边打字，清单即时筛选只留下符合的项目，第一个符合项目以强调底色亮起并显示 ↵ 提示；按 Enter 时该项闪一下并关闭面板。（JS：keydown 监听 Meta/Ctrl + K 开启；input 事件筛选清单；CSS 面板 opacity + scale(.95) → 1 过渡、背景 backdrop-filter:blur）"
+  },
+  {
+    "id": 322,
+    "zh": "地图路线导航",
+    "en": "Map Route",
+    "desc": "地图上的地标针依序落下，路线从起点画到终点，小圆点沿路线前进",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "地图 路线 导航 地标 定位 旅程 外送 物流 Map Route Path Pin Delivery Journey 图形 SVG",
+    "uses": [
+      "data",
+      "hero"
+    ],
+    "tag": "MotionPath",
+    "txt": "台北 台中 高雄",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "一张简化的地图背景（淡淡的陆地轮廓与经纬格线），上面有三个地标针从上方依序落下并弹跳停住，每个地标下方标示地名；接著一条路线从起点沿著弯曲路径一路画到终点（约 2.2 秒），同时一个带光圈的小圆点沿著路线前进；抵达终点时终点地标弹一下。（GSAP：地标 from y:-30 + bounce.out stagger；路线 DrawSVG 0% → 100%；小圆点用 MotionPathPlugin 沿同一条 path 移动，duration 与画线一致；底下另有一条淡色虚线表示完整路线）"
+  },
+  {
+    "id": 323,
+    "zh": "即时时钟",
+    "en": "Analog Clock",
+    "desc": "显示现在时间的指针时钟，秒针每秒跳一格并带一点回弹",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "时钟 指针 秒针 即时 时间 Clock Analog Watch Time Real-time 图形 SVG",
+    "uses": [
+      "data",
+      "ui"
+    ],
+    "tag": "JS rAF",
+    "txt": "现在时间",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "一个显示目前真实时间的指针时钟：表面有 60 个刻度（每 5 格较粗较长），时针、分针连续平滑移动，秒针用强调色、每一秒跳一格，跳动时在约 0.15 秒内微微超过再弹回定位，像真的机械表。（JS requestAnimationFrame：读取 Date 的时分秒毫秒，计算各指针角度；秒针角度 = (秒 − 1 + 回弹曲线(毫秒/150)) × 6 度；SVG line 用 transform rotate）"
+  },
+  {
+    "id": 324,
+    "zh": "天气图标动画",
+    "en": "Animated Weather Icons",
+    "desc": "晴天太阳缓转、云朵飘动、雨滴落下、闪电闪一下",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "天气 图标 太阳 云 雨 闪电 icon Weather Icons Animated Sun Cloud Rain Thunder 图形 SVG",
+    "uses": [
+      "ui",
+      "app",
+      "data"
+    ],
+    "tag": "CSS keyframes",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-21",
+    "prompt": "一组天气图标卡片：晴天的太阳与光芒缓慢自转；多云的云朵左右轻轻飘移；雨天的雨滴从云下方错开时间持续落下并淡出；雷雨的闪电大部分时间暗淡，偶尔快速闪两下。图标下方标示天气名称。（SVG + CSS keyframes：太阳 rotate 10 秒一圈；云 translateX 来回；雨滴 translateY + opacity，animation-delay 错开；闪电用 steps(1) 的 keyframes 做闪烁）"
+  },
+  {
+    "id": 325,
+    "zh": "蚂蚁线选区框",
+    "en": "Marching Ants Selection",
+    "desc": "虚线选取框的线条持续流动，四角有控制点，框的大小改变时尺寸数字即时更新",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "选取框 虚线 蚂蚁线 控制点 设计工具 Figma Marching Ants Selection Box Handles 图形 SVG",
+    "uses": [
+      "ui",
+      "emph"
+    ],
+    "tag": "stroke-dashoffset",
+    "txt": "设计工具",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "像设计工具里的选取框：一个虚线矩形框住内容，虚线持续往同一个方向流动（俗称蚂蚁线），四个角落有方形控制点；选取框的大小在两种尺寸之间平滑变化，下方的尺寸标签（宽 × 高）跟著即时更新数字。（SVG rect：stroke-dasharray 6 5，keyframes 让 stroke-dashoffset 从 0 到 −11 无限循环；框的 width/height 用 CSS keyframes 改变；JS 定时读取尺寸更新标签）"
+  },
+  {
+    "id": 326,
+    "zh": "有机流动色块",
+    "en": "Organic Blob",
+    "desc": "一团不规则的柔软色块持续缓慢变形，后面还有一层淡淡的影子",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "有机 色块 斑点 流动 变形 液态 Blob Organic Shape Morph Liquid 图形 SVG",
+    "uses": [
+      "bg",
+      "hero",
+      "emph"
+    ],
+    "tag": "JS + SVG",
+    "txt": "Blob",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "一团有机的不规则色块（像软软的液体或果冻），边缘以多组不同频率的正弦波驱动，持续缓慢地变形、永不重复；后方还有一层稍大、较淡的同色影子以不同节奏变形，增加层次；文字放在色块中央。（JS requestAnimationFrame：取 8 个绕圆分布的控制点，半径 = 基准 + 多个 sin(时间 + 索引 × 相位) 的和，用 Catmull-Rom 转成平滑的三次贝兹曲线写入 path 的 d）"
+  },
+  {
+    "id": 327,
+    "zh": "成就徽章解锁",
+    "en": "Badge Unlock",
+    "desc": "六角形徽章描边画出、星星从大缩小盖上去、四周光芒放射",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "徽章 成就 解锁 奖励 游戏化 Badge Achievement Unlock Reward Gamification 图形 SVG",
+    "uses": [
+      "emph",
+      "app"
+    ],
+    "tag": "DrawSVG",
+    "txt": "连续登录 7 天",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "达成成就时的徽章动画：六角形徽章的外框先沿著边一笔画出，接著内部淡入填满；一颗星星从很大、旋转、透明的状态快速缩小落到徽章中央并带回弹，像盖章一样；同时徽章四周的一圈短光芒由内往外快速射出后消失，徽章整体轻弹一下；下方的成就名称与「成就解锁」字样依序浮现。（GSAP timeline：DrawSVG 画外框 → fillOpacity → 星星 fromTo scale 3 → 1、rotation −60 → 0、back.out → 光芒 DrawSVG \"0% 0%\" → \"0% 100%\" → \"100% 100%\"）"
+  },
+  {
+    "id": 328,
+    "zh": "心电图脉冲波形",
+    "en": "ECG Heartbeat Line",
+    "desc": "心电图的波形由左往右画出，发光的光标点沿线前进，旁边心跳数字跳动",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "心电图 心跳 波形 健康 医疗 监测 ECG Heartbeat Pulse Monitor Health 图形 SVG",
+    "uses": [
+      "data",
+      "app"
+    ],
+    "tag": "DrawSVG",
+    "txt": "",
+    "bg": "dark",
+    "fixed": true,
+    "added": "2026-10-21",
+    "prompt": "医疗或健康 App 的心电图显示：深色带细格线的萤幕上，一条发光的心电图波形（平线、小波、尖锐的 QRS 波、T 波重复）由左往右画出，一颗发光的光标点跟著画线的前端前进，画到底后线条从左侧开始消失再重画；右上角显示心跳数字（偶尔小幅变动）与一颗规律跳动的爱心。（GSAP：DrawSVG \"0% 0%\" → \"0% 100%\" 画出、再到 \"100% 100%\" 消失；光标点用 MotionPathPlugin 沿同一条路径；爱心 scale yoyo）"
+  },
+  {
+    "id": 329,
+    "zh": "枝芽分形生长",
+    "en": "Growing Plant",
+    "desc": "树干先长出来，再分出枝条，最后叶子一片片冒出",
+    "comp": "shape",
+    "when": [
+      "enter"
+    ],
+    "tech": "GSAP",
+    "style": "树 生长 植物 枝条 叶子 成长 永续 Growing Tree Plant Branches Leaves Growth 图形 SVG",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "DrawSVG",
+    "txt": "慢慢长大",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "一棵树由下往上生长：先画出地面线与主干（约 0.8 秒），接著左右分枝依序长出，再长出更细的小枝；枝条画完后，叶子以随机顺序一片片从枝条末端弹出（从 0 放大到 1，带回弹）；最后下方文字浮现。适合品牌故事、成长或永续主题。（GSAP timeline：每条枝条是 SVG path，用 DrawSVG 0% → 100% 依序画出；叶子 scale 0 → 1、transform-origin 在叶柄、stagger from:\"random\"）"
+  },
+  {
+    "id": 330,
+    "zh": "齿轮齿数咬合联动",
+    "en": "Gear Train",
+    "desc": "三个大小不同的齿轮咬合在一起，依齿数比例以不同速度互相带动",
+    "comp": "shape",
+    "when": [
+      "loop"
+    ],
+    "tech": "GSAP",
+    "style": "齿轮 连动 机械 运转 设定 系统 Gears Cogs Mechanism Rotation Settings 图形 SVG",
+    "uses": [
+      "bg",
+      "data"
+    ],
+    "tag": "GSAP",
+    "txt": "系统运作中",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "三个大小与齿数不同的齿轮彼此咬合：最大的齿轮以固定速度顺时针转动，与它咬合的两个较小齿轮依照齿数比例以较快的速度逆时针转动（齿数少的转得快），齿与齿对准不会穿模，像机械系统正在运作；适合「处理中」、设定或系统状态的画面。（SVG：用程式依半径与齿数产生齿轮轮廓 path；GSAP 让每个齿轮 rotation 无限循环，小齿轮的角速度 = 大齿轮 × (大齿数 ÷ 小齿数)、方向相反，并设定初始相位让齿对齐）"
+  },
+  {
+    "id": 331,
+    "zh": "指纹光条扫描解锁",
+    "en": "Fingerprint Scan",
+    "desc": "指纹纹路一圈圈画出，扫描光条上下扫过，成功后外框发光并勾选",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "GSAP",
+    "style": "指纹 扫描 解锁 生物辨识 验证 登录 Fingerprint Scan Biometric Unlock Auth 图形 SVG",
+    "uses": [
+      "app",
+      "ui"
+    ],
+    "tag": "DrawSVG",
+    "txt": "验证成功",
+    "bg": "dark",
+    "added": "2026-10-21",
+    "prompt": "手机指纹解锁画面：圆角方形感应区中，指纹的弧线纹路由内而外一圈圈依序画出；接著一条发光的扫描光条由上往下、再由下往上扫过，下方文字显示「扫描中…」；扫描完成后指纹纹路变淡，一个粗勾勾快速画出，感应区外框发出光晕，文字变成「验证成功」。（GSAP timeline：指纹弧线用 DrawSVG stagger 画出；扫描条 top 0% → 100% yoyo；完成时加 class 让外框 box-shadow 发光，勾勾 DrawSVG 0% → 100%）"
+  },
+  {
+    "id": 332,
+    "zh": "量子坍缩重构",
+    "en": "Quantum Superposition & Collapse",
+    "desc": "处于多重态概率云中的文字随着量子观测触发，伴随荧光跃迁高能坍缩凝为实体",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "量子力学 坍缩 叠加态 概率云 跃迁 矩阵 闪烁 科幻 Superposition Quantum Collapse Matrix",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "量子・科幻",
+    "txt": "QUANTUM",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "前沿量子力学微观动效：字元初始散落于高频弥散的虚粒子概率云中（带有 [|ψ⟩] 状态标识），字符在多重叠加态中闪烁微颤；触发波函数坍缩时，伴随强烈的高能翠绿与青蓝荧光跃迁闪烁，瞬间坍缩收束为结构极具张力的几何字形，四周散落微弱的干涉波纹与虚数坐标。（CSS 3D transform + text-shadow 高光能谱 + keyframes 概率收敛）"
+  },
+  {
+    "id": 333,
+    "zh": "色散棱镜折射",
+    "en": "Prism Chromatic Dispersion",
+    "desc": "高透三棱镜将光束解构为红绿蓝光谱色散，伴随45度晶体焦散光芒扫过字身切面",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "光学 棱镜 色散 彩虹 折射 光影 焦散 极简 高级感 Prism Dispersion Chromatic Caustics Optical",
+    "uses": [
+      "hero",
+      "logo"
+    ],
+    "tag": "光学・美学",
+    "txt": "SPECTRUM",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "高透晶体物理光学折射：文字如同置身于光学级三角棱镜后，折射出的纯白光束解构为红(R)、翠绿(G)、青紫(B)三原色光谱色散，三层色彩在空间中产生动态错位位移与波长延迟；一道 45 度的耀眼纯净焦散光带（Caustic Shimmer）如同日光扫过字身切面。（多层 text-shadow 与 mix-blend-mode: screen，配合流动线性高光）"
+  },
+  {
+    "id": 334,
+    "zh": "机械快门光圈",
+    "en": "Mechanical Iris Shutter",
+    "desc": "工业级6片相机光圈叶片机械联动旋转开合，伴随高精刻度标尺利落聚焦出文字",
+    "comp": "text",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "机械 镜头 快门 光圈 工业 精密 工业美学 摄影 对焦 Aperture Shutter Optical Leica",
+    "uses": [
+      "emph",
+      "hero"
+    ],
+    "tag": "精密・机械",
+    "txt": "APERTURE",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "德国精密工业与摄影光学美学：文字四周环绕着 6 片哑光钛金属光圈叶片与十字测距准星，伴随清脆的快门叶片联动旋转与缩放，光圈孔径从 f/1.4 快速旋开至 f/22，中央文字伴随清晰的景深焦距变化从虚化径向模糊瞬间咬合对焦为超锐利字形，四周带有精密角度刻度标尺。（SVG/CSS clip-path 多边形旋转叶片与 CSS blur 滤镜）"
+  },
+  {
+    "id": 335,
+    "zh": "机械分叶翻牌",
+    "en": "Mechanical Split-Flap Solari Board",
+    "desc": "经典机场与车站机械翻牌矩阵，上下分叶沿三维水平轴咬合翻落，伴随韵律卡嗒声逐字定格于锐利金色时刻字形",
+    "comp": "text",
+    "when": [
+      "enter",
+      "switch",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "机械 翻牌 时刻表 拟真 翻页 3D 折叠 拟物 复古 Split-Flap Solari Mechanical Flip Clock",
+    "uses": [
+      "hero",
+      "data",
+      "emph"
+    ],
+    "tag": "精密・机械",
+    "txt": "FLIGHT 77",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "经典机械分叶翻牌系统（Solari di Udine）：每个字位均配有哑光碳黑机械叶片舱（含左右金属铰链铆钉与中央水平分模缝）；入场时上下分叶沿三维 X 轴高速翻转，字母像复古机场时刻表一样急速向下折落滚动，从左到右带有时序递增的机械咬合阻尼，逐一卡嗒（Click-Clack）锁定在目标字符上；锁定后字形定格于高对比度的纯正象牙白/金黄色，上下叶片接缝处完美拼接无缝，伴随清脆微弱的机械回弹。（CSS 3D perspective + transform-origin 铰链翻转 + 机械卡嗒回弹缓动 + 真实叶片阴影）"
+  },
+  {
+    "id": 336,
+    "zh": "霓虹流体渗透",
+    "en": "Bioluminescent Fluid Meniscus",
+    "desc": "生物发光液态墨滴因表面张力垂落聚集，相互触碰时瞬间交融为平滑饱满的有机流体字形",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "流体 液体 表面张力 生物发光 水银 融合 有机 质感 Fluid Viscous Liquid Bioluminescent",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "流体・有机",
+    "txt": "VISCOUS",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "自然仿生与高分子物理：深色背景中数滴如同带有微弱生物荧光的高黏度流体水滴向下滴落，在重力与表面张力作用下接触，液滴之间形成优雅弯曲的弯月面（Meniscus）并迅速合并融合，流动扩散蔓延为圆润饱满的字形笔画，表面微泛反光高光并带有果冻般的阻尼微弹。（SVG feColorMatrix + feGaussianBlur 液态黏稠融合算法，结合弹性缓动）"
+  },
+  {
+    "id": 337,
+    "zh": "磁流体磁极针尖",
+    "en": "Ferrofluid Magnetic Spikes",
+    "desc": "黑色哑光磁流体在强磁场激活瞬间沿笔画脊线迸发出尖锐高耸的磁力针刺，随后平稳收敛",
+    "comp": "text",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "磁流体 磁场 针尖 尖刺 暗物质 物理 强力 冲击 异星科技 Ferrofluid Magnetic Spikes Physics",
+    "uses": [
+      "hero",
+      "emph"
+    ],
+    "tag": "物理・磁性",
+    "txt": "MAGNETIC",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "深黑磁流体物理现象：静止时字形呈现光滑饱满的深墨黑色，当高斯磁场脉冲通电激活，字体的边缘与折角处瞬间向外垂直射出数十根锐利修长的磁力针尖（Magnetic Spikes），针尖随着磁力线共振微颤，并伴随绿色磁感线电弧，最终磁场平稳回落，针刺优雅缩回晶莹圆润的字身。（CSS 伪元素尖锥渐变与 polygon clip-path 爆发动画）"
+  },
+  {
+    "id": 338,
+    "zh": "胶片灼烧消融",
+    "en": "Celluloid Film Burn & Ember",
+    "desc": "复古35毫米电影胶片放映机颤动中，炽热火圈从中心融化碳化，热浪消退后定格为超锐利文字，出场再次焦化模糊消融",
+    "comp": "text",
+    "when": [
+      "enter",
+      "exit"
+    ],
+    "tech": "CSS",
+    "style": "复古 胶片 灼烧 融化 电影 颗粒 灰烬 烫印 模拟 Celluloid Film Burn Vintage Ember 35mm",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "复古・电影",
+    "txt": "CINEMA 35",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "经典电影胶片物理质感：老式放映机24帧微颤与银盐胶片颗粒中，炽热熔孔瞬间扩张烧穿片基，文字伴随高温热浪模糊切入，热量散去后瞬间定格为100%超锐度清晰字体持续展陈，尾段再次引燃焦化、伴随热卷曲模糊消融。（双阶段热熔扩散 + 持续期绝对锐利定格 + 离场二次碳化滤镜）"
+  },
+  {
+    "id": 339,
+    "zh": "激光雷达点云",
+    "en": "Holographic LiDAR Point Cloud",
+    "desc": "垂直翠绿激光雷达扫描线横向掠过，在真三维空间中激发出数千颗带有深度坐标的高亮测量点云",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "Canvas",
+    "style": "雷达 激光 点云 自动驾驶 遥感 空间计算 三维 极客 LiDAR Laser PointCloud Cyber",
+    "uses": [
+      "hero",
+      "data"
+    ],
+    "tag": "雷达・空间",
+    "txt": "SPATIAL",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "自动驾驶与空间计算感知：一道极细的发光翠绿激光束（LiDAR Vertical Scan Line）自左向右高速扫描穿过虚空，扫描线所过之处，成百上千个微小的 3D 深度采样点被激发点亮，点云根据深度值呈现绿色至青蓝色的渐变，伴随微小视角视差立体转动，精准还原出三维点云构建的立体文字。（Canvas 2D/3D 逐点深度渲染与扫描线激发算法，交互时支持光标微视差旋转）"
+  },
+  {
+    "id": 340,
+    "zh": "纸艺立体折展",
+    "en": "Kirigami Geometric Unfold",
+    "desc": "日式建筑折纸艺术，每个字元如多边形折纸沿45度轴线立体翻折展开，伴随真实的纸张投影",
+    "comp": "text",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "折纸 纸艺 几何 建筑 极简 阴影 质感 触觉 Kirigami Origami Papercraft Unfold Isometric",
+    "uses": [
+      "hero",
+      "ui"
+    ],
+    "tag": "纸艺・几何",
+    "txt": "ORIGAMI",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "当代纸艺与建筑设计：字形被解构为若干张 45 度角的极简几何纸片，起始状态紧贴折叠在平面中，随着动画开启，折痕如合页般自内而外顺畅翻开，带有柔和漫反射环境阴影（Ambient Occlusion）与纸张倾斜产生的明暗对比，呈现出极具触觉美感的立体纸雕立体字。（CSS 3D perspective + transform-origin 铰链翻转 + 动态 box-shadow）"
+  },
+  {
+    "id": 341,
+    "zh": "克拉尼声波图",
+    "en": "Chladni Acoustic Resonance",
+    "desc": "纯净声频震动黑色金属振动板，细白沙粒在驻波节线上迅速滑移排列，聚合成神圣几何声学文字",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "声学 克拉尼 驻波 振动 共鸣 细沙 物理 神圣几何 Cymatics Chladni Acoustic Resonance",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "声学・共振",
+    "txt": "CYMATICS",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "声学波动物理学奇迹：深灰磨砂金属共振板上，无序散布的微小晶体细沙颗粒在特定音频频率（如 432Hz）激发下剧烈震颤跳跃，颗粒因驻波声压迅速逃离波腹、汇聚在静止的波节线（Nodal Lines）上，快速形成极其精巧繁复的对称声学共振花纹，最终清晰凝练出文字轮廓。（CSS 粒子位移震颤 + 几何多边形共振轮廓 + 聚焦平滑动画）"
+  },
+  {
+    "id": 342,
+    "zh": "墨染拓印·宣纸渗染",
+    "en": "Sumi Ink Wash & Xuan Paper Deboss",
+    "desc": "宋代美学宣纸微凹拓印，松烟墨滴沿纤维毛细渗染展开，最终凝为极高锐度且具矿物沉淀感的静谧书道字体",
+    "comp": "text",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "水墨 拓印 宣纸 渗染 书法 宋代理学 极简 沉静 东方美学 Sumi Ink Deboss Calligraphy",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "东方・水墨",
+    "txt": "墨痕微澜",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "高审美东方古典水墨与活字拓印美学：纯净哑光玄色宣纸背景中，字形初始如盲文压印般在纸张上呈现深浅不一的凹凸阴影；浓黑松烟墨汁顺着微米级纸张纤维毛细孔向外渐次渗润渗透，伴随表面张力收敛与水分蒸发沉淀，最终定格为如刀刻碑帖般极度凝练利落、兼具墨色沉淀与绝对边缘锐度的高级书道文字。（CSS text-shadow 拓印压痕 + 多重高斯墨渗过渡 + 锐利高对比成型）"
+  },
+  {
+    "id": 343,
+    "zh": "钛金磁浮触感",
+    "en": "Titanium Mag-Lev Haptic Push",
+    "desc": "精密航空级钛金按键悬浮于微米级沉孔内，带有非线性磁斥阻尼行程与微倾斜反光高光切边",
+    "comp": "button",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "钛金属 磁悬浮 触觉 反馈 工业设计 倒角 极简 奢华 实体按键 Titanium Haptic MagLev Minimalist",
+    "uses": [
+      "ui",
+      "brand"
+    ],
+    "tag": "精密・硬件",
+    "txt": "DEPLOY",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "德国精密五金与高端触觉界面哲学：一枚由航空级拉丝钛合金CNC精铣而成的胶囊按键，静止悬浮于带发丝纹阶梯沉孔中；受按压时产生非线性强磁排斥阻尼下沉（初段顺滑、末段刚性制动），下压瞬间露出内圈冷白磷光环形光隙，边缘精密切角随角度流转出镜面反光游光，松开时清脆回弹归位。（CSS 3D 深度行程 + 非线性磁力弹簧贝塞尔 + 动态高光扫射与冷光缝隙）"
+  },
+  {
+    "id": 344,
+    "zh": "游标微动精密度盘",
+    "en": "Vernier Micrometer Caliper Dial",
+    "desc": "瑞士精密仪器游标副尺刻度盘，双层环向主副标尺相对微动微调，伴随惯性阻尼与冷光指标咬合对齐",
+    "comp": "control",
+    "when": [
+      "hover",
+      "switch",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "游标卡尺 刻度盘 精密仪器 瑞士钟表 调参 控制器 微米 Vernier Caliper Micrometer Precision",
+    "uses": [
+      "ui",
+      "data"
+    ],
+    "tag": "精密・度量",
+    "txt": "0.025 mm",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "瑞士精密钟表与游标卡尺物理联动：中央环形度盘刻有激光蚀刻0.1mm主刻度与0.02mm游标细分副尺，旋钮在旋转微调时，主尺与副尺产生带质量惯性的微速差滑动；当主副刻度线绝对共线重合瞬间，翠绿色冷光测量准星触发微米级卡嗒咬合锁定，中央数字读数精准同步翻转刷新。（双层差速旋转刻度环 + 磁滞步进咬合对齐 + 荧光标尺准星）"
+  },
+  {
+    "id": 345,
+    "zh": "黑曜石雕塑立面",
+    "en": "Obsidian Architectural Monolith Slab",
+    "desc": "厚重哑光黑曜玄石体块，带有倾斜光束扫射产生的建筑阴影与微米级金丝倒角，呈现极具雕塑体量感的悬浮进深",
+    "comp": "card",
+    "when": [
+      "enter",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "黑曜石 建筑 雕塑 体量 阴影 倒角 极简 沉稳 安藤忠雄 奢石 Obsidian Monolith Architectural",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "建筑・体量",
+    "txt": "SPECIMEN 01",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "安藤忠雄与卒姆托式建筑体量美学：一块沉稳致密的深灰黑曜石卡片悬浮于幽暗空间，斜向45度冷调掠射天光扫过其经过手工研磨的微斜倒角（Chamfer），在边缘激发出若隐若现的金属冷光反射；卡片随着呼吸式微重力缓慢悬浮升降，卡片背面的深邃漫反射空间阴影随之优雅张弛扩展，展现绝对克制而震撼的雕塑级建筑质感。（CSS 3D 透视角度 + 真实定向日光阴影方程 + 阶梯金相切面）"
+  },
+  {
+    "id": 346,
+    "zh": "黑胶声槽反光扫掠",
+    "en": "Vinyl Microgroove Specular Sheen",
+    "desc": "高保真模拟黑胶唱片同心微细声槽，在定向侧光下流转出经典的双叶沙漏形干涉反光光斑，伴随唱臂微颤对焦",
+    "comp": "media",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "CSS",
+    "style": "黑胶 唱片 声槽 衍射 光斑 模拟 音响 音乐 发烧友 经典 Vinyl Hi-Fi Specular Grooves",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "模拟・黑胶",
+    "txt": "SIDE A · 33⅓ RPM",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "发烧级模拟声学与微观几何光学：一盘致密深邃的哑光碳黑180克发烧黑胶黑胶唱盘缓缓自转，其表面密布的数百条微米级声波同心刻槽在侧向环境光源映射下，产生标志性的双叶对顶沙漏状各向异性反光束（Anisotropic Specular Sheen）；光斑随着转动在声槽间平滑扫掠漂移，中央唱片圆心标签清晰锐利，唱臂精密悬浮并伴随细微的唱片平整度微量物理起伏。（CSS 圆锥渐变与各向异性高光扫掠 + 极低频转盘物理抖动模拟）"
+  },
+  {
+    "id": 347,
+    "zh": "悬链悬索张拉曲面",
+    "en": "Catenary Tensile Arch Geometry",
+    "desc": "高迪式反向悬链线双曲力学曲面，极简几何悬索在重力平衡与张力极限之间平滑呼吸形变，呈现纯粹力学建筑结构美",
+    "comp": "shape",
+    "when": [
+      "enter",
+      "loop"
+    ],
+    "tech": "Canvas",
+    "style": "悬链线 张拉膜 索网 结构力学 高迪 黄金分割 数学几何 纯净 Catenary Tensile Architecture Geometry",
+    "uses": [
+      "hero",
+      "brand"
+    ],
+    "tag": "结构・力学",
+    "txt": "CATENARY",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "高迪自然悬链线（Funicular Catenary）与弗雷·奥托张拉力学美学：根据双曲余弦方程实时计算的多组超纯净张力悬索曲线在空间中舒展延展，细如发丝的高强度悬索受力节点之间产生富有韵律的微小引力张弛振荡；反向悬链拱与下沉垂索相互交织成完美的双曲抛物面网格，节点处的微小测量光点随着结构受力重新分配而流畅游弋，展现不施粉黛的纯数学力学高级感。（Canvas 矢量悬链线微分方程实时运算 + 张拉力阻尼缓动）"
+  },
+  {
+    "id": 348,
+    "zh": "地质层叠断层微光",
+    "en": "Stratified Geological Rift & Amber Seam",
+    "desc": "大地构造深层玄武岩与页岩沉积断层微速平移，岩层缝隙间呼吸溢出温润深邃的琥珀矿脉地热微光",
+    "comp": "bg",
+    "when": [
+      "loop",
+      "hover"
+    ],
+    "tech": "CSS",
+    "style": "地质 断层 岩层 琥珀 矿石 大地 构造 宏大 沉思 空间 Geological Strata Rift Amber Tectonic",
+    "uses": [
+      "bg",
+      "hero"
+    ],
+    "tag": "地质・沉积",
+    "txt": "STRATA",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "深层地质构造与时间沉积艺术：深灰玄武岩与页岩水平层理在深渊中以极低速度产生微米级的板块构造错位滑动（Tectonic Drift），在断层岩理裂隙深处，一条如同天然凝固琥珀与金矿脉络的地热微光缓缓深呼吸；漫射的暖琥珀金光穿透半透明硅质岩层边缘，映射出层次分明的水平岩层肌理，克制沉静，极具浩瀚深邃的空间存在感。（多层 CSS 视差层叠切面 + 动态琥珀次表面散射微光）"
+  },
+  {
+    "id": 349,
+    "zh": "柯布西耶模度网格重组",
+    "en": "Modulor Architectural Grid Alignment",
+    "desc": "现代建筑大师柯布西耶黄金分割模度网格，辅助比例线在空间中滑移咬合，将非对称布局从容重组为绝对和谐的理性版面",
+    "comp": "layout",
+    "when": [
+      "enter",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "柯布西耶 模度 建筑网格 黄金分割 包豪斯 比例 平面理性 Modulor Le Corbusier Grid Layout",
+    "uses": [
+      "ui",
+      "hero"
+    ],
+    "tag": "建筑・网格",
+    "txt": "MODULOR 1.618",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "柯布西耶《模度》（Le Modulor）黄金比例网格建筑系统：画面展开时，若干条极细的 0.5px 建筑制图红蓝辅助参考线与模度刻度尺从虚空中平滑滑移穿梭；随着线条在空间交汇处形成几何约束，原本非对称的三栏内容区块如同预制建筑构件般被磁性网格精准咬合、吸附归位，标注尺寸数值顺畅收敛，呈现令人身心愉悦的绝对空间比例与理性秩序。（CSS Grid 自适应比例过渡 + 建筑尺标动态划线与对齐动画）"
+  },
+  {
+    "id": 350,
+    "zh": "光学测距标定准星",
+    "en": "Optical Rangefinder Reticle & Vernier Crosshair",
+    "desc": "经典莱卡旁轴重合双影测距与航空抬头显示准星，在移动中呈现亚像素位移读数与磁吸对焦平滑重合闭锁",
+    "comp": "cursor",
+    "when": [
+      "hover",
+      "switch"
+    ],
+    "tech": "CSS",
+    "style": "光标 旁轴测距 莱卡 准星 测距 航空 瞄准 极客 极简 对焦 Rangefinder Reticle Leica Crosshair",
+    "uses": [
+      "ui",
+      "app"
+    ],
+    "tag": "光学・标定",
+    "txt": "RANGE 2.4m",
+    "bg": "dark",
+    "isNew": true,
+    "added": "2026-10-29",
+    "prompt": "德国经典旁轴相机黄斑重合测距与航空平视显示器（HUD）融合：光标化为一组极简轻盈的双折角框线准星；移动时准星中央呈现两道略微水平错位的重叠分影（Split Image），并伴随超细字体的微米级实时视差读数；当光标接近交互目标或悬停时，双影以阻尼极佳的惯性向中心平滑重合聚拢、咬合成单一高锐度准星，外圈迸发一道极细微的翠绿聚焦刻度光圈。（CSS 自定义光标变换 + 差动双影重合合焦 + 实时坐标遥测显示）"
+  }
+];

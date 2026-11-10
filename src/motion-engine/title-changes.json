@@ -1,0 +1,1969 @@
+[
+  {
+    "id": 1,
+    "en": "Lightning Strike",
+    "before": "閃電砸落",
+    "after": "闪电砸落",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 2,
+    "en": "Laser Cut",
+    "before": "雷射切斷",
+    "after": "激光横切",
+    "reason": "原名“雷射切斷”为港台音译，标准术语为“激光横切”（Laser Cut）"
+  },
+  {
+    "id": 3,
+    "en": "Coin Flip",
+    "before": "硬幣翻轉",
+    "after": "硬币翻转",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 7,
+    "en": "Text Kaleido",
+    "before": "文字萬花筒",
+    "after": "文字万花筒",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 8,
+    "en": "Number Slam",
+    "before": "倒數砸落",
+    "after": "倒数重击",
+    "reason": "原名“倒數砸落”略显口语化，改用“倒数重击”更具 Number Slam 冲击力"
+  },
+  {
+    "id": 10,
+    "en": "Stop Motion",
+    "before": "定格晃動",
+    "after": "定格抽帧晃动",
+    "reason": "原名“定格晃動”，补充“抽帧”准确传达 Stop Motion 定格动画的低帧率特征"
+  },
+  {
+    "id": 11,
+    "en": "Letter Rain",
+    "before": "文字雨",
+    "after": "假名字符雨",
+    "reason": "原名“文字雨”，实际为垂直下落的矩阵字符流（Letter Rain / Matrix Rain）"
+  },
+  {
+    "id": 12,
+    "en": "Magnifier Lens",
+    "before": "放大鏡",
+    "after": "放大镜局部透视",
+    "reason": "原名“放大鏡”，补充“局部透视”强化 Magnifier Lens 随光标放大的物理属性"
+  },
+  {
+    "id": 13,
+    "en": "Scramble Decode",
+    "before": "亂碼解讀",
+    "after": "乱码解码",
+    "reason": "原名“亂碼解讀”，Scramble Decode 在科技动效中规范称为“乱码解码”"
+  },
+  {
+    "id": 14,
+    "en": "Domino Letters",
+    "before": "骨牌倒下",
+    "after": "多米诺骨牌连倒",
+    "reason": "原名“骨牌倒下”，加入“多米诺”与“连倒”强化 Domino Letters 的连环推倒质感"
+  },
+  {
+    "id": 15,
+    "en": "Gradient Flow",
+    "before": "漸層流動",
+    "after": "多色渐变流动",
+    "reason": "原名“漸層流動”，大陆标准色彩设计术语为“渐变”（Gradient Flow）"
+  },
+  {
+    "id": 16,
+    "en": "Circle Text",
+    "before": "圓環文字",
+    "after": "双环反向自旋",
+    "reason": "原名“圓環文字”，准确指出其双圈同心圆、一顺一逆反向旋转的核心机制"
+  },
+  {
+    "id": 18,
+    "en": "Letter Bounce",
+    "before": "逐字彈跳",
+    "after": "逐字弹跳",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 19,
+    "en": "Text Flag",
+    "before": "文字旗幟",
+    "after": "旗帜迎风飘扬",
+    "reason": "原名“文字旗幟”，生动呈现 Text Flag 迎风掀起波浪翻滚的视觉意境"
+  },
+  {
+    "id": 20,
+    "en": "Gravity Flip",
+    "before": "重力反轉",
+    "after": "重力反转",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 21,
+    "en": "Magnet Pull",
+    "before": "磁鐵吸附",
+    "after": "磁铁吸附",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 22,
+    "en": "Word Pulse Grid",
+    "before": "脈動格子",
+    "after": "脉冲网格波纹",
+    "reason": "原名“脈動格子”，Grid Pulse 标准术语为“脉冲网格”"
+  },
+  {
+    "id": 23,
+    "en": "Weight Grow",
+    "before": "字重變粗",
+    "after": "可变字重呼吸",
+    "reason": "原名“字重變粗”，该动画采用 Variable Font（可变字体）在极细到极粗之间呼吸循环"
+  },
+  {
+    "id": 24,
+    "en": "Text Fan",
+    "before": "文字扇",
+    "after": "折扇层叠展开",
+    "reason": "原名“文字扇”，准确描摹同一文字如和风折扇开合的轴心展开效果"
+  },
+  {
+    "id": 25,
+    "en": "Karaoke Ball",
+    "before": "卡拉OK小球",
+    "after": "卡拉OK跳动小球",
+    "reason": "原名“卡拉OK小球”，准确指出小球在字幕上方逐字跃动点亮（Karaoke Ball）"
+  },
+  {
+    "id": 26,
+    "en": "Swing Letters",
+    "before": "鐘擺搖晃",
+    "after": "摆钟悬挂摇晃",
+    "reason": "原名“鐘擺搖晃”，明确从顶部固定点做摆锤钟摆晃荡的动力学特征"
+  },
+  {
+    "id": 28,
+    "en": "Rotating Words",
+    "before": "圓環換字",
+    "after": "季节文字环轮播",
+    "reason": "原名“圓環換字”，描述包含四季文字在中央翻牌轮播的完整动作"
+  },
+  {
+    "id": 29,
+    "en": "Blur Trail",
+    "before": "殘影疾走",
+    "after": "高速残影掠过",
+    "reason": "原名“殘影疾走”，Blur Trail 带有极速运动模糊与拖尾"
+  },
+  {
+    "id": 30,
+    "en": "Checker Words",
+    "before": "棋盤翻轉",
+    "after": "棋盘格逐字翻转",
+    "reason": "原名“棋盤翻轉”，Checkerboard 逐格翻转"
+  },
+  {
+    "id": 31,
+    "en": "Roller Path",
+    "before": "∞ 軌道",
+    "after": "无穷符号轨迹环绕",
+    "reason": "原名“無窮文字”，该效果文字沿着 ∞ 符号（Infinity Path）SVG 轨迹无限运动"
+  },
+  {
+    "id": 32,
+    "en": "Shuffle Letters",
+    "before": "洗牌重排",
+    "after": "随机字符洗牌重排",
+    "reason": "原名“隨機洗牌”，明确体现字母乱序打乱后重新复位的过程"
+  },
+  {
+    "id": 33,
+    "en": "Text Spiral",
+    "before": "文字漩渦",
+    "after": "文字漩涡",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 34,
+    "en": "Jitter Settle",
+    "before": "顫抖穩定",
+    "after": "颤抖稳定",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 35,
+    "en": "Elastic Wave Stretch",
+    "before": "彈性拉伸",
+    "after": "弹性拉伸",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 36,
+    "en": "Ink Bleed",
+    "before": "墨水暈開",
+    "after": "墨水晕开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 38,
+    "en": "Text Mosaic",
+    "before": "字體樣本",
+    "after": "多字体逐字混排",
+    "reason": "原名“不同字體”，8 种截然不同的艺术字型逐字穿插"
+  },
+  {
+    "id": 41,
+    "en": "Word Burst",
+    "before": "文字爆開",
+    "after": "文字爆开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 42,
+    "en": "Letter Sequence",
+    "before": "逐字敲擊",
+    "after": "逐字敲击",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 44,
+    "en": "Punch Zoom",
+    "before": "衝擊放大",
+    "after": "冲击放大",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 45,
+    "en": "Kinetic Stack",
+    "before": "動態堆疊",
+    "after": "多向对撞入场",
+    "reason": "原名“多向撞擊”，词组分别由上下左右四个方向汇聚对撞"
+  },
+  {
+    "id": 46,
+    "en": "Text Zoom Through",
+    "before": "穿越放大",
+    "after": "逐词聚焦放大",
+    "reason": "原名“縮放換字”，Zoom Title 词条依次向前推近放大"
+  },
+  {
+    "id": 47,
+    "en": "Text Squeeze",
+    "before": "擠壓彈跳",
+    "after": "挤压弹跳",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 48,
+    "en": "Huge Text Scroll",
+    "before": "巨字滑過",
+    "after": "巨幅双速走马灯",
+    "reason": "原名“雙層走馬燈”，上下两层大字与小字以不同速率反向滚动"
+  },
+  {
+    "id": 49,
+    "en": "Vertical Typography",
+    "before": "直書逆走",
+    "after": "直书逆走",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 50,
+    "en": "Diagonal Text Bands",
+    "before": "斜線帶",
+    "after": "交错斜向警戒带",
+    "reason": "原名“斜角走馬燈”，工业警示带风格斜向对角穿梭"
+  },
+  {
+    "id": 51,
+    "en": "Text Ribbon",
+    "before": "緞帶",
+    "after": "S弯道跑道文字",
+    "reason": "原名“S型走馬燈”，沿着 S 型波浪曲线平滑流动"
+  },
+  {
+    "id": 52,
+    "en": "Marquee",
+    "before": "跑馬燈",
+    "after": "跑马灯",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 53,
+    "en": "Parallax Columns",
+    "before": "直書三層",
+    "after": "直书三层",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 54,
+    "en": "Tape Cross",
+    "before": "封鎖膠帶",
+    "after": "封锁胶带",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 57,
+    "en": "Text Cylinder",
+    "before": "圓柱",
+    "after": "圆柱",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 58,
+    "en": "Ring Text Tunnel",
+    "before": "圓環隧道",
+    "after": "圆环隧道",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 59,
+    "en": "Text Orbit",
+    "before": "軌道",
+    "after": "轨道",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 60,
+    "en": "Text Cube",
+    "before": "方塊",
+    "after": "方块",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 61,
+    "en": "Extrude Text",
+    "before": "立體字",
+    "after": "立体字",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 64,
+    "en": "Typewriter",
+    "before": "打字機",
+    "after": "打字机",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 66,
+    "en": "Odometer",
+    "before": "計數器",
+    "after": "计数器",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 67,
+    "en": "Headline Swap",
+    "before": "標題切換",
+    "after": "标题切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 71,
+    "en": "Text Mask Pattern",
+    "before": "圖案遮罩",
+    "after": "图案遮罩",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 72,
+    "en": "Long Shadow",
+    "before": "長陰影",
+    "after": "长阴影",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 73,
+    "en": "Liquid Fill",
+    "before": "液體填滿",
+    "after": "液体填满",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 74,
+    "en": "Highlight Text",
+    "before": "螢光筆",
+    "after": "萤光笔",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 75,
+    "en": "Split Invert",
+    "before": "斜線反轉",
+    "after": "斜线反转",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 77,
+    "en": "Scramble Reveal",
+    "before": "亂碼揭示",
+    "after": "乱码揭示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 78,
+    "en": "Typing Swap",
+    "before": "打字換句",
+    "after": "打字换句",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 79,
+    "en": "Elastic Drop",
+    "before": "彈性落下",
+    "after": "弹性落下",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 81,
+    "en": "Random Scatter",
+    "before": "隨機散聚",
+    "after": "随机散聚",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 82,
+    "en": "Grid Stagger",
+    "before": "格狀擴散",
+    "after": "格状扩散",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 83,
+    "en": "Word Rotator",
+    "before": "遮罩換詞",
+    "after": "遮罩换词",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 84,
+    "en": "Number Counter",
+    "before": "數字累加",
+    "after": "数字累加",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 87,
+    "en": "Squash Bounce",
+    "before": "壓扁彈跳",
+    "after": "压扁弹跳",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 88,
+    "en": "Draw Highlight",
+    "before": "手繪圈重點",
+    "after": "手绘圈重点",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 89,
+    "en": "Shape Morph",
+    "before": "形狀變形",
+    "after": "形状变形",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 90,
+    "en": "Path Flight",
+    "before": "路徑飛行",
+    "after": "路径飞行",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 92,
+    "en": "Scroll Reveal",
+    "before": "捲動揭示",
+    "after": "滚动揭示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 93,
+    "en": "Horizontal Scroll",
+    "before": "橫向捲動",
+    "after": "横向滚动",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 94,
+    "en": "Parallax Layers",
+    "before": "視差圖層",
+    "after": "视差图层",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 95,
+    "en": "Magnetic Button",
+    "before": "磁吸按鈕",
+    "after": "磁吸按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 96,
+    "en": "Cursor Follower",
+    "before": "游標跟隨",
+    "after": "光标跟随",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 97,
+    "en": "Drag & Toss",
+    "before": "拖曳甩動",
+    "after": "拖拽甩动",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 98,
+    "en": "Card Deal",
+    "before": "發牌展開",
+    "after": "发牌展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 99,
+    "en": "Confetti Burst",
+    "before": "彩紙爆發",
+    "after": "彩纸爆发",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 100,
+    "en": "Velocity Marquee",
+    "before": "滾輪加速跑馬燈",
+    "after": "滚动速度联动跑马灯",
+    "reason": "原名“滾輪加速跑馬燈”，走马灯速度与用户页面滚动速度动态绑定"
+  },
+  {
+    "id": 101,
+    "en": "Scroll Spy Dot Nav",
+    "before": "捲動導覽點",
+    "after": "滚动定位指示点",
+    "reason": "原名“捲動導覽點”，Scroll Spy Dot Nav 随视口位置高亮指示点"
+  },
+  {
+    "id": 102,
+    "en": "Rolling Text Button",
+    "before": "文字翻滾按鈕",
+    "after": "文字翻滚按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 103,
+    "en": "Direction-aware Fill Button",
+    "before": "游標擴散填滿按鈕",
+    "after": "光标方向感知填充按钮",
+    "reason": "原名“游標擴散填滿按鈕”，Direction-aware Fill Button 感知光标进入方位"
+  },
+  {
+    "id": 104,
+    "en": "Staggered Card Reveal",
+    "before": "卡片依序浮現",
+    "after": "卡片阶梯交错渐入",
+    "reason": "原名“卡片依序浮現”，Staggered Card Reveal 阶梯延时"
+  },
+  {
+    "id": 105,
+    "en": "Tilt Parallax Image",
+    "before": "3D 傾斜視差圖片",
+    "after": "3D 倾斜视差图片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 106,
+    "en": "Aurora Gradient",
+    "before": "流動光暈漸層",
+    "after": "极光流动渐变背景",
+    "reason": "原名“流動光暈漸層”，Aurora Gradient 极光光晕色彩漂移"
+  },
+  {
+    "id": 107,
+    "en": "Spotlight Grid",
+    "before": "聚光網格",
+    "after": "聚光灯跟随网格",
+    "reason": "原名“聚光網格”，Spotlight Grid 光标探照网格高亮"
+  },
+  {
+    "id": 108,
+    "en": "Particle Network",
+    "before": "粒子連線",
+    "after": "粒子连线",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 109,
+    "en": "Shine Sweep Button",
+    "before": "光澤掃過按鈕",
+    "after": "光泽横扫扫光按钮",
+    "reason": "原名“光澤掃過按鈕”，Shine Sweep Button 镜面高光斜扫"
+  },
+  {
+    "id": 110,
+    "en": "Rotating Gradient Border",
+    "before": "旋轉光邊按鈕",
+    "after": "旋转光边按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 111,
+    "en": "Like Burst",
+    "before": "愛心按讚爆開",
+    "after": "爱心按赞爆开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 113,
+    "en": "Spotlight Card",
+    "before": "光暈邊框卡片",
+    "after": "光晕边框卡片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 114,
+    "en": "Skeleton Shimmer",
+    "before": "骨架載入",
+    "after": "骨架载入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 115,
+    "en": "Image Clip Reveal",
+    "before": "圖片遮罩揭示",
+    "after": "图片遮罩揭示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 116,
+    "en": "Before / After Slider",
+    "before": "前後對比滑桿",
+    "after": "前后对比滑杆",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 117,
+    "en": "Shrinking Sticky Header",
+    "before": "導覽列捲動縮小",
+    "after": "导览列滚动缩小",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 118,
+    "en": "Toast Stack",
+    "before": "通知堆疊",
+    "after": "通知堆叠",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 119,
+    "en": "Hover Expand Cursor",
+    "before": "懸停放大游標",
+    "after": "悬停放大光标",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 120,
+    "en": "Hover Image Reveal",
+    "before": "清單懸停預覽圖",
+    "after": "清单悬停预览图",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 121,
+    "en": "Cursor Trail",
+    "before": "游標拖尾軌跡",
+    "after": "光标拖尾轨迹",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 122,
+    "en": "Click Ripple",
+    "before": "點擊漣漪",
+    "after": "点击涟漪扩散",
+    "reason": "原名“點擊漣漪”，Click Ripple 水波扩散"
+  },
+  {
+    "id": 123,
+    "en": "Rotating Text Cursor",
+    "before": "旋轉文字環游標",
+    "after": "旋转文字环光标",
+    "reason": "原名“旋轉文字環游標”，Rotating Text Cursor 环状文字环绕光标"
+  },
+  {
+    "id": 124,
+    "en": "Flashlight Reveal",
+    "before": "手電筒探照",
+    "after": "手电筒局部探照",
+    "reason": "原名“手電筒探照”，Flashlight Reveal 仅在光标周围照出隐藏内容"
+  },
+  {
+    "id": 127,
+    "en": "Timeline Draw",
+    "before": "時間軸延伸",
+    "after": "时间轴延伸",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 128,
+    "en": "Z-pattern Reveal",
+    "before": "Z 字閱讀動線",
+    "after": "Z 字阅读动线",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 129,
+    "en": "Connected Steps",
+    "before": "步驟依序連接",
+    "after": "步骤依序连接",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 130,
+    "en": "Gentle CTA Cue",
+    "before": "行動按鈕提示",
+    "after": "行动按钮提示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 131,
+    "en": "Soft Mask Reveal",
+    "before": "柔邊遮罩揭示",
+    "after": "柔边遮罩揭示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 132,
+    "en": "Zigzag Cascade",
+    "before": "左右交錯淡入",
+    "after": "左右交错淡入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 133,
+    "en": "Draw Your SVG",
+    "before": "上傳 SVG 描繪",
+    "after": "上传 SVG 描绘",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 134,
+    "en": "Signature Writing",
+    "before": "手寫簽名",
+    "after": "手写签名",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 135,
+    "en": "Line Illustration Draw",
+    "before": "線條插畫逐筆描繪",
+    "after": "线条插画逐笔描绘",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 136,
+    "en": "Icon Stroke Redraw",
+    "before": "圖示描邊 hover",
+    "after": "图示描边 hover",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 137,
+    "en": "Flowing Connectors",
+    "before": "流程連線流動",
+    "after": "流程连线流动",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 138,
+    "en": "Wave Divider",
+    "before": "波浪分隔線",
+    "after": "波浪分隔线",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 139,
+    "en": "Circular Progress",
+    "before": "圓環進度",
+    "after": "圆环进度",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 141,
+    "en": "Toggle Switch",
+    "before": "開關切換",
+    "after": "开关切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 143,
+    "en": "Bottom Sheet",
+    "before": "底部抽屜",
+    "after": "底部抽屉",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 144,
+    "en": "Tab Bar Indicator",
+    "before": "底部導覽列切換",
+    "after": "底部导览列切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 145,
+    "en": "Swipe to Delete",
+    "before": "滑動刪除",
+    "after": "滑动删除",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 146,
+    "en": "Loading Button",
+    "before": "按鈕載入成功",
+    "after": "按钮载入成功",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 147,
+    "en": "Number Stepper",
+    "before": "數量步進器",
+    "after": "数量步进器",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 148,
+    "en": "Floating Label Input",
+    "before": "輸入框浮動標籤",
+    "after": "输入框浮动标签",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 149,
+    "en": "Star Rating",
+    "before": "星星評分",
+    "after": "星星评分",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 150,
+    "en": "Splash to Home",
+    "before": "啟動頁轉場",
+    "after": "启动页转场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 151,
+    "en": "Shake on Error",
+    "before": "錯誤震動提示",
+    "after": "错误震动提示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 152,
+    "en": "Scroll Text Reveal",
+    "before": "捲動逐字點亮",
+    "after": "滚动逐字点亮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 153,
+    "en": "Scroll Zoom to Full",
+    "before": "捲動放大全幅圖片",
+    "after": "滚动放大全幅图片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 154,
+    "en": "Sticky Stacking Cards",
+    "before": "黏著堆疊卡片",
+    "after": "黏著堆叠卡片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 155,
+    "en": "Count Up on Scroll",
+    "before": "數據捲到才計數",
+    "after": "数据卷到才计数",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 156,
+    "en": "Hide Header on Scroll",
+    "before": "往下捲隱藏導覽列",
+    "after": "往下卷隐藏导览列",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 157,
+    "en": "Scroll Draw Path",
+    "before": "捲動繪製路徑",
+    "after": "滚动绘制路径",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 158,
+    "en": "Image Parallax in Frame",
+    "before": "圖框內視差",
+    "after": "图框内视差",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 159,
+    "en": "Scroll Marquee Text",
+    "before": "捲動橫移大字",
+    "after": "滚动横移大字",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 160,
+    "en": "Section Theme Switch",
+    "before": "章節主題切換",
+    "after": "章节主题切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 161,
+    "en": "Circle Reveal Transition",
+    "before": "圓形擴張轉場",
+    "after": "圆形扩张转场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 162,
+    "en": "Underline Slide Link",
+    "before": "連結底線滑入",
+    "after": "连结底线滑入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 163,
+    "en": "Outline Text Fill",
+    "before": "空心字填滿",
+    "after": "空心字填满",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 165,
+    "en": "Circle to Card Image",
+    "before": "圖片圓形展開",
+    "after": "图片圆形展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 166,
+    "en": "Dock Magnify",
+    "before": "Dock 放大選單",
+    "after": "Dock 放大选单",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 167,
+    "en": "Sliding Nav Highlight",
+    "before": "選單滑塊跟隨",
+    "after": "选单滑块跟随",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 168,
+    "en": "Expanding Panels",
+    "before": "展開式圖片面板",
+    "after": "展开式图片面板",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 169,
+    "en": "Tooltip Pop",
+    "before": "提示框彈出",
+    "after": "提示框弹出",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 170,
+    "en": "Letter Hover Bounce",
+    "before": "逐字跳動",
+    "after": "逐字跳动",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 171,
+    "en": "Border Draw Button",
+    "before": "邊框描繪按鈕",
+    "after": "边框描绘按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 173,
+    "en": "Flow Field",
+    "before": "流場線條",
+    "after": "流场线条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 174,
+    "en": "Falling Petals",
+    "before": "飄落花瓣",
+    "after": "飘落花瓣",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 175,
+    "en": "Matrix Rain",
+    "before": "數字雨",
+    "after": "数字雨",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 178,
+    "en": "Magnetic Dot Grid",
+    "before": "磁力點陣",
+    "after": "磁力点阵",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 179,
+    "en": "Water Ripple",
+    "before": "水波漣漪",
+    "after": "水波涟漪",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 180,
+    "en": "Scratch Reveal",
+    "before": "刮刮樂揭示",
+    "after": "刮刮乐揭示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 181,
+    "en": "Fireworks",
+    "before": "煙火",
+    "after": "烟火",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 185,
+    "en": "Tumble",
+    "before": "翻滾",
+    "after": "翻滚",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 186,
+    "en": "Neon Flicker",
+    "before": "霓虹閃爍",
+    "after": "霓虹闪烁",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 187,
+    "en": "Scrapbook",
+    "before": "剪貼簿",
+    "after": "剪贴簿",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 188,
+    "en": "Merge",
+    "before": "合併",
+    "after": "合并",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 189,
+    "en": "Spread",
+    "before": "展開",
+    "after": "展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 191,
+    "en": "Ken Burns",
+    "before": "緩慢推鏡",
+    "after": "缓慢推镜",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 192,
+    "en": "Logo Build Reveal",
+    "before": "Logo 組合登場",
+    "after": "Logo 组合登场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 193,
+    "en": "Audio Waveform",
+    "before": "音訊波形",
+    "after": "音讯波形",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 194,
+    "en": "Flowing Gradient Stroke",
+    "before": "漸層光流線條",
+    "after": "渐变光流线条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 195,
+    "en": "Liquid Fill Icon",
+    "before": "液體填充圖示",
+    "after": "液体填充图示",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 196,
+    "en": "Radar Sweep",
+    "before": "雷達掃描",
+    "after": "雷达扫描",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 197,
+    "en": "Line Chart Draw",
+    "before": "折線圖繪製",
+    "after": "折线图绘制",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 198,
+    "en": "Bar Chart Grow",
+    "before": "長條圖成長",
+    "after": "长条图成长",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 199,
+    "en": "Donut Chart Segments",
+    "before": "圓餅圖分段",
+    "after": "圆饼图分段",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 200,
+    "en": "Geometric Loader",
+    "before": "幾何載入動畫",
+    "after": "几何载入动画",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 201,
+    "en": "Turbulence Distortion",
+    "before": "SVG 濾鏡水波扭曲",
+    "after": "SVG 滤镜水波扭曲",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 202,
+    "en": "Curtain Page Transition",
+    "before": "頁面轉場簾幕",
+    "after": "页面转场帘幕",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 203,
+    "en": "Hamburger Menu Reveal",
+    "before": "漢堡選單展開",
+    "after": "汉堡选单展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 204,
+    "en": "Push Side Drawer",
+    "before": "側邊抽屜推移",
+    "after": "侧边抽屉推移",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 205,
+    "en": "Modal Dialog",
+    "before": "彈出視窗",
+    "after": "弹出视窗",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 206,
+    "en": "Accordion FAQ",
+    "before": "手風琴問答",
+    "after": "手风琴问答",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 207,
+    "en": "Directional Tabs",
+    "before": "分頁標籤切換",
+    "after": "分页标签切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 208,
+    "en": "Filterable Grid",
+    "before": "作品篩選重排",
+    "after": "作品筛选重排",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 209,
+    "en": "Bento Grid Expand",
+    "before": "Bento 格局展開",
+    "after": "Bento 格局展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 210,
+    "en": "Split Screen Scroll",
+    "before": "左右分割捲動",
+    "after": "左右分割滚动",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 211,
+    "en": "Back to Top Progress",
+    "before": "回到頂部進度環",
+    "after": "回到顶部进度环",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 212,
+    "en": "Focus Carousel",
+    "before": "焦點卡片輪播",
+    "after": "焦点卡片轮播",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 214,
+    "en": "Stack Fan Out",
+    "before": "疊卡散開",
+    "after": "叠卡散开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 215,
+    "en": "Pricing Toggle",
+    "before": "價格方案切換",
+    "after": "价格方案切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 216,
+    "en": "Card Expand Detail",
+    "before": "卡片展開詳情",
+    "after": "卡片展开详情",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 217,
+    "en": "Infinite Card Wall",
+    "before": "無限捲動卡片牆",
+    "after": "无限滚动卡片墙",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 218,
+    "en": "Testimonial Slider",
+    "before": "評論輪播",
+    "after": "评论轮播",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 221,
+    "en": "Add to Cart Fly",
+    "before": "加入購物車飛入",
+    "after": "加入购物车飞入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 222,
+    "en": "Grain Gradient",
+    "before": "顆粒漸層",
+    "after": "颗粒渐变",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 223,
+    "en": "Retro Grid Horizon",
+    "before": "復古透視網格",
+    "after": "复古透视网格",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 224,
+    "en": "Bokeh Lights",
+    "before": "散景光點",
+    "after": "散景光点",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 226,
+    "en": "Pulse Rings",
+    "before": "同心圓擴散",
+    "after": "同心圆扩散",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 227,
+    "en": "Sunburst Rays",
+    "before": "旋轉光芒",
+    "after": "旋转光芒",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 228,
+    "en": "Twinkling Sky",
+    "before": "閃爍星空",
+    "after": "闪烁星空",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 229,
+    "en": "Depth Parallax",
+    "before": "景深視差圖層",
+    "after": "景深视差图层",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 230,
+    "en": "Wavy Lines",
+    "before": "起伏線條",
+    "after": "起伏线条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 231,
+    "en": "Floating Shapes",
+    "before": "漂浮幾何",
+    "after": "漂浮几何",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 232,
+    "en": "3D Press Button",
+    "before": "立體按壓按鈕",
+    "after": "立体按压按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 233,
+    "en": "Jelly Button",
+    "before": "果凍彈跳按鈕",
+    "after": "果冻弹跳按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 234,
+    "en": "Ripple Click",
+    "before": "按鈕漣漪回饋",
+    "after": "按钮涟漪回馈",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 235,
+    "en": "Slide to Confirm",
+    "before": "滑動確認",
+    "after": "滑动确认",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 236,
+    "en": "Hold to Confirm",
+    "before": "長按確認",
+    "after": "长按确认",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 237,
+    "en": "Icon Slide Button",
+    "before": "箭頭接力按鈕",
+    "after": "箭头接力按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 238,
+    "en": "Neon Glow Button",
+    "before": "霓虹呼吸按鈕",
+    "after": "霓虹呼吸按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 239,
+    "en": "Copy Feedback",
+    "before": "複製成功回饋",
+    "after": "复制成功回馈",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 240,
+    "en": "Expanding Button",
+    "before": "展開文字按鈕",
+    "after": "展开文字按钮",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 241,
+    "en": "Send Plane Button",
+    "before": "紙飛機送出",
+    "after": "纸飞机送出",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 242,
+    "en": "Animated Checkbox",
+    "before": "勾選框打勾",
+    "after": "勾选框打勾",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 244,
+    "en": "Password Strength",
+    "before": "密碼強度條",
+    "after": "密码强度条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 245,
+    "en": "Range Slider Bubble",
+    "before": "滑桿數值氣泡",
+    "after": "滑杆数值气泡",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 246,
+    "en": "OTP Input",
+    "before": "驗證碼輸入",
+    "after": "验证码输入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 247,
+    "en": "Expanding Search",
+    "before": "展開搜尋框",
+    "after": "展开搜寻框",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 248,
+    "en": "Dropdown Reveal",
+    "before": "下拉選單展開",
+    "after": "下拉选单展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 249,
+    "en": "Tag Input",
+    "before": "標籤輸入",
+    "after": "标签输入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 250,
+    "en": "Liquid Radio",
+    "before": "水滴單選",
+    "after": "水滴单选",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 251,
+    "en": "File Drop Upload",
+    "before": "拖放上傳",
+    "after": "拖放上传",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 252,
+    "en": "Blend Difference Cursor",
+    "before": "反色混合游標",
+    "after": "反色差值光标",
+    "reason": "原名“反色混合游標”，Blend Difference Cursor 经过文字时差值反色"
+  },
+  {
+    "id": 253,
+    "en": "Sticky Cursor",
+    "before": "黏性游標",
+    "after": "磁吸黏性光标",
+    "reason": "原名“黏性游標”，Sticky Cursor 靠近按钮产生磁吸形变"
+  },
+  {
+    "id": 254,
+    "en": "Velocity Stretch Cursor",
+    "before": "速度拉伸游標",
+    "after": "速度形变拉伸光标",
+    "reason": "原名“速度拉伸游標”，Velocity Stretch Cursor 根据光标移动速度动态拉长"
+  },
+  {
+    "id": 255,
+    "en": "Contextual Cursor",
+    "before": "情境標籤游標",
+    "after": "上下文情境标签光标",
+    "reason": "原名“情境標籤游標”，Contextual Cursor 移到目标上变成对应动作圆圈"
+  },
+  {
+    "id": 256,
+    "en": "Crosshair Cursor",
+    "before": "十字準星座標",
+    "after": "十字准星坐标光标",
+    "reason": "原名“十字準星座標”，Crosshair Cursor 随动横竖细线与动态坐标数字"
+  },
+  {
+    "id": 257,
+    "en": "Following Eyes",
+    "before": "眼睛跟隨",
+    "after": "视线跟踪眨眼大眼",
+    "reason": "原名“眼睛跟隨”，Following Eyes 眼珠跟踪光标并规律眨眼"
+  },
+  {
+    "id": 258,
+    "en": "Magnifier Lens",
+    "before": "放大鏡游標",
+    "after": "放大镜透镜光标",
+    "reason": "原名“放大鏡游標”，Magnifier Lens 移动透镜放大"
+  },
+  {
+    "id": 260,
+    "en": "Gooey Trail",
+    "before": "黏液拖尾",
+    "after": "黏液水滴融合拖尾",
+    "reason": "原名“黏液拖尾”，Gooey Trail 液滴融合拉丝"
+  },
+  {
+    "id": 261,
+    "en": "Click Confetti Pop",
+    "before": "點擊噴出小物",
+    "after": "点击喷洒粒子彩带",
+    "reason": "原名“點擊噴出小物”，Click Confetti Pop 点击喷出彩带粒子"
+  },
+  {
+    "id": 262,
+    "en": "Hover Zoom in Frame",
+    "before": "框內微放大",
+    "after": "框内微放大",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 263,
+    "en": "Hover Zoom & Pan",
+    "before": "滑過放大檢視",
+    "after": "滑过放大检视",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 264,
+    "en": "Saturate on Hover",
+    "before": "低飽和喚醒",
+    "after": "低饱和唤醒",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 265,
+    "en": "Image Swap on Hover",
+    "before": "商品圖切換",
+    "after": "商品图切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 266,
+    "en": "Hover to Play Video",
+    "before": "滑過預覽影片",
+    "after": "滑过预览影片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 267,
+    "en": "Lightbox Zoom",
+    "before": "點圖放大燈箱",
+    "after": "点图放大灯箱",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 268,
+    "en": "Thumbnail Gallery",
+    "before": "縮圖列相簿",
+    "after": "缩图列相簿",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 269,
+    "en": "Slice Transition",
+    "before": "切片轉場",
+    "after": "切片转场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 271,
+    "en": "Glitch Image",
+    "before": "故障錯位圖片",
+    "after": "故障错位图片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 272,
+    "en": "Scroll Flip Card",
+    "before": "捲動翻轉卡片",
+    "after": "滚动翻转卡片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 273,
+    "en": "Scroll Rotating Cube",
+    "before": "捲動旋轉立方體",
+    "after": "滚动旋转立方体",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 274,
+    "en": "Zoom Through Text",
+    "before": "穿越大字轉場",
+    "after": "穿越大字转场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 275,
+    "en": "Scroll Velocity Skew",
+    "before": "捲動速度傾斜",
+    "after": "滚动速度倾斜",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 277,
+    "en": "Scroll Shape Morph",
+    "before": "捲動形狀變形",
+    "after": "滚动形状变形",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 278,
+    "en": "Scroll Fan Out",
+    "before": "捲動扇形展開",
+    "after": "滚动扇形展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 279,
+    "en": "Blur to Focus",
+    "before": "模糊對焦",
+    "after": "模糊对焦",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 280,
+    "en": "Text Along Path",
+    "before": "沿曲線跑的文字",
+    "after": "沿曲线跑的文字",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 281,
+    "en": "Split Doors Reveal",
+    "before": "對開門轉場",
+    "after": "对开门转场",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 282,
+    "en": "Split Text Hover",
+    "before": "上下切開文字",
+    "after": "上下切开文字",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 283,
+    "en": "Letter Spacing Expand",
+    "before": "字距展開",
+    "after": "字距展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 284,
+    "en": "List Row Fill",
+    "before": "清單列滑入填滿",
+    "after": "清单列滑入填满",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 285,
+    "en": "Icon Micro-animations",
+    "before": "圖示微動畫",
+    "after": "图示微动画",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 286,
+    "en": "Card Info Slide Up",
+    "before": "資訊面板滑上",
+    "after": "资讯面板滑上",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 287,
+    "en": "Social Icon Fill",
+    "before": "社群圖示填滿",
+    "after": "社群图示填满",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 288,
+    "en": "Highlighter Hover",
+    "before": "螢光筆劃記",
+    "after": "萤光笔划记",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 289,
+    "en": "Holographic Card",
+    "before": "全息閃卡",
+    "after": "全息闪卡",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 290,
+    "en": "Link Preview Popover",
+    "before": "連結預覽卡",
+    "after": "连结预览卡",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 292,
+    "en": "Handwriting Draw",
+    "before": "手寫描繪",
+    "after": "手写描绘",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 295,
+    "en": "Image Filled Text",
+    "before": "圖片填字",
+    "after": "图片填字",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 296,
+    "en": "Blur In Letters",
+    "before": "逐字模糊浮現",
+    "after": "逐字模糊浮现",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 297,
+    "en": "Strike & Rewrite",
+    "before": "劃掉改寫",
+    "after": "划掉改写",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 298,
+    "en": "Chat Message Pop",
+    "before": "聊天訊息出現",
+    "after": "聊天讯息出现",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 299,
+    "en": "Echo Stack",
+    "before": "殘影堆疊",
+    "after": "残影堆叠",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 301,
+    "en": "Multilingual Greeting",
+    "before": "多語問候切換",
+    "after": "多语问候切换",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 302,
+    "en": "Drag to Reorder",
+    "before": "拖曳排序清單",
+    "after": "拖拽排序清单",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 304,
+    "en": "Selectable Cards",
+    "before": "多選卡片",
+    "after": "多选卡片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 305,
+    "en": "Border Spotlight Grid",
+    "before": "邊框聚光網格",
+    "after": "边框聚光网格",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 306,
+    "en": "3D Ring Carousel",
+    "before": "3D 環形輪播",
+    "after": "3D 环形轮播",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 307,
+    "en": "Memory Match",
+    "before": "翻牌配對遊戲",
+    "after": "翻牌配对游戏",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 308,
+    "en": "Stat Cards",
+    "before": "數據儀表卡片",
+    "after": "数据仪表卡片",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 309,
+    "en": "Page Flip Book",
+    "before": "翻頁書",
+    "after": "翻页书",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 310,
+    "en": "Stack to Grid",
+    "before": "照片堆展開",
+    "after": "照片堆展开",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 311,
+    "en": "Folding Card",
+    "before": "對折邀請卡",
+    "after": "对折邀请卡",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 312,
+    "en": "Top Loading Bar",
+    "before": "頂部載入進度條",
+    "after": "顶部载入进度条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 313,
+    "en": "Step Progress",
+    "before": "步驟進度條",
+    "after": "步骤进度条",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 314,
+    "en": "Mega Menu",
+    "before": "大型下拉選單",
+    "after": "大型下拉选单",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 315,
+    "en": "Push Navigation",
+    "before": "推入換頁",
+    "after": "推入换页",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 316,
+    "en": "Empty State",
+    "before": "空狀態插畫",
+    "after": "空状态插画",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 317,
+    "en": "Cookie Banner",
+    "before": "Cookie 同意橫幅",
+    "after": "Cookie 同意横幅",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 318,
+    "en": "Speed Dial FAB",
+    "before": "浮動按鈕展開選單",
+    "after": "浮动按钮展开选单",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 319,
+    "en": "Infinite Scroll",
+    "before": "無限捲動載入",
+    "after": "无限滚动载入",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 320,
+    "en": "Collapsible Sidebar",
+    "before": "側欄收合",
+    "after": "侧栏收合",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 322,
+    "en": "Map Route",
+    "before": "地圖路線導航",
+    "after": "地图路线导航",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 323,
+    "en": "Analog Clock",
+    "before": "即時時鐘",
+    "after": "即时时钟",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 324,
+    "en": "Animated Weather Icons",
+    "before": "天氣圖示動畫",
+    "after": "天气图示动画",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 325,
+    "en": "Marching Ants Selection",
+    "before": "選取框螞蟻線",
+    "after": "蚂蚁线选区框",
+    "reason": "原名“選取框螞蟻線”，Marching Ants Selection 虚线连续跑动"
+  },
+  {
+    "id": 326,
+    "en": "Organic Blob",
+    "before": "有機流動色塊",
+    "after": "有机流动色块",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 327,
+    "en": "Badge Unlock",
+    "before": "成就徽章解鎖",
+    "after": "成就徽章解锁",
+    "reason": "简体中文标准化转换（术语统一为光标/滚动/激光/渐变等规范用法）"
+  },
+  {
+    "id": 328,
+    "en": "ECG Heartbeat Line",
+    "before": "心電圖線條",
+    "after": "心电图脉冲波形",
+    "reason": "原名“心電圖線條”，ECG Heartbeat Pulse 动态绘制心率尖峰与数值"
+  },
+  {
+    "id": 329,
+    "en": "Growing Plant",
+    "before": "樹枝生長",
+    "after": "枝芽分形生长",
+    "reason": "原名“樹枝生長”，Growing Plant 树干地面分枝抽叶生长"
+  },
+  {
+    "id": 330,
+    "en": "Gear Train",
+    "before": "齒輪連動",
+    "after": "齿轮齿数咬合联动",
+    "reason": "原名“齒輪連動”，Gear Train 根据齿数比例真实齿轮啮合传动"
+  },
+  {
+    "id": 331,
+    "en": "Fingerprint Scan",
+    "before": "指紋掃描解鎖",
+    "after": "指纹光条扫描解锁",
+    "reason": "原名“指紋掃描解鎖”，Fingerprint Scan 纹路扩散与光学扫描线"
+  }
+]
